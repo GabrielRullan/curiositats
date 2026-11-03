@@ -540,17 +540,26 @@ function switchView(viewName) {
 function pickRandomSpotlight(animate = true) {
   if (allItems.length === 0) return;
 
-  // Triar un índex diferent de l'actual si n'hi ha més d'un
-  let newIdx;
-  if (allItems.length > 1) {
+  // Mostreig estratificat equilibrat per categoria per garantir diversitat en el Spotlight
+  const activeTypes = [...new Set(allItems.map(it => it.type))];
+  const chosenType = activeTypes[Math.floor(Math.random() * activeTypes.length)];
+  const pool = allItems.filter(it => it.type === chosenType);
+
+  let item;
+  if (pool.length > 1) {
+    let candidate;
+    let attempts = 0;
     do {
-      newIdx = Math.floor(Math.random() * allItems.length);
-    } while (newIdx === currentRandomIndex);
+      candidate = pool[Math.floor(Math.random() * pool.length)];
+      attempts++;
+    } while (allItems.indexOf(candidate) === currentRandomIndex && attempts < 10);
+    item = candidate;
+  } else if (pool.length === 1) {
+    item = pool[0];
   } else {
-    newIdx = 0;
+    item = allItems[Math.floor(Math.random() * allItems.length)];
   }
-  currentRandomIndex = newIdx;
-  const item = allItems[newIdx];
+  currentRandomIndex = allItems.indexOf(item);
 
   const updateCardContent = () => {
     const cfg = TYPE_CONFIG[item.type] || TYPE_CONFIG.words;

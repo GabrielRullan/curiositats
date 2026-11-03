@@ -3,7 +3,7 @@
 No requereix dependències externes (només la biblioteca estàndard de Python).
 """
 
-from http.server import SimpleHTTPRequestHandler, HTTPServer
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
 import random
@@ -29,7 +29,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 1. Words
     if not category or category == "words":
         cursor.execute(
-            "SELECT id, term AS title, ipa_pronunciation AS subtitle, grammatical_category AS tag, definition, example_sentence, etymology, dialectal_notes, source_reference, 'words' AS type FROM words"
+            "SELECT id, term AS title, COALESCE(ipa_pronunciation, dialectal_notes, '') AS subtitle, COALESCE(grammatical_category, '') AS tag, definition, example_sentence, etymology, dialectal_notes, source_reference, 'words' AS type FROM words"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -37,7 +37,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 2. Fauna
     if not category or category == "fauna":
         cursor.execute(
-            "SELECT id, common_name_ca AS title, scientific_name AS subtitle, group_type AS tag, is_endemic, is_native_breed, conservation_status, habitat, description AS definition, curiosities, source_reference, 'fauna' AS type FROM fauna"
+            "SELECT id, common_name_ca AS title, COALESCE(scientific_name, '') AS subtitle, group_type AS tag, is_endemic, is_native_breed, conservation_status, habitat, description AS definition, curiosities, source_reference, 'fauna' AS type FROM fauna"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -45,7 +45,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 3. Flora
     if not category or category == "flora":
         cursor.execute(
-            "SELECT id, common_name_ca AS title, scientific_name AS subtitle, family AS tag, is_endemic, flowering_period, habitat, traditional_uses, description AS definition, curiosities, source_reference, 'flora' AS type FROM flora"
+            "SELECT id, common_name_ca AS title, scientific_name AS subtitle, COALESCE(family, '') AS tag, is_endemic, flowering_period, habitat, traditional_uses, description AS definition, curiosities, source_reference, 'flora' AS type FROM flora"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -73,7 +73,7 @@ def fetch_all_curiositats(category=None, search=None):
         s = search.lower().strip()
         filtered = []
         for it in items:
-            text_corpus = f"{it.get('title', '')} {it.get('subtitle', '')} {it.get('tag', '')} {it.get('definition', '')}".lower()
+            text_corpus = f"{it.get('title') or ''} {it.get('subtitle') or ''} {it.get('tag') or ''} {it.get('definition') or ''}".lower()
             if s in text_corpus:
                 filtered.append(it)
         items = filtered
@@ -104,8 +104,23 @@ class TeringaRequestHandler(SimpleHTTPRequestHandler):
             return
 
         elif parsed.path == "/api/random":
-            items = fetch_all_curiositats()
-            chosen = random.choice(items) if items else {}
+            params = urllib.parse.parse_qs(parsed.query)
+            category = params.get("category", [None])[0]
+
+            if category:
+                items = fetch_all_curiositats(category=category)
+                chosen = random.choice(items) if items else {}
+            else:
+                # Mostreig estratificat equilibrat per categoria per evitar biaix lèxic
+                categories = ["words", "fauna", "flora", "businesses", "history"]
+                random.shuffle(categories)
+                chosen = {}
+                for cat in categories:
+                    items = fetch_all_curiositats(category=cat)
+                    if items:
+                        chosen = random.choice(items)
+                        break
+
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.send_header("Access-Control-Allow-Origin", "*")
@@ -188,7 +203,7 @@ class TeringaRequestHandler(SimpleHTTPRequestHandler):
 
 def run_server(port=8080):
     server_address = ("", port)
-    httpd = HTTPServer(server_address, TeringaRequestHandler)
+    httpd = ThreadingHTTPServer(server_address, TeringaRequestHandler)
     print(
         f"🌐 Servidor d'Una teringa de curiositats en marxa a: http://localhost:{port}"
     )

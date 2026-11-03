@@ -160,8 +160,26 @@
           "Curiositats"
         ],
         "summary": "Retorna una curiositat aleatòria del catàleg.",
-        "description": "Selecciona a l'atzar un element individual de qualsevol de les categories del catàleg general d'«Una teringa de curiositats».",
+        "description": "Selecciona a l'atzar un element del catàleg. Si no s'especifica categoria, aplica un mostreig estratificat equilibrat entre totes les categories disponibles.",
         "operationId": "getRandomCuriositat",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Filtra per una categoria específica (words, fauna, flora, businesses, history). Si s'omet, s'aplica una selecció equilibrada entre totes les categories.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "words",
+                "fauna",
+                "flora",
+                "businesses",
+                "history"
+              ]
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Element aleatori retornat correctament.",

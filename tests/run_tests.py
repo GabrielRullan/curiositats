@@ -40,8 +40,8 @@ def parse_arguments():
         "-t", "--tier",
         type=str,
         default="all",
-        choices=["1", "2", "3", "4", "all"],
-        help="Test tier to execute (1: Features, 2: Boundaries, 3: Interactions, 4: Workflows, all: Default)"
+        choices=["1", "2", "3", "4", "dialectal", "all"],
+        help="Test tier to execute (1: Features, 2: Boundaries, 3: Interactions, 4: Workflows, dialectal: Dialectal enrichment, all: Default 4 tiers)"
     )
     parser.add_argument(
         "-s", "--strict",
@@ -66,11 +66,12 @@ def load_test_suite(tier: str = "all") -> unittest.TestSuite:
         "2": "tests.test_tier2_boundaries",
         "3": "tests.test_tier3_interactions",
         "4": "tests.test_tier4_workflows",
+        "dialectal": "tests.verify_dialectal_enrichment",
     }
 
     if tier == "all":
-        for mod_name in tier_modules.values():
-            suite.addTests(loader.loadTestsFromName(mod_name))
+        for t in ["1", "2", "3", "4"]:
+            suite.addTests(loader.loadTestsFromName(tier_modules[t]))
     else:
         mod_name = tier_modules.get(tier)
         if mod_name:

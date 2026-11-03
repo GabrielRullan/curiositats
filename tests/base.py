@@ -4,7 +4,7 @@ Zero external dependencies: uses Python standard library only (unittest, sqlite3
 """
 
 import functools
-from http.server import HTTPServer
+from http.server import HTTPServer, ThreadingHTTPServer
 import json
 import os
 from pathlib import Path
@@ -116,7 +116,7 @@ def start_test_server():
             return _server_url
 
         import server
-        _server_instance = HTTPServer(("127.0.0.1", 0), server.TeringaRequestHandler)
+        _server_instance = ThreadingHTTPServer(("127.0.0.1", 0), server.TeringaRequestHandler)
         port = _server_instance.server_address[1]
         _server_thread = threading.Thread(target=_server_instance.serve_forever, daemon=True)
         _server_thread.start()

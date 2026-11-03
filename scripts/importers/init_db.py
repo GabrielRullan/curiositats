@@ -369,7 +369,15 @@ def generate_fallback_data(data: dict) -> list:
     return items
 
 
-def init_database(db_path=DB_PATH, schema_path=SCHEMA_PATH, seed_path=SEED_PATH, dry_run=False, with_diec=False, export_fallback=False):
+def init_database(
+    db_path=DB_PATH,
+    schema_path=SCHEMA_PATH,
+    seed_path=SEED_PATH,
+    dry_run=False,
+    with_diec=False,
+    with_viccionari=False,
+    export_fallback=False
+):
     """Executa la inicialització o validació de la base de dades."""
     mode_text = "[DRY-RUN / VALIDACIÓ]" if dry_run else "[EXECUTANT]"
     print(f"🚀 {mode_text} Inicialitzant procés per a: {db_path}")
@@ -454,6 +462,21 @@ def init_database(db_path=DB_PATH, schema_path=SCHEMA_PATH, seed_path=SEED_PATH,
             inserted, skipped, total_w = import_diec_corpus(db_path=db_path)
             print(f"✅ DIEC2 importat: {inserted} noves, {skipped} omeses, total paraules: {total_w}")
 
+    # 5. Suport opcional per al corpus Viccionari (Milestone M2 / R2)
+    if with_viccionari:
+        print("\n📖 Executant importació del corpus Viccionari (Milestone M2 / R2)...")
+        if str(BASE_DIR) not in sys.path:
+            sys.path.insert(0, str(BASE_DIR))
+        from scripts.importers.import_viccionari import import_viccionari_corpus, JSON_PATH as VICC_JSON_PATH
+        if dry_run:
+            with open(VICC_JSON_PATH, "r", encoding="utf-8") as f:
+                vicc_entries = json.load(f)
+            valid_vicc = [e for e in vicc_entries if (e.get("term") or "").strip()]
+            print(f"✅ [DRY-RUN] Viccionari validat: {len(valid_vicc)} entrades vàlides a {VICC_JSON_PATH.name}")
+        else:
+            res = import_viccionari_corpus(db_path=db_path)
+            print(f"✅ Viccionari importat: {res['inserted']} noves, {res['enriched']} enriquides, total paraules: {res['total_words']}")
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -474,6 +497,20 @@ def main():
         help="Executa també la importació del corpus DIEC2 (91 entrades) a curiositats.db.",
     )
     parser.add_argument(
+        "--with-viccionari",
+        "--viccionari",
+        dest="with_viccionari",
+        action="store_true",
+        help="Executa també la importació del corpus Viccionari (944 entrades) a curiositats.db.",
+    )
+    parser.add_argument(
+        "--all",
+        "--with-all",
+        dest="with_all",
+        action="store_true",
+        help="Inicialitza la base de dades amb TOT el corpus dialectal complet (seed + DIEC2 + Viccionari, 1.036 paraules).",
+    )
+    parser.add_argument(
         "--export-fallback",
         action="store_true",
         help="Genera i mostra l'array FALLBACK_DATA per a web/app.js a partir de seed_data.json.",
@@ -484,13 +521,17 @@ def main():
 
     args = parser.parse_args()
 
+    with_diec = args.with_diec or args.with_all
+    with_viccionari = args.with_viccionari or args.with_all
+
     try:
         init_database(
             db_path=args.db,
             schema_path=args.schema,
             seed_path=args.seed,
             dry_run=args.dry_run,
-            with_diec=args.with_diec,
+            with_diec=with_diec,
+            with_viccionari=with_viccionari,
             export_fallback=args.export_fallback,
         )
     except Exception as e:
