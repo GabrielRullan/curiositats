@@ -32,45 +32,37 @@
 </head>
 <body>
 
-  <!-- CAPÇALERA PRINCIPAL -->
-  <header class="hero">
-    <div class="container hero-content">
-      <!-- Navegació ràpida superior: Contacte, Privadesa, GitHub, Swagger -->
-      <nav class="hero-top-nav" aria-label="Informació del projecte, contacte i privadesa">
-        <button type="button" class="hero-nav-btn" data-open-modal="contact-modal" aria-label="Obrir apartat de contacte">
-          <span class="icon">📬</span> Contacte
-        </button>
-        <button type="button" class="hero-nav-btn" data-open-modal="privacy-modal" aria-label="Obrir política de privadesa sense cookies">
-          <span class="icon">🔒</span> Privadesa (Zero Cookies)
-        </button>
-        <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="hero-nav-btn">
-          <span class="icon">🐙</span> GitHub
-        </a>
-        <a href="/swagger/" class="hero-nav-btn">
-          <span class="icon">⚡</span> Swagger API
-        </a>
-      </nav>
+  <!-- BARRA DE CAPÇALERA COMPACTA I FIXA (MOBILE & DESKTOP FRIENDLY) -->
+  <header class="app-header">
+    <div class="header-inner">
+      <!-- Marca i Logotip -->
+      <a href="/" class="brand-link" aria-label="Inici — Una teringa de curiositats balears">
+        <img src="logo-circle.png" alt="Logotip Una teringa" class="brand-logo" width="38" height="38" fetchpriority="high">
+        <div class="brand-text">
+          <span class="brand-title">Una teringa</span>
+          <span class="brand-sub">Curiositats Balears</span>
+        </div>
+      </a>
 
-      <div class="hero-brand">
-        <a href="/" class="hero-brand-link" aria-label="Inici — Una teringa de curiositats">
-          <img src="logo.svg" alt="Logotip Una teringa de curiositats balears" class="hero-logo" width="112" height="112" fetchpriority="high">
-        </a>
-      </div>
-      <div class="badge-brand">Patrimoni & Etnografia de Mallorca</div>
-      <h1 class="site-title">Una teringa de curiositats</h1>
-      <p class="site-tagline">
-        <em>«Teringa» (f.):</em> Filera o successió continuada de coses o persones que van l'una darrere l'altra.
-      </p>
-
-      <!-- Commutador de vistes principal (Per defecte: Una a la sort) -->
+      <!-- Commutador de Vistes Central (A la sort / Tota sa teringa) -->
       <nav class="view-switcher" aria-label="Selector de vista principal">
         <button type="button" class="btn-tab active" id="tab-spotlight" data-view="spotlight" aria-label="Vista d'una curiositat a la sort">
           <span class="tab-icon">🎲</span> <span class="tab-label">A la sort</span>
         </button>
         <button type="button" class="btn-tab" id="tab-teringa" data-view="teringa" aria-label="Vista del catàleg complet de curiositats">
-          <span class="tab-icon">📜</span> <span class="tab-label">Tota sa teringa</span> <span class="tab-badge" id="tab-total-badge">31</span>
+          <span class="tab-icon">📜</span> <span class="tab-label">Tota sa teringa</span> <span class="tab-badge" id="tab-total-badge">1086</span>
         </button>
       </nav>
+
+      <!-- Botó Menú Lateral -->
+      <button type="button" class="btn-drawer-toggle" id="btn-open-drawer" aria-label="Obrir menú lateral d'informació i navegació" aria-controls="side-drawer" aria-expanded="false">
+        <svg class="drawer-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span class="drawer-btn-label">Menú</span>
+      </button>
     </div>
   </header>
 
