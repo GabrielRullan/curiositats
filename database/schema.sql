@@ -20,6 +20,7 @@ CREATE TABLE words (
     etymology TEXT,
     dialectal_notes VARCHAR(150),     -- p. ex: 'Pla de Mallorca', 'Sóller', 'Mallorquí general', 'Raiguer'
     source_reference VARCHAR(255) DEFAULT 'Diccionari Català-Valencià-Balear (Alcover-Moll)',
+    source_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -40,6 +41,7 @@ CREATE TABLE IF NOT EXISTS fauna (
     curiosities TEXT,
     image_url TEXT,
     source_reference VARCHAR(255) DEFAULT 'Biodibal (UIB) / IRFAP',
+    source_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -60,6 +62,7 @@ CREATE TABLE IF NOT EXISTS flora (
     curiosities TEXT,
     image_url TEXT,
     source_reference VARCHAR(255) DEFAULT 'Herbari Virtual del Mediterrani Occidental (UIB)',
+    source_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -81,6 +84,7 @@ CREATE TABLE IF NOT EXISTS emblematic_businesses (
     heritage_elements TEXT,             -- Elements protegits (fusteria modernista, rètols històrics, forns de llenya antics)
     is_active BOOLEAN DEFAULT 1,
     source_reference VARCHAR(255) DEFAULT 'Catàleg Emblemàtics Balears (IDI)',
+    source_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CHECK (latitude BETWEEN 39.0 AND 40.2 AND longitude BETWEEN 2.2 AND 3.6),
     CHECK (foundation_year IS NULL OR foundation_year > 1200)
@@ -102,6 +106,7 @@ CREATE TABLE IF NOT EXISTS historical_events (
     detailed_description TEXT,
     key_figures TEXT,                        -- p. ex: 'Jaume I, Ramon Llull, Joanot Colom, Guillem Sagrera'
     source_reference VARCHAR(255) DEFAULT 'Arxiu del Regne de Mallorca (ARM) / GEM',
+    source_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CHECK (year_end IS NULL OR year_start <= year_end)
 );

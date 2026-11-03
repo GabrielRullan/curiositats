@@ -1526,3 +1526,46 @@ dialog::backdrop {
     display: none;
   }
 }
+
+
+/* Enllaços d'origen / fonts originals amb URL */
+.source-link {
+  color: var(--cat-history);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.source-link:hover {
+  color: var(--cat-words);
+  text-decoration-color: var(--cat-words);
+}
+
+.source-link .ext-icon {
+  font-size: 0.85em;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.card-source-link {
+  color: var(--cat-history);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--color-surface);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.card-source-link:hover {
+  background: var(--cat-history);
+  color: #FFFFFF;
+}

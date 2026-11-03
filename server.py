@@ -32,7 +32,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 1. Words
     if not category or category == "words":
         cursor.execute(
-            "SELECT id, term AS title, COALESCE(ipa_pronunciation, dialectal_notes, '') AS subtitle, COALESCE(grammatical_category, '') AS tag, definition, example_sentence, etymology, dialectal_notes, source_reference, 'words' AS type FROM words"
+            "SELECT id, term AS title, COALESCE(ipa_pronunciation, dialectal_notes, '') AS subtitle, COALESCE(grammatical_category, '') AS tag, definition, example_sentence, etymology, dialectal_notes, source_reference, source_url, 'words' AS type FROM words"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -40,7 +40,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 2. Fauna
     if not category or category == "fauna":
         cursor.execute(
-            "SELECT id, common_name_ca AS title, COALESCE(scientific_name, '') AS subtitle, group_type AS tag, is_endemic, is_native_breed, conservation_status, habitat, description AS definition, curiosities, source_reference, 'fauna' AS type FROM fauna"
+            "SELECT id, common_name_ca AS title, COALESCE(scientific_name, '') AS subtitle, group_type AS tag, is_endemic, is_native_breed, conservation_status, habitat, description AS definition, curiosities, source_reference, source_url, 'fauna' AS type FROM fauna"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -48,7 +48,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 3. Flora
     if not category or category == "flora":
         cursor.execute(
-            "SELECT id, common_name_ca AS title, scientific_name AS subtitle, COALESCE(family, '') AS tag, is_endemic, flowering_period, habitat, traditional_uses, description AS definition, curiosities, source_reference, 'flora' AS type FROM flora"
+            "SELECT id, common_name_ca AS title, scientific_name AS subtitle, COALESCE(family, '') AS tag, is_endemic, flowering_period, habitat, traditional_uses, description AS definition, curiosities, source_reference, source_url, 'flora' AS type FROM flora"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -56,7 +56,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 4. Negocis
     if not category or category == "businesses":
         cursor.execute(
-            "SELECT id, name AS title, municipality AS subtitle, sector AS tag, category_type, foundation_year, address, latitude, longitude, history_summary AS definition, heritage_elements, source_reference, 'businesses' AS type FROM emblematic_businesses"
+            "SELECT id, name AS title, municipality AS subtitle, sector AS tag, category_type, foundation_year, address, latitude, longitude, history_summary AS definition, heritage_elements, source_reference, source_url, 'businesses' AS type FROM emblematic_businesses"
         )
         for r in cursor.fetchall():
             items.append(dict(r))
@@ -64,7 +64,7 @@ def fetch_all_curiositats(category=None, search=None):
     # 5. Història
     if not category or category == "history":
         cursor.execute(
-            "SELECT id, title, date_display AS subtitle, historical_period AS tag, location_scope, summary AS definition, detailed_description, key_figures, source_reference, 'history' AS type FROM historical_events"
+            "SELECT id, title, date_display AS subtitle, historical_period AS tag, location_scope, summary AS definition, detailed_description, key_figures, source_reference, source_url, 'history' AS type FROM historical_events"
         )
         for r in cursor.fetchall():
             items.append(dict(r))

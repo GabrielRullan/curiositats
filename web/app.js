@@ -531,7 +531,7 @@ async function initApp() {
 // Carregar dades: prova curiositats.json (producció/Firebase), /api/curiositats (local), o fallback
 async function loadData() {
   try {
-    const res = await fetch("curiositats.json");
+    const res = await fetch("curiositats.json?v=20261103");
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
@@ -637,7 +637,11 @@ function pickRandomSpotlight(animate = true) {
       spCuriosityBox.style.display = "none";
     }
 
-    spSource.textContent = `Font: ${item.source_reference || "Patrimoni i Etnografia de Mallorca"}`;
+    if (item.source_url) {
+      spSource.innerHTML = `Font original: <a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="source-link" title="Consulta la font oficial">${item.source_reference} <span class="ext-icon" aria-hidden="true">↗</span></a>`;
+    } else {
+      spSource.textContent = `Font: ${item.source_reference || "Patrimoni i Etnografia de Mallorca"}`;
+    }
   };
 
   if (animate && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -722,6 +726,7 @@ function renderTeringa() {
       <p class="card-snippet">${item.definition || ""}</p>
       <div class="card-bottom">
         <span>#${index + 1} a sa teringa</span>
+        ${item.source_url ? `<a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="card-source-link" onclick="event.stopPropagation();" title="Obrir la font original a ${item.source_reference}">Font ↗</a>` : ''}
         <span class="card-readmore">Saber-ne més &rarr;</span>
       </div>
     `;
@@ -780,7 +785,11 @@ function openDetail(item) {
     modalExtra.style.display = "none";
   }
 
-  modalSource.textContent = `Font: ${item.source_reference || "Patrimoni de Mallorca"}`;
+  if (item.source_url) {
+    modalSource.innerHTML = `Font original: <a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="source-link" title="Consulta la font oficial">${item.source_reference} <span class="ext-icon" aria-hidden="true">↗</span></a>`;
+  } else {
+    modalSource.textContent = `Font: ${item.source_reference || "Patrimoni de Mallorca"}`;
+  }
   detailModal.showModal();
 }
 
@@ -917,7 +926,7 @@ function setupEventListeners() {
       if (!currentSpotlightItem) return;
       const it = currentSpotlightItem;
       const extra = it.curiosities || it.detailed_description || it.example_sentence || it.heritage_elements || "";
-      const textToCopy = `📜 «${it.title}»${it.subtitle ? ` (${it.subtitle})` : ""}\n${it.definition || ""}${extra ? `\n💡 ${extra}` : ""}\nFont: ${it.source_reference || "Patrimoni de Mallorca"}\nDescobreix més a: https://teringa.balears.tech`;
+      const textToCopy = `📜 «${it.title}»${it.subtitle ? ` (${it.subtitle})` : ""}\n${it.definition || ""}${extra ? `\n💡 ${extra}` : ""}\nFont original: ${it.source_reference || "Patrimoni de Mallorca"}${it.source_url ? ` (${it.source_url})` : ""}\nDescobreix més a: https://teringa.balears.tech`;
 
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
