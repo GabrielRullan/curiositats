@@ -1,0 +1,939 @@
+[
+  {
+    "id": "0006739",
+    "term": "amo",
+    "grammatical_category": "m.",
+    "full_definition": "amo 1 1 m. [LC] Home que té el domini d’alguna cosa. L’amo de la vinya. L’amo d’aquelles cases. 1 2 m. [LC] per ext. És l’amo dels seus pensaments. 1 3 m. [LC] Home que té algú sota el seu domini o al seu servei. Un criat fidel al seu amo. Els obrers anaren a parlar amb l’amo. 1 4 m. [LC] Cap de casa . 2 m. [LC] Masover d’una explotació rural de Mallorca o Menorca. L’amo En Biel des Rafal. Ha vingut l’amo de Son Fullana.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0104918",
+    "term": "beta2",
+    "grammatical_category": "f.",
+    "full_definition": "beta 2 1 f. [TRA] Embarcació petita de fons pla, de dues rodes, típica de les costes de la Provença i del Llenguadoc. 2 f. [TRA] Tèquina pròpia de Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002670",
+    "term": "boix1",
+    "grammatical_category": "m.",
+    "full_definition": "boix 1 1 1 m. [AGF] [BOS] [LC] Arbust o arbret de la família de les buxàcies, de fulles oposades, petites, ovades, coriàcies i persistents, flors unisexuals d’un groc verdós, disposades en glomèruls axil·lars, i fruit en càpsula terminada en tres apèndixs corresponents als estils ( Buxus sempervirens ). 1 2 [BOS] [LC] boix baleàric Arbret de la família de les buxàcies, molt semblant al boix, però més robust i de fulla més grossa, que viu a Mallorca i a Cabrera ( Buxus balearica ). 1 3 [BOS] [LC] boix bord Aladern 1 . 1 4 [BOS] [LC] boix de muntanya Neret . 1 5 [BOS] [LC] boix de Núria Neret . 1 6 [BOS] [LC] boix grèvol Grèvol 1 2 . 1 7 [BOS] [LC] boix marí Galzeran . 1 8 [BOS] boix moll Arbust de la família de les caprifoliàcies, mena de xuclamel de fulles ovades, blanes i pubescents, flors d’un blanc groguenc, sovint tenyides de porpra, i fruit en baia vermella, que es fa als boscos caducifolis de l’estatge montà ( Lonicera xylosteum ). 2 m. [AF] [AGF] [AR] [IMF] [LC] Fusta de boix, de fibra compacta, molt usada en torneria i per a l’obtenció de gravats xilogràfics. Gravar al boix. 3 m. [AF] [AR] Estampa obtinguda amb la tècnica de gravat al boix. 4 m. [ED] [LC] Mà de morter .",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0059896",
+    "term": "boleres",
+    "grammatical_category": "f. pl.",
+    "full_definition": "boleres f. pl. [AN] [JE] [MU] Ball, variant del bolero, practicat a Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002687",
+    "term": "bolero",
+    "grammatical_category": "m.",
+    "full_definition": "bolero 1 m. [JE] [LC] [MU] Ball vuitcentista de ritme ternari, molt popularitzat a Mallorca. 2 m. [JE] [LC] [MU] Música d’aquest ball. 3 m. [JE] [MU] Cançó i ball de ritme binari i sincopat, d’origen hispànic i molt popular a les Antilles.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0001381",
+    "term": "bufalaga",
+    "grammatical_category": "f.",
+    "full_definition": "bufalaga 1 f. [BOS] [LC] Planta llenyosa del gènere Thymelaea , de la família de les timeleàcies, de fulles enteres i flors de periant simple i persistent. 2 [BOS] bufalaga hirsuta Bufalaga marina . 3 [BOS] bufalaga marina [o bufalaga hirsuta ] Bufalaga de branques pèndules, totes cobertes de fulles oblongues, gruixudes i tomentoses a l’anvers, i flors grogues, pròpia de la franja litoral ( Thymelaea hirsuta ). 4 [BOS] bufalaga tintòria Bufalaga en forma de mata, de fulles estretament oblongues i flors groguenques, que es fa a les brolles dels terrenys calcaris i que s’havia emprat per a tenyir la llana de groc ( Thymelaea tinctoria ). 5 [BOS] bufalaga velutina Bufalaga de fulles llanoses, cendroses o groguenques, pròpia de Mallorca i de Menorca ( Thymelaea velutina ).",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002874",
+    "term": "callet",
+    "grammatical_category": "m.",
+    "full_definition": "callet 1 m. [AGA] [LC] Cep d’una varietat que dona raïm de gra rogenc, pròpia de Mallorca. 2 m. [AGA] [LC] Raïm de cep callet.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0060361",
+    "term": "capada",
+    "grammatical_category": "f.",
+    "full_definition": "capada f. [HIA] capada de moro Cavitat o fornícula oberta a la roca o dins una cova artificial prehistòrica, a Mallorca i a Menorca.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002753",
+    "term": "cassot",
+    "grammatical_category": "m.",
+    "full_definition": "cassot m. [ED] [LC] Camisa de tela ordinària que els pagesos de Mallorca es posen sobre la roba per treballar al camp.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0014096",
+    "term": "cocarroi",
+    "grammatical_category": "m.",
+    "full_definition": "cocarroi m. [LC] Panada en forma de cresta, pròpia de Mallorca, farcida de verdures i altres ingredients.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0014229",
+    "term": "col",
+    "grammatical_category": "f.",
+    "full_definition": "col 1 f. [AGA] [BOS] [LC] Hortalissa de la família de les crucíferes, de tija gruixuda, el tronxo o caluix, fulles comestibles un xic carnoses, obovades o oblongues, sovint apinyades fent un cabdell o capça, flors blanques o grogues, reunides en raïm, i fruit en síliqua bequeruda, que prové d’una planta silvestre, comprèn nombroses races de conreu i és pròpia dels penya-segats de les costes atlàntiques europees ( Brassica oleracea ). 2 [AGA] [BOS] col aloma Col verda . 3 [AGA] [BOS] col arrissada Col d’una raça de fulles un xic arrissades ( Brassica oleracea var. sabauda ). 4 [AGA] [BOS] col bajana Col verda . 5 [AGA] [BOS] col baleàrica Planta de la família de les crucíferes, de fulles lluents, quasi totes en roseta, i flors grogues, que es fa a les escletxes de les roques i és endèmica de Mallorca ( Brassica balearica ). 6 [AGA] [BOS] col borda a ) Col d’una raça silvestre, de fulles pinnatipartides, que es fa a les roques i als pedregars de les contrades marítimes del Mediterrani nord-occidental ( Brassica oleracea ssp. robertiana ). 6 [BOS] col borda b ) Col que creix vora els horts i els ermots, escapada de conreu. 7 [AGA] [BOS] col borratgenca Col d’una raça de fulles bofegades, les superiors de les quals formen capça ( Brassica oleracea var. bullata ). 8 [AGA] [BOS] col cabdellada Col de cabdell . 9 [AGA] [BOS] col caputxina Col de caputxa . 10 [AGA] [BOS] col caragolada Col arrissada . 11 [AGA] [BOS] col de Brussel·les [o col de brot ] Col d’una raça de tija dreta, amb molts brots axil·lars que en són les parts aprofitades ( Brassica oleracea var. gemmifera ). 12 [AGA] [BOS] col de cabdell Col d’una raça de caluix curt i capça molt densa, que comprèn formes diverses, entre les quals hi ha la col gegant , de gran desenvolupament, la col llombarda , de color morat, i la col valenciana , de tija gruixuda i fulles de color verd clar i nervadura molt marcada ( Brassica oleracea var. capitata ). 13 [AGA] [BOS] col de caputxa Col d’una raça de fulles molt carnoses, cabdellades ( Brassica oleracea var. conica ). 14 [AGA] [BOS] col de fulles Col verda . 15 [AGA] [BOS] col de Milà Col arrissada . 16 [AGA] [BOS] col de tripa Col de cabdell . 17 [AGA] [BOS] col gitana Col arrissada . 18 [AGA] [BOS] col nana Col borratgenca . 19 [AGA] [BOS] col verda [o col primerenca ] Col d’una raça de caluix llarg i fulles soltes ( Brassica oleracea var. acephala ).",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0015591",
+    "term": "coronel",
+    "grammatical_category": "m.if.",
+    "full_definition": "coronel coronela 1 m. i f. [DE] [LC] [PR] Militar de grau intermedi entre tinent coronel i general de brigada. 2 m. [HIH] [PR] Als segles xvii i xviii , a Barcelona, i durant la Guerra de Successió també a Ciutat de Mallorca, cap de la host ciutadana anomenada la Coronela . 3 f. [LC] en rec. Muller d’un coronel.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0051975",
+    "term": "corral",
+    "grammatical_category": "m.",
+    "full_definition": "corral 1 1 m. [AGR] [LC] Lloc tancat, en les cases o en el camp, especialment el destinat a tenir-hi bestiar. El corral dels porcs, de les ovelles. 1 2 [AGR] [AQ] [LC] corral badívol Corral descobert, destinat especialment a l’aviram, que forma un badiu davant o darrere la casa. 2 m. [JE] Recinte on es representaven comèdies a València, a Mallorca i sobretot a Castella, des de la fi de l’edat mitjana.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0059791",
+    "term": "corralada",
+    "grammatical_category": "f.",
+    "full_definition": "corralada f. [HIH] Dret que a Mallorca pagava al corraler l’amo del bestiar agafat fent tala o aperduat, en compensació d’haver-lo guardat dins el corral del rei.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0019121",
+    "term": "destre1",
+    "grammatical_category": "m.",
+    "full_definition": "destre 1 1 m. [FIM] [HIH] Mesura de longitud emprada a Catalunya que és igual a 12 pams de destre i equival a 2,82 metres. 2 m. [FIM] Mida agrària emprada a Mallorca, equivalent a 4,214 metres.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0020150",
+    "term": "digital",
+    "grammatical_category": "adj.",
+    "full_definition": "digital 1 1 adj. [LC] [ZOA] Relatiu o pertanyent a un dit o als dits. Nervis digitals. 1 2 adj. [MD] Semblant a un dit o als dits. Les impressions digitals dels ossos del crani. Apèndixs digitals en els intestins. 2 1 adj. [EL] [FIF] [IN] Relatiu o pertanyent als dígits. Sistema digital. 2 2 adj. [EL] [FIF] [IN] Que opera amb nombres expressats amb dígits. Un ordinador digital. 2 3 adj. [EL] [FIF] [LC] Que dona la informació directament amb xifres. Un rellotge digital. 2 4 adj. [IN] Que utilitza models de transmissió o de tractament de la informació en què les variables són discontínues. Tècniques digitals. 3 1 f. [BOS] [LC] Herba de la família de les escrofulariàcies, poc o molt tomentosa, de fulles lanceolades i gruixudes, i flors en raïm, de corol·la tubulosa en forma de didal, generalment purpúrica i tacada per dins, que sol fer-se a les clarianes dels boscos humits, emprada com a tònic cardíac perquè conté digitalina i digitoxina ( Digitalis purpurea ). 3 2 [BOS] digital de les Balears Herba de la família de les escrofulariàcies, molt semblant a la digital, però de flors rosades, que es fa a les roques calcàries i és endèmica de Mallorca i Menorca ( Digitalis minor ). 3 3 [BOS] digital groga Herba de la família de les escrofulariàcies, semblant a la digital, però glabrescent i de flors de color groc pàl·lid, més petites, que es fa a les vorades forestals i als boscos clars de la muntanya mitjana ( Digitalis lutea ). 3 4 [BOS] digital purpúria Digital 3 1 .",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0021603",
+    "term": "donatiu",
+    "grammatical_category": "m.",
+    "full_definition": "donatiu 1 m. [LC] Acció de donar. 2 m. [LC] Allò que hom dona, especialment per a fins benèfics o culturals. Fer un donatiu. 3 1 m. [HIH] A la Corona catalanoaragonesa, quantitat que les Corts acordaven per subvencionar les empreses del rei o cobrir càrregues públiques. 3 2 m. [HIH] Al Regne de Mallorca, quantitat votada, a petició del rei, pel Gran i General Consell.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0014495",
+    "term": "eixorba-rates",
+    "grammatical_category": "m.",
+    "full_definition": "eixorba-rates 1 m. [BOS] Planta en forma de coixinet espinós, pròpia de les illes Balears. 2 [BOS] eixorba-rates blanc Petita mata espinosa de la família de les labiades, densa, grisenca i de flors purpúries, que es fa en terrenys pedregosos i secs, endèmica de Mallorca i Menorca ( Teucrium marum var. balearicum ). 3 [BOS] eixorba-rates negre Petita mata espinosa de la família de les papilionàcies, de fulles pinnades i flors blanques, endèmica de Mallorca i Menorca ( Astragalus balearicus ).",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca",
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0018611",
+    "term": "ferreret",
+    "grammatical_category": "m.",
+    "full_definition": "ferreret 1 m. [ZOR] Amfibi anur de la família dels discoglòssids, de membres prims i cos estilitzat, de color groc daurat amb taques negres o verd oliva brillant, endèmic de Mallorca ( Alytes muletensis ). 2 m. [LC] [ZOO] Mallerenga blava .",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0006264",
+    "term": "glosador",
+    "grammatical_category": "m.if.",
+    "full_definition": "glosador glosadora m. i f. [AN] [FLL] [PR] Poeta popular de Mallorca i Menorca que compon, sovint d’una manera improvisada, gloses i glosats.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0030620",
+    "term": "glosat",
+    "grammatical_category": "m.",
+    "full_definition": "glosat m. [LC] [MU] Glosa llarga feta per un glosador, típica de Mallorca i Menorca.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0086618",
+    "term": "llanerol",
+    "grammatical_category": "m.",
+    "full_definition": "llanerol m. [HIH] Dret consistent a pagar 2 diners setmanals que imposaven a Mallorca els paraires als teixidors per a exercir l’ofici.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0086998",
+    "term": "madò",
+    "grammatical_category": "f.",
+    "full_definition": "madò f. [LC] Tractament tradicional a Mallorca i Menorca que s’anteposa al nom de les dones, especialment si són d’edat i de posició econòmica modesta o mitjana.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0011264",
+    "term": "mallorquí",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "mallorquí -ina 1 1 adj. i m. i f. [LC] Natural de Mallorca. 1 2 adj. [LC] Relatiu o pertanyent a Mallorca o als seus habitants. 2 1 m. [FL] [LC] Subdialecte del balear parlat a Mallorca. 2 2 adj. [FL] [LC] Relatiu o pertanyent al mallorquí.",
+    "matched_keywords": [
+      "Mallorca",
+      "balear",
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0021274",
+    "term": "mallorquinisme",
+    "grammatical_category": "m.",
+    "full_definition": "mallorquinisme 1 m. [FL] [LC] Mot, gir, peculiar del mallorquí. 2 m. [HIH] Moviment l’objectiu del qual és el reconeixement de la personalitat política de Mallorca o de les illes Balears en el procés integrador dels Països Catalans propugnat pel catalanisme. 3 1 m. [LC] Amor a les coses característiques de Mallorca. 3 2 m. [LC] Afecció pel Club Esportiu Mallorca.",
+    "matched_keywords": [
+      "Mallorca",
+      "Balears",
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0033266",
+    "term": "mallorquinista",
+    "grammatical_category": "adj.",
+    "full_definition": "mallorquinista 1 1 adj. [LC] Relatiu o pertanyent al mallorquinisme. 1 2 adj. i m. i f. [LC] Seguidor del mallorquinisme. 2 adj. i m. i f. [LC] Soci o simpatitzant del Reial Club Esportiu Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0071800",
+    "term": "marès1",
+    "grammatical_category": "m.",
+    "full_definition": "marès 1 m. [AQ] [GL] [LC] Roca arenosa de gra i ciment calcari, de bon treballar, abundant a Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0012850",
+    "term": "olivella",
+    "grammatical_category": "f.",
+    "full_definition": "olivella f. [BOS] [LC] Mata de la família de les cneoràcies, tot l’any verda, de fulles oblongues, coriàcies i lluents, flors grogues amb tres o quatre pètals, i fruit de primer un xic carnós i vermell, finalment sec i negrós, que es desfà en tres o quatre cocs, pròpia de les terres mediterrànies càlides i seques i freqüent a Mallorca i Eivissa ( Cneorum tricoccon ).",
+    "matched_keywords": [
+      "Mallorca",
+      "Eivissa"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0004540",
+    "term": "palo",
+    "grammatical_category": "m.",
+    "full_definition": "palo m. [HO] Licor elaborat a base de quina amb arrels d’agrella, aiguardent, sucre i aigua, originari de Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0026908",
+    "term": "pancaritat",
+    "grammatical_category": "m.",
+    "full_definition": "pancaritat m. [AN] Berenada que es fa fora vila el dia de la segona festa de Pasqua a Menorca o algun altre dia pròxim a aquella festa a Mallorca.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0027670",
+    "term": "procurador",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "procurador -a 1 1 adj. i m. i f. [LC] Que procura. 1 2 adj. i m. i f. [DR] [LC] Que obra per procuració. 2 1 m. i f. [DR] [PR] Persona que, per ofici, davant dels jutjats i tribunals, obra per una de les parts en virtut del poder que li ha estat donat legalment per aquesta. 2 2 m. i f. [PR] [RE] Persona que, en algunes comunitats religioses, s’encarrega de gestionar els afers econòmics de la seva província. 3 1 m. [HIH] [PR] procurador general a ) Càrrec que ostentava l’infant primogènit a la Corona catalanoaragonesa. 3 1 m. [HIH] [PR] procurador general b ) Als grans territoris senyorials, representant del senyor territorial, en nom del qual exercia la jurisdicció baronial i la representació dels drets de caràcter econòmic. 3 2 [HIH] [PR] procurador reial Oficial reial de Mallorca i del Rosselló que tenia cura de l’administració del patrimoni reial i de cobrar els diners deguts al rei procedents de drets reials, confiscacions, etc. 3 3 m. [HIH] [PR] Magistrat de l’Antic Règim que, a Tortosa, detenia les facultats rectores i executives, equivalent al jurat, al cònsol, al conseller o al paer d’altres poblacions catalanes.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0106269",
+    "term": "quarto2",
+    "grammatical_category": "m.",
+    "full_definition": "quarto 2 m. [HO] [LC] Pastís fet de pols de midó, ous i sucre, de forma rectangular, que se sol menjar amb xocolata o gelat, propi de Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0003751",
+    "term": "rapa",
+    "grammatical_category": "f.",
+    "full_definition": "rapa 1 f. [AGA] [LC] Raïm despullat dels grans. 2 f. [AGA] [LC] Raïmet que formen les flors de l’olivera, l’alzina i altres arbres. Aquest arbre ja treu la rapa. 3 1 f. [BOS] Sarriassa . 3 2 [BOS] rapa blava Herba de la família de les aràcies, tuberosa, de fulles alabardades amb un reticle de venes blanques i inflorescència en espàdix, embolcallat per una espata en forma de paperina, de color púrpura violaci, que es fa a les màquies i en llocs ombrejats de Mallorca i Menorca ( Arum pictum ). 3 3 [BOS] rapa de frare Planta de la família de les aràcies, de fulles ovades o sagitades, verdes i amb taques brunes, espàdix amb la punta engruixida o globulosa, verda, i espata verdosa o rogenca i sovint amb tires més fosques, tubulosa a la base i en forma de caputxa a la part distal, que es fa a les màquies i en llocs ombrívols de les terres mediterrànies poc fredes ( Arisarum vulgare ). 3 4 [BOS] rapa de porc Ciclamen baleàric . 3 5 [BOS] rapa marina Fonoll marí . 3 6 [BOS] rapa mosquera Planta de la família de les aràcies, de tiges i pecíols tacats, fulles profundament dividides en segments lanceolats o linears, espàdix d’un púrpura negrós i espata de color violaci lívid, fètida, pilosa per dins i amb la part distal ampla i aplanada, molt atractiva per a les mosques, que es fa a les màquies de Mallorca i Menorca ( Dracunculus muscivorus o Arum muscivorum ). 4 f. [BOI] Herba caragolera . 5 1 f. [IQA] Cuir en pèl, ordinari o senzill o amb alguna tara o defecte, pel qual hom dedueix que en ésser adobat no sortiran senceres totes les peces. 5 2 f. [IQA] Cuir de qualitat inferior.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0005167",
+    "term": "sargantana",
+    "grammatical_category": "f.",
+    "full_definition": "sargantana 1 1 f. [LC] [ZOR] Rèptil saure de diferents espècies de la família dels lacèrtids, de mida petita o mitjana. 1 2 [ZOR] sargantana balear Sargantana de mida mitjana, cap aixecat i coloració verdosa, brunenca o blavosa negrosa, que habita a Cabrera i als illots que envolten Mallorca i Menorca ( Podarcis lilfordi ). 1 3 [ZOR] sargantana cendrosa Sargantaner petit . 1 4 [ZOR] sargantana comuna Sargantana ibèrica . 1 5 [ZOR] sargantana cuallarga Sargantaner gros . 1 6 [ZOR] sargantana cua-roja Sargantana de mida mitjana, cap alt i robust, extremitats fortes, amb unes sèries d’escates carenades especialment aptes per al desplaçament ràpid en les zones terroses i sorrenques on habita ( Acanthodactylus erythrurus ). 1 7 [ZOR] sargantana de les Pitiüses Sargantana de mida mitjana, cap lleugerament deprimit i coloració variable, generalment verdosa, amb una línia de taques al dors, que habita a les Pitiüses majors i illots circumdants ( Podarcis pityusensis ). 1 8 [ZOR] sargantana ibèrica Sargantana de mida petita i aspecte esvelt, de cap i cos molt deprimits, que abunda en els ambients rocallosos i en les construccions humanes, i és la sargantana més freqüent a Catalunya i al País Valencià ( Podarcis hispanica ). 1 9 [ZOR] sargantana roquera Sargantana de mida mitjana, aspecte robust i cap alt, que es troba en zones de muntanya i més humides que la sargantana ibèrica ( Podarcis muralis ). 1 10 [ZOR] sargantana vivípara Sargantana de mida petita, cap robust i musell curt i arrodonit, cos cilíndric i coloració brunenca, amb bandes laterals més fosques i contrastades, que habita a les zones humides de l’alta muntanya ( Lacerta vivipara ). 1 11 f. [ZOR] Rèptil saure de petites dimensions i de morfologia semblant a la d’un lacèrtid. 2 f. [BOS] [LC] Cerverina .",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009280",
+    "term": "síndic",
+    "grammatical_category": "m.if.",
+    "full_definition": "síndic síndica 1 m. i f. [AD] [DR] [PR] Persona encarregada dels interessos d’una reunió de creditors, d’una corporació, de les almoines aplegades per una comunitat, etc. 2 1 m. i f. [AD] Membre d’una sindicatura. La Sindicatura de Comptes de Catalunya és formada per set síndics. 2 2 [AD] síndic major Síndic que presideix una sindicatura. La síndica major va refusar la proposta. 2 3 [AD] [PR] síndic de greuges Persona nomenada per a la defensa dels drets i de les llibertats dels ciutadans. 2 4 [AD] [PR] síndic general President del Consell General d’Andorra. 3 1 m. [HIH] [PR] A la Corona catalanoaragonesa, representant de les ciutats i les viles reials a les Corts. 3 2 m. [HIH] [PR] A Mallorca i a l’edat mitjana, representant dels habitants de fora de la ciutat de Mallorca en el govern de l’illa.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009391",
+    "term": "siurell",
+    "grammatical_category": "m.",
+    "full_definition": "siurell m. [MU] Xiulet fet de terrissa, amb formes que imiten animals i altres figures i decorat amb colors vius sobre fons blanc, propi de Mallorca.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0038820",
+    "term": "socarrell",
+    "grammatical_category": "m.",
+    "full_definition": "socarrell 1 1 m. [BOB] [LC] Bolet del grup dels basidiomicets afil·loforats, que viu sobre soques cremades o en descomposició, especialment les soques d’arboç ( Polyporus corylinus o P. tunetanus ). 1 2 m. [BOB] Bolet de soca del gènere Polyporus i afins, comestible, en alguns casos, quan és jove i tendre. 2 m. [AGA] [BOB] [LC] Negre 9 1 . 3 m. [BOS] Mata en coixinet molt espinosa, que pertany a diferents espècies, sobretot de la família de les compostes o de les papilionàcies, que es fa al litoral ventós del nord de Mallorca i de Menorca.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0005416",
+    "term": "talaiòtic",
+    "grammatical_category": "adj.",
+    "full_definition": "talaiòtic -a 1 1 adj. [HIA] [HIH] [LC] Relatiu o pertanyent als talaiots. 1 2 adj. [HIA] [HIH] [LC] Relatiu o pertanyent a la civilització indígena de Mallorca i Menorca pròpia de les últimes fases de l’edat del bronze i les primeres de l’edat del ferro. Cultura talaiòtica. 2 m. i f. [HIA] [HIH] [LC] Membre d’un poblat talaiòtic.",
+    "matched_keywords": [
+      "Mallorca",
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0006961",
+    "term": "veguer",
+    "grammatical_category": "m.if.",
+    "full_definition": "veguer veguera 1 m. i f. [AD] [DR] [PR] obs. Representant d’un copríncep. 2 m. [AD] [HIH] [PR] Antigament, autoritat delegada de la Corona o d’una baronia en una demarcació del Principat de Catalunya i de Mallorca, amb jurisdicció governativa, judicial i administrativa.",
+    "matched_keywords": [
+      "Mallorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0013299",
+    "term": "caixer3",
+    "grammatical_category": "m.if.",
+    "full_definition": "caixer 3 caixera 1 m. i f. [AD] [ECT] [PR] Encarregat de la caixa d’una empresa, d’una entitat financera o de l’Administració pública. 2 m. [LC] caixer automàtic Aparell dotat d’un sistema interactiu que permet al client d’una institució bancària de realitzar un cert nombre d’operacions de caixa amb la introducció d’una targeta magnètica i la inscripció d’un codi numèric personal, o utilitzant la llibreta d’estalvis proveïda d’una banda magnètica. 3 1 m. [AN] Organitzador d’una festa patronal a Menorca. 3 2 m. [AN] Cavaller que participa en les colcades i en els altres actes de les festes majors dels pobles de Menorca.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0016770",
+    "term": "dauradella",
+    "grammatical_category": "f.",
+    "full_definition": "dauradella 1 f. [BOI] [LC] Falguera de mida petita, de fulles pinnatífides de lòbuls curts i arrodonits i esporangis coberts per esquames que semblen daurades, emprada antigament com a medicinal ( Ceterach officinarum ). 2 f. [HO] Bunyol fet amb carn picada pastada amb ous, sucre i mantega, típic de Menorca.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0059408",
+    "term": "dobler1",
+    "grammatical_category": "m.",
+    "full_definition": "dobler 1 1 1 m. [NU] Moneda medieval que valia 2 diners. 1 2 m. pl. [LC] Diners en general. 2 m. [FIM] Peça de fusta que es transporta en rai. 3 m. [FIM] Mesura de capacitat per a rom i aiguardent, emprada a Menorca, equivalent a una quarta part de lliura menorquina.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0024104",
+    "term": "enclova",
+    "grammatical_category": "f.",
+    "full_definition": "enclova f. [AGA] [BOS] Herba de la família de les papilionàcies, de fulles imparipinnades, flors vermelles o rarament blanques, en raïms axil·lars, i llegum segmentat, conreada com a farratgera a Menorca i en altres terres mediterrànies ( Hedysarum coronarium ).",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0080069",
+    "term": "estivada",
+    "grammatical_category": "f.",
+    "full_definition": "estivada 1 f. [LC] Tros de terreny que a Menorca es destina al conreu de plantes d’estiu. 2 f. [LC] Plantació que fan per compte propi els missatges de Menorca.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0086224",
+    "term": "guindola",
+    "grammatical_category": "f.",
+    "full_definition": "guindola 1 1 f. [TRA] Flotador de salvament disposat al cap d’una corda llarga amarrada a bord, que hom gita quan cau algú a l’aigua per tal que s’hi agafi. 1 2 [TRA] guindola d’arboradura Petita plataforma triangular que fa de bastida per a pintar, rascar, etc., en l’arbre d’una nau, del qual se suspèn horitzontalment per les puntes. 2 f. [AN] Bicorn emprat pels cavallers de les colcades de les festes majors dels pobles de Menorca.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0008622",
+    "term": "herba",
+    "grammatical_category": "f.",
+    "full_definition": "herba 1 1 f. [BO] [LC] Planta la tija de la qual no desenvolupa teixit llenyós com fan els arbres i els arbustos. Herbes anuals, biennals, perennes. Herbes medicinals, remeieres. 1 2 [AGA] [BO] [LC] mala herba Herba que no té cap utilitat i perjudica el desenvolupament de les plantes entre les quals creix. Mala herba mai no mor. Créixer com la mala herba. 2 1 f. [AGR] [BOC] [LC] Conjunt d’herbes que creixen en un lloc. L’herba verda dels prats. Jeure sobre l’herba. Segar l’herba. 2 2 [AGA] [LC] fer herba Segar-la per donar-la al bestiar. 2 3 [AGA] en herba loc. adv. Abans de madurar i perdre la verdor. El blat en herba ajagut pel ruixat. 3 f. pl. [LC] [MD] Herbada 2 . 4 1 f. pl. [HO] Infusió d’una o més herbes. Voleu herbes o cafè? 4 2 [AGA] [HO] herbes per al brou Verdures com l’api, els naps, els porros, la pastanaga, etc., que serveixen per a preparar el brou. 4 3 [AGA] [HO] fines herbes Assortiment de plantes aromàtiques com l’all, l’estragó, el julivert, etc., que s’utilitza per a adobar alguns plats o aliments. Formatge amb fines herbes. 5 f. [LC] [MD] pop. Marihuana . 6 1 f. [BOS] [LC] herba abellera Abellera² . 6 2 [AGA] [BOS] [LC] herba alfals Alfals . 6 3 [BOS] [LC] herba arenera Morritort bord . 6 4 [BOS] [LC] herba arrapadissa Xereix 1 . 6 5 [BOS] [LC] herba ballestera Veratre . 6 6 [BOS] [LC] herba beatamaria Segell de Salomó . 6 7 [BOS] [LC] herba bellugadissa Belluguets . 6 8 [BOS] herba berruguera Herba anual de la família de les boraginàcies, tota ella pilosa i grisenca, de fulles ovades i de flors blanques o violàcies, disposades en inflorescències escorpioides, que es fa als erms i a les vinyes ( Heliotropium europaeum ). 6 9 [BOS] herba blanca a ) Herba de la família de les compostes, coberta tota ella d’una pilositat blanca, de fulles ovades, pinnatipartides i de segments amples, i capítols d’un groc daurat, en corimbe dens, que es fa exclusivament a les tarteres de l’estatge alpí dels Pirineus, emprada en medicina popular ( Senecio leucophyllus ). 6 9 [BOS] herba blanca b ) Caps blancs . 6 9 [BOS] herba blanca c ) Fetgera blanca . 6 9 [BOS] herba blanca d ) Blet blanc . 6 9 [BOS] herba blanca e ) Candelera 2 2 . 6 9 [BOS] herba blanca f ) Perdiguera . 6 9 [BOS] herba blanca g ) Salat blanc . 6 10 [BOS] [LC] herba blenera Herba del gènere Verbascum , de la família de les escrofulariàcies, robusta, densament coberta d’una pilositat que la fa grisenca o groguenca, amb una roseta de fulles basals i amb una llarga inflorescència terminal de flors grogues, que es fa en llocs secs, oberts i assolellats, i s’havia utilitzat per a fer els blens dels llums d’oli i també per a pescar. 6 11 [BOS] [LC] herba bovina Peu de colom . 6 12 [BOS] herba bruna [o herba cabrera , o herba cabruna ] Trèvol pudent . 6 13 [BOS] [LC] herba cafetera Cafè bord . 6 14 [BOS] [LC] herba camforada Camforada . 6 15 [BOS] [LC] herba caminadora Passacamins . 6 16 [BOS] herba campana Herba de l’ala . 6 17 [BOS] [LC] herba campanera Corretjola de serp . 6 18 [BOS] herba candelera Herba blenera . 6 19 [BOS] [LC] herba capitana Panical 1 . 6 20 [BOS] [LC] herba capsera [o herba capsigranyera ] Timó mascle . 6 21 [BOS] [LC] herba capsotera Mata de la família de les labiades ( Teucrium polium ssp. homotrichum ). 6 22 [BOI] herba caragolera Alga vermella de làmines estretes, fosques i dentades ( Vidalia volubilis ). 6 23 [AGA] [BOS] [LC] herba carnera Acant 1 1 . 6 24 [BOS] [LC] herba carxofera Herbacol 1 . 6 25 [BOS] [LC] herba centaura Herba de Santa Margarida . 6 26 [AGA] [BOS] [LC] herba cervesera Llúpol . 6 27 [BOS] [LC] herba cidrera Tarongina 1 . 6 28 [BOS] [LC] herba cloquera Morró 1 . 6 29 [BOS] [LC] herba coent Crespinell groc . 6 30 [BOI] herba colera Fulla de col . 6 31 [BOS] [LC] herba còlica Trencapedra 1 . 6 32 [BOS] [LC] herba conillera Xenixell . 6 33 [BOS] [LC] herba cossiada [o herba cossiera ] Foixarda . 6 34 [BOS] [LC] herba cost Cost² . 6 35 [BOS] herba cotonera Herba anual del gènere Filago , de la família de les compostes, de mida menuda, de capítols molt petits coberts per la borra de les bràctees involucrals i mig amagats per les fulles, que es fa en erms i pradells secs. 6 36 [BOS] herba cristal·lina Planta de la família de les aïzoàcies, carnosa i decumbent, recoberta de papil·les transparents, de fulles ovades i flors blanques, amb nombrosos pètals linears, pròpia dels llocs salins del litoral ( Mesembryanthemum crystallinum ). 6 37 [BOS] herba cuquera a ) Poliol d’aigua . 6 37 [BOS] herba cuquera b ) Timó mascle . 6 37 [BOS] herba cuquera c ) Tanarida . 6 37 [BOS] herba cuquera d ) Espernallac . 6 37 [BOS] herba cuquera e ) Broida . 6 38 [BOS] [LC] herba d’agulles Agulles de pastor . 6 39 [BOS] [LC] herba d’all Al·liària . 6 40 [BOS] [LC] herba d’almesc Iva . 6 41 [BOS] [LC] herba d’anyell Milfulles . 6 42 [BOS] herba d’era Jusquiam . 6 43 [BOS] [LC] herba d’eruga Herba berruguera . 6 44 [BOS] herba d’espant Herba de Santa Margarida . 6 45 [BOS] [LC] herba d’espasa Lliri dels blats . 6 46 [BOS] herba d’esquelleta Jusquiam . 6 47 [BOS] [LC] herba d’ocell Morró 1 . 6 48 [AGA] [BOS] [LC] herba d’olives a ) Sajolida 1 . 6 48 [AGA] [BOS] [LC] herba d’olives b ) Sajolida de bosc . 6 49 [BOS] herba d’or Herba o mateta del gènere Helianthemum , de la família de les cistàcies, de flors grogues, regulars, amb cinc pètals i nombrosos estams, que es fa en llocs oberts i assolellats. 6 50 [BOI] herba daurada Dauradella 1 . 6 51 [BOS] [LC] herba de boligs Herba ramosa de la família de les compostes, pilosa, de fulles molt dividides i de capítols florals grocs formats únicament per un botó central en forma de bola, freqüent a les vores de camins de les contrades marítimes ( Anacyclus valentinus ). 6 52 [BOS] [LC] herba de bruixa Ruda 1 1 . 6 53 [BOS] [LC] herba de bugada Herba sabonera b) . 6 54 [BOS] [LC] herba de caderneres a ) Morró 1 . 6 54 [BOS] [LC] herba de caderneres b ) Anagall 1 . 6 55 [BOS] [LC] herba de canari Morró 1 . 6 56 [BOS] herba de capseta Jusquiam . 6 57 [BOS] [LC] herba de capsot Trèvol estrellat . 6 58 [BOS] herba de cent nusos Passacamins . 6 59 [BOS] herba de cinc costures [o herba de cinc nervis , o herba de cinc ratlles ] Plantatge de fulla estreta . 6 60 [BOS] herba de cingle Corona de rei . 6 61 [BOS] herba de colom Fumària . 6 62 [BOS] herba de cop Pericó 1 . 6 63 [BOS] herba de corder Milfulles . 6 64 [BOS] [LC] herba de foc a ) Gata rabiosa . 6 64 [BOS] [LC] herba de foc b ) Fumària . 6 64 [BOS] [LC] herba de foc c ) Xenixell . 6 65 [BOS] [LC] herba de folls Anagall d’aigua . 6 66 [AGA] [BOS] [LC] herba de formatjar Herbacol 1 . 6 67 [BOS] [LC] herba de gat Nepta . 6 68 [BOS] herba de graneres Herba escombrera . 6 69 [BOS] herba de l’ala Herba de la família de les compostes, molt robusta, pubescent, de fulles ovades i capítols grocs i grossos, pròpia de l’Europa oriental i antigament cultivada com a medicinal ( Inula helenium ). 6 70 [BOS] herba de l’asma Estramoni . 6 71 [BOS] herba de l’epidèmia Herba dels gats . 6 72 [AGA] [BOS] [LC] herba de l’escorbut Cocleària . 6 73 [BOS] [LC] herba de l’escorpí Coronil·la escorpioide . 6 74 [BOS] herba de l’esparver Herba de la família de les compostes, amb les fulles radicals en roseta i capítols grocs en panícula corimbiforme, que es fa sobretot als boscos caducifolis ( Hieracium murorum i espècies afins). 6 75 [BOS] herba de l’esquinància Herba prima a) . 6 76 [BOS] herba de l’ofec Estramoni . 6 77 [BOS] [LC] herba de la bajoqueta Salsufragi . 6 78 [BOI] [LC] herba de la barra Coleta . 6 79 [BOS] herba de la carabasseta Herba de la família de les aristoloquiàcies, d’un verd grisenc, de fulles triangulars i cordiformes, gruixudes, aspres i amb el marge com rosegat, i de flors tubuloses, brunes, amb la boca prolongada en llengüeta, que es fa als terrenys pedregosos calcaris ( Aristolochia pistolochia ). 6 80 [BOS] [LC] herba de la coltellada Sàlvia romana . 6 81 [BOS] [LC] herba de la cremada Crespinell groc . 6 82 [BOS] herba de la creu Raïm de guineu . 6 83 [AGA] [BOS] [LC] herba de la desfeta Trèvol 1 1 . 6 84 [BOS] [LC] herba de la febre a ) Gracíola . 6 84 [BOS] [LC] herba de la febre b ) Obriülls 1 . 6 85 [BOS] herba de la feridura Mateta de la família de les labiades, pilosa, de fulles oblongues i dentades, i de flors bilabiades, amb el llavi superior blanc i l’inferior groc, reunides en verticil·lastres molt densos, distants entre ells fent una inflorescència interrompuda, que es fa en llocs secs i és emprada en medicina popular ( Sideritis hirsuta ). 6 86 [BOS] herba de la fita Herba de Sant Jaume . 6 87 [BOS] herba de la fluxió Morritort bord . 6 88 [BOS] [LC] herba de la galda Galda . 6 89 [BOS] [LC] herba de la geneta Niella 1 . 6 90 [BOS] herba de la gota Dròsera . 6 91 [BOS] [LC] herba de la grava a ) Trencapedra 1 . 6 91 [BOS] [LC] herba de la grava b ) Herba prima a) . 6 92 [BOS] herba de la mala bua Herba presseguera . 6 93 [BOS] [LC] herba de la mala llavor Herba de la família de les cariofil·làcies, de tiges prostrades, nuoses i fràgils, fulles ovades, flors d’un blanc verdós i fruit en baia negra, de la mida d’un pèsol, embolcat pel calze, que és persistent, i es fa en els herbassars humits del riberal dels rius ( Cucubalus baccifer ). 6 94 [BOS] [LC] herba de la mare Camamilla pudent . 6 95 [BOS] herba de la marfuga Herba de la carabasseta . 6 96 [BOS] [LC] herba de la moneda Herba de la família de les primulàcies, de tiges reptants, fulles ovades o arrodonides, oposades, i flors grogues axil·lars, freqüent en alguns països europeus, en indrets humits, i cultivada com a ornamental ( Lysimachia nummularia ). 6 97 [AGA] [BOS] [LC] herba de la Pampa Cortadèria . 6 98 [AGA] [BOS] [LC] herba de la passió Passionera . 6 99 [BOS] herba de la pedra a ) Salsufragi . 6 99 [BOS] herba de la pedra b ) Trencapedra 1 . 6 100 [AGA] [BOS] [LC] herba de la plata Setins . 6 101 [BOS] herba de la prunella Prunel·la de muntanya . 6 102 [BOS] herba de la ràbia a ) Herba anual de la família de les crucíferes, grisenca, de tiges dretes o ascendents, fulles oblongues, flors groguenques, en raïm, i fruit en silícula arrodonida, freqüent als pradells i en llocs secs ( Alyssum alyssoides ). 6 102 [BOS] herba de la ràbia b ) Malrubí . 6 103 [BOS] [LC] herba de la sang a ) Sanguinària blanca . 6 103 [BOS] herba de la sang b ) Serverola . 6 104 [BOS] herba de la sapiència Herba de Santa Sofia . 6 105 [BOS] [LC] herba de la taca Herba anual de la família de les papilionàcies, de tiges prostrades, fulles trifoliolades, amb els folíols en forma de cor invertit i amb una taca negrosa central, flors grogues i fruit caragolat en hèlix, globulós i cobert d’agullons, que es fa a les vores de camins i als pradells poc o molt humits ( Medicago arabica ). 6 106 [BOS] herba de les berrugues Celidònia . 6 107 [BOS] [LC] herba de les caigudes Àrnica . 6 108 [BOS] [LC] herba de les cardines Xenixell . 6 109 [AGA] [BOS] herba de les culleres Cocleària . 6 110 [BOS] [LC] herba de les encantades Herba de la família de les onagràcies, molt delicada, de fulles ovades, flors molt petites, blanques o rosades, en raïm terminal, i fruit piriforme cobert de pèls ganxuts, que es fa als boscos humits ( Circaea lutetiana ). 6 111 [BOS] herba de les ferides [o herba de les nou camises ] Milfulles . 6 112 [BOS] herba de les llagues a ) Vidiella 1 . 6 112 [BOS] herba de les llagues b ) Vidalba . 6 113 [BOS] [LC] herba de les palomes Herba o mateta ramificada, de la família de les labiades, pilosa i grisenca, de fulles oblongues, dentades, i flors bilabiades, corbades, de color rosat, blanquinós o blavenc, en inflorescències terminals, laxes, que es fa als pedruscalls i en indrets secs del Mediterrani occidental ( Nepeta nepetella ). 6 114 [BOS] [LC] herba de les patarrugues Herba de la família de les euforbiàcies, laticífera, del grup de les lletereses, amb nombroses fulles linears, bràctees florals ovades, groguenques o vermelloses i glàndules del ciati semilunars, freqüent a les pastures, sobretot a muntanya ( Euphorbia cyparissias ). 6 115 [BOS] herba de les set sagnies a ) Mata de la família de les boraginàcies, de fulles linears, recobertes esparsament de pèls rígids, flors tubuloses, de primer purpúries i després blaves, i fruit format per quatre granets blanquinosos, molt durs, pròpia de les brolles calcícoles mediterrànies i utilitzada en medicina popular ( Lithospermum fruticosum ). 6 115 [BOS] herba de les set sagnies b ) Botja peluda . 6 115 [BOS] herba de les set sagnies c ) Herba de Sant Segimon i altres saxífragues. 6 116 [BOS] [LC] herba de melic Barretets . 6 117 [BOS] herba de mil fulles Milfulles . 6 118 [BOS] [LC] herba de mosca Olivarda . 6 119 [AGA] [BOS] herba de Noè Herba de la família de les cariofil·làcies, glabra i verda, de tiges ajagudes i esteses tot al volt, fulles oblongues molt petites, flors diminutes reunides en glomèruls nombrosos i de vegades confluents i fruit en aqueni, que es fa als camins, camps i pradells i és emprada en medicina popular com a diürètica ( Herniaria glabra ). 6 120 [BOS] [LC] herba de Nostra Dona Morella roquera . 6 121 [BOI] herba de pagre Alga vermella mediterrània ( Fauchaea repens ). 6 122 [BOS] [LC] herba de pare i fill Gravit . 6 123 [BOS] herba de paret Morella roquera . 6 124 [BOS] [LC] herba de rellotge Bec de cigonya a) . 6 125 [BOS] herba de Robert Herba de Sant Robert . 6 126 [BOS] [LC] herba de salobre Cirialera . 6 127 [BOS] herba de Sant Antoni a ) Planta perenne de la família de les labiades, de tija simple o ramificada, fulles lanceolades i dentades, oposades, flors d’un groc clar, en inflorescència interrompuda, que es fa a les pastures seques, sobretot a l’estatge montà ( Stachys recta ). 6 127 [BOS] herba de Sant Antoni b ) Herba de la feridura . 6 127 [BOS] herba de Sant Antoni c ) Serverola . 6 127 [BOS] herba de Sant Antoni d ) Botja peluda . 6 128 [BOS] herba de Sant Benet Herba pilosa de la família de les rosàcies, de fulles pinnaticompostes i amb grans estípules, les caulinars trifoliolades, flors grogues i fruit format per nombrosos aquenis prolongats en un llarg estil, pròpia dels marges forestals i dels boscos humits ( Geum urbanum ). 6 129 [BOS] [LC] herba de Sant Bonifaci Galzeran 1 . 6 130 [BOS] herba de Sant Cristòfol Planta herbàcia de la família de les ranunculàcies, tòxica, de fulles doblement pinnaticompostes, amb els folíols dentats, flors blanques i petites, en raïms curts, i fruit en baia negra, que es fa als boscos humits ( Actaea spicata ). 6 131 [BOS] herba de Sant Domènec Camedris . 6 132 [BOS] herba de Sant Felip Glast 1 . 6 133 [BOS] herba de Sant Jaume Herba de la família de les compostes, de fulles pinnatipartides i capítols grocs, en corimbe, que es fa als prats i als herbassars humits ( Senecio jacobaea ). 6 134 [BOS] herba de Sant Joan a ) Pericó 1 . 6 134 [BOS] herba de Sant Joan b ) Espernallac . 6 134 [BOS] herba de Sant Joan c ) Espunyidella groga . 6 135 [BOS] [LC] herba de Sant Jordi Herba alta de la família de les valerianàcies, ben glabra, de tiges fistuloses, fulles amplament lanceolades, oposades, i flors tubuloses i esperonades, vermelles o roses, de vegades blanques, reunides en corimbes terminals, que es fa als marges i als murs ( Centranthus ruber ). 6 136 [BOS] [LC] herba de Sant Llorenç Herba de la família de les papilionàcies, de fulles basals pinnaticompostes, flors llarguetes, de color groguenc, blanquinós, rosat o purpuri, reunides en glomèruls oblongs, i de llegum cilíndric i un xic corbat, que es fa a les pastures seques de l’Europa meridional i del nord d’Àfrica ( Astragalus monspessulanus ). 6 137 [BOS] herba de Sant Pelegrí Herba robusta de la família de les labiades, densament tomentosa i d’un blanc argentat, de fulles lanceolades o el·líptiques i flors roses, en inflorescència força densa, cultivada com a ornamental i rarament espontània ( Stachys byzantina o S. lanata ). 6 138 [BOS] [LC] herba de Sant Pere a ) Morella roquera . 6 138 [BOS] [LC] herba de Sant Pere b ) Espernallac . 6 139 [BOS] herba de Sant Ponç a ) Poliol d’aigua . 6 139 [BOS] herba de Sant Ponç b ) Timó blanc . 6 140 [BOS] herba de Sant Robert Herba de la família de les geraniàcies, sovint vermellosa, pudent, de fulles palmaticompostes de contorn pentagonal o triangular, flors roses, regulars, i fruit prolongat en bec, que es fa als boscos i en indrets ombrívols ( Geranium robertianum ). 6 141 [BOS] [LC] herba de Sant Roc Herba de la família de les compostes, pilosa i llanosa, de fulles abraçadores i amb orelletes, i de capítols grocs, força grossos i nombrosos, pròpia dels indrets humits ( Pulicaria dysenterica ). 6 142 [BOS] herba de Sant Segimon Herba de la família de les saxifragàcies, glandulosa, que forma petits coixinets, de fulles cuneïformes, palmatipartides, i flors blanques, que es fa només a les zones rocoses del Montseny i és emprada en medicina popular ( Saxifraga vayredana ). 6 143 [BOS] herba de Santa Bàrbara Herba de la família de les crucíferes, glabra i erecta, de fulles lobades o pinnatipartides, lluents, flors grogues en raïm i fruit en síliqua erecta, que es fa en sòls nitrificats i humits ( Barbarea vulgaris ). 6 144 [BOS] [LC] herba de Santa Llúcia Biscutel·la . 6 145 [BOS] herba de Santa Margarida Herba biennal o anual de la família de les gencianàcies, de fulles el·líptiques o lanceolades, les basals en roseta, les caulinars oposades, i de flors rosades o purpúries, tubuloses i amb el limbe de cinc pètals estesos, reunides en cimes corimbiformes, de gust amargant, emprada com a tònica, que es fa als prats i en indrets poc secs ( Centaurium erythraea ). 6 146 [BOS] herba de Santa Sofia Herba de la família de les crucíferes, erecta, d’un verd cendrós, de fulles repetidament pinnatisectes, amb els segments linears o oblongs, flors grogues en raïm i fruit en síliqua, que es fa en llocs ruderals i era emprada antigament per a prevenir i guarir l’escorbut ( Descurainia sophia ). 6 147 [BOS] [LC] herba de tres claus Espina-xoca . 6 148 [BOS] herba de xai Milfulles . 6 149 [BOS] [LC] herba del ballester Veratre . 6 150 [BOS] herba del bàlsam Mata de la família de les labiades, de mida petita, de fulles lanceolades o estretament lanceolades, sovint dentades, i flors grogues, agrupades en una inflorescència terminal densa, que es fa als prats secs de muntanya i és emprada en medicina popular ( Sideritis hyssopifolia ). 6 151 [BOS] herba del borm Herba cotonera . 6 152 [BOS] [LC] herba del carboner Sarronets de pastor . 6 153 [BOS] herba del caragol Morella roquera . 6 154 [BOS] [LC] herba del cor Masera . 6 155 [BOS] [LC] herba del diable Carnassa 3 . 6 156 [BOS] herba del git Niella 1 . 6 157 [BOS] herba del ferro Desferracavalls . 6 158 [BOS] herba del fum Fumària . 6 159 [BOS] [LC] herba del lladre Xereix 1 . 6 160 [BOS] [LC] herba del mal blanc Pelosella . 6 161 [BOS] [LC] herba del mal de cor Herba robusta de la família de les labiades, erecta, de fulles palmatífides o palmatipartides i flors purpúries, en verticil·lastres densos, axil·lars, força distants entre ells, d’origen asiàtic, espontània en alguns herbassars humits de muntanya i antigament cultivada com a medicinal ( Leonorus cardiaca ). 6 162 [BOS] [LC] herba del mal de pedra Trencapedra 1 . 6 163 [BOS] herba del mal estrany a ) Herba de la família de les compostes, glandulosa, de rizoma tuberós, fulles estretament lanceolades i capítols grocs, que es fa en sòls margosos, humits en temps de pluja, emprada en medicina popular ( Jasonia tuberosa ). 6 163 [BOS] [LC] herba del mal estrany b ) Serverola . 6 164 [BOS] herba del mal gra Ranuncle de pedrusca . 6 165 [BOS] herba del mesc Almescat 2 . 6 166 [BOS] herba del meu Meu¹ . 6 167 [BOS] herba del nuset Herba prima a) . 6 168 [BOS] [LC] herba del nord Herba de la família de les saxifragàcies, viscosa, que fa tofes laxes, de fulles palmatipartides, llargament peciolades, i flors blanques, que viu als indrets rocosos ombrívols de la muntanya mediterrània ( Saxifraga cuneata ). 6 169 [BOS] [LC] herba del passerell Sarronets de pastor . 6 170 [BOS] herba del pastell Glast 1 . 6 171 [BOS] herba del pastoret Sarronets de pastor . 6 172 [BOS] [LC] herba del pigot Desferracavalls . 6 173 [BOS] herba del pobre home a ) Filipèndula . 6 173 [BOS] herba del pobre home b ) Gracíola . 6 174 [BOS] herba del traïdor Prunel·la de muntanya . 6 175 [BOS] [LC] herba del vent Anemone alpina . 6 176 [AGA] [BOS] herba dels canonges Herba de la família de les valerianàcies, de fulles oblongues, flors petites blavenques, en glomèruls, i fruit inflat i esponjós, pròpia de les terres de conreu i d’indrets ruderals, cultivada per menjar en amanida quan encara és tendra ( Valerianella locusta ). 6 177 [BOS] herba dels cirurgians Herba de Santa Sofia . 6 178 [BOS] herba dels fics a ) Olivereta . 6 178 [BOS] herba dels fics b ) Tintorell . 6 178 [BOS] herba dels fics c ) Aladern de fulla estreta . 6 178 [BOS] herba dels fics d ) Celidònia . 6 178 [BOS] herba dels fics e ) Olivella . 6 179 [BOS] herba dels gats Mata de la família de les labiades, molt semblant a l’eixorba-rates blanc, però més laxa i no tan espinosa, que es fa en sòls calcaris a les brolles de Menorca ( Teucrium marum ssp. spinescens ). 6 180 [BOS] herba dels innocents Fumària . 6 181 [BOS] [LC] herba dels tintorers Roja 1 . 6 182 [BOS] [LC] herba desinflamatòria Peucrist 2 . 6 183 [BOS] [LC] herba didalera Digital 3 1 . 6 184 [BOS] herba disentèrica Herba de Sant Roc . 6 185 [AGA] [BOS] herba donzella Vinca . 6 186 [AGA] [BOS] [LC] herba dormidora Cascall 1 1 . 6 187 [BOS] [LC] herba emperadora Salsufragi 2 . 6 188 [BOS] herba escombrera Herba de la família de les compostes, erecta i ramosa, de fulles lanceolades i linears, dentades o pinnatipartides, i capítols florals purpuris, amb les bràctees de l’involucre terminades en espina curta, que es fa en indrets secs i assolellats de les terres mediterrànies ( Mantisalca salmantica o Centaurea salmantica ). 6 189 [BOS] herba escurçonera Escurçonera 1 . 6 190 [BOS] herba espitllera a ) Obriülls 1 . 6 190 [BOS] herba espitllera b ) Card fuell . 6 191 [BOS] herba espunyidera Espunyidella 1 . 6 192 [BOS] herba esquellera Planta anual del gènere Rhinantus , de la família de les escrofulariàcies, de tiges erectes, fulles oblongues i dentades, oposades, flors en raïm terminal, amb el calze inflat i comprimit i la corol·la tubulosa i bilabiada, groga i amb dues dents violàcies al llavi superior, els fruits madurs de la qual aboquen les granes dins els calzes secs i membranosos, els quals, en ésser moguts, fan un soroll semblant al dels esquellots o sonalls, que es fa als prats i als herbassars. 6 193 [BOI] herba estanyera Cua de cavall . 6 194 [BOS] herba felera a ) Planta de la família de les labiades, pilosa i molt foliosa, de fulles tripartides amb els segments linears i flors grogues tacades de vermell, amb un sol llavi, de gust molt amarg, que es fa als erms i als prats secs ( Ajuga chamaepitys ). 6 194 [BOS] herba felera b ) Herba de la carabasseta . 6 194 [BOS] herba felera c ) Herba fetgera . 6 194 [BOS] herba felera d ) Herba presseguera . 6 195 [BOS] herba fetgera Herba de la família de les ranunculàcies, de fulles totes basals, trilobades i coriàcies, sovint vermelloses al revers i tacades de blanc a l’anvers, i flors solitàries, generalment blaves o blanques, freqüent als boscos frescals ( Anemone hepatica o Hepatica nobilis ). 6 196 [BOS] herba flatera Herba fetgera . 6 197 [BOS] herba foradada Pericó 1 . 6 198 [BOS] [LC] herba formiguera Te bord . 6 199 [BOS] herba forrera Pimpinella 1 1 . 6 200 [BOI] herba freixurera a ) Planta de la classe de les hepàtiques, constituïda per un tal·lus laminar ramificat dicotòmicament i esporangis sobre lòbuls modificats pedicel·lats ( Marchantia polymorpha ). 6 200 [BOI] herba freixurera b ) Llengua de cérvol . 6 201 [BOI] herba garriguera Herba caragolera . 6 202 [BOS] herba gatera a ) Nepta . 6 202 [BOS] herba gatera b ) Valeriana . 6 203 [BOS] herba gelada Herba cristal·lina . 6 204 [BOS] [LC] herba joca Vesc 1 . 6 205 [BOS] herba llanera Galda . 6 206 [BOS] herba llarga Passacamins . 6 207 [BOS] [LC] herba llimonera Tarongina 1 . 6 208 [BOS] herba llombriguera Barretets . 6 209 [BOS] [LC] herba madrona Sàlvia romana . 6 210 [BOS] [LC] herba matapolls Estafisàgria . 6 211 [BOS] herba mate Mate . 6 212 [BOS] [LC] herba maura Morella vera . 6 213 [BOS] [LC] herba melera Abellera² . 6 214 [BOI] herba melsera a ) Llengua de cérvol . 6 214 [BOS] herba melsera b ) Herba fetgera . 6 215 [BOS] herba menuda Mateta de la família de les compostes, sovint grisenca, amb olor de càmfora, de fulles dividides en segments linears i de capítols groguencs petits, disposats en raïm o en panícula, que es fa a les pastures seques de l’estatge montà i és emprada per a guarir els animals que tenen dolors abdominals ( Artemisia alba ). 6 216 [BOS] [LC] herba molla Herba anual de la família de les teligonàcies, tendra i molt fràgil, decumbent, de fulles ovades llargament peciolades i flors unisexuals, petites i verdoses, en petits grups, que viu arrapada als murs de pedra seca i als marges ombrejats ( Theligonum cynocrambe ). 6 217 [BOS] herba mora Morella vera . 6 218 [BOS] [LC] herba morenera Mata del gènere Phagnalon , de la família de les compostes, de tiges tomentoses i blanques, fulles linears o lanceolades, blanques i tomentoses per sota, i capítols al principi globulosos, llargament pedunculats, d’un groc pàl·lid, que es fa als llocs pedregosos i a les brolles, en indrets assolellats de les terres mediterrànies. 6 219 [BOS] [LC] herba mosquera Espunyidella 1 . 6 220 [BOI] herba napolitana Coleta . 6 221 [BOS] herba negra a ) Herba de la família de les dipsacàcies, erecta, de fulles oposades oblongues, dentades o enteres, flors rosades o violàcies en capítols terminals i fruits tancats dins un receptacle coriaci coronat per vuit arestes, que es fa a les vorades de bosc i als prats frescals ( Knautia arvernensis o K. sylvatica ). 6 221 [BOS] herba negra b ) Botja peluda . 6 221 [BOS] herba negra c ) Lluqueta de roca . 6 221 [BOS] herba negra d ) Tem bord . 6 222 [BOS] [LC] herba nuada Espunyidella groga . 6 223 [BOS] [LC] herba nusosa Ripoll . 6 224 [BOS] herba paixellera Herba berruguera . 6 225 [BOS] herba palma Lliri dels blats . 6 226 [BOS] herba passerella a ) Herba vermella . 6 226 [BOS] herba passerella b ) Herba berruguera . 6 226 [BOS] herba passerella c ) Trencapedra 1 . 6 227 [BOS] herba pedrera Mata de la família de les ericàcies, que pot formar catifes extenses, de fulles petites, lanceolades i oposades, coriàcies i persistents, densament disposades sobre les tiges, flors petites, rosades o rogenques, en grupets terminals, i fruit en càpsula, que es fa a les carenes i als indrets ventejats de l’estatge alpí ( Loiseleuria procumbens ). 6 228 [BOS] herba pelada Xenixell . 6 229 [BOS] [LC] herba peluda a ) Herba de la família de les gramínies, estolonífera, amb els nusos de la tija pilosos i les beines foliars escabres, i amb les espiguetes uniflores, disposades en panícula laxa i de branquetes flexuoses, que es fa als aiguamolls de terra baixa ( Leersia oryzoides ). 6 229 [BOS] [LC] herba peluda b ) Orella d’os . 6 230 [BOS] [LC] herba pixanera Caps blancs . 6 231 [BOS] [LC] herba pixosa [o herba pixotera ] Trencapedra 1 . 6 232 [BOS] [LC] herba plana Herba anual de la família de les compostes, híspida, de fulles oblongues, capítols grocs ligulats i fruits quasi tots amb bec i amb un plomall de setes plomoses, dilatades a la base, freqüent als llistonars i als erms de les illes Balears ( Hypochoeris achyrophorus ). 6 233 [BOS] [LC] herba platera Sanguinària blanca . 6 234 [BOS] herba ploranera [o herba plorosa ] Herba blenera . 6 235 [BOS] [LC] herba pollera [o herba pollosa ] a ) Estafisàgria . 6 235 [BOS] [LC] herba pollera [o herba pollosa ] b ) Matapoll . 6 236 [BOS] herba poma Herba de la família de les escrofulariàcies, poc o molt glandulosa i viscosa, erecta, d’un verd clar, amb ramificacions molt obertes, fulles linears i enteres, oposades, flors grogues i petites, en raïms terminals, i fruit en càpsula, que es fa sobretot a les vorades i clarianes forestals de la baixa muntanya ( Odontides viscosus ). 6 237 [AGA] [BOS] [LC] herba presonera Herbacol 1 . 6 238 [BOS] herba presseguera Herba de la família de les poligonàcies, de tija erecta i ascendent sovint vermellosa, amb òcrees ciliades, fulles lanceolades sovint amb una taca fosca a l’anvers, flors rosades o blanques en espigues denses cilíndriques i la majoria de fruits lenticulars, que es fa en conreus i en indrets ruderals humits ( Polygonum persicaria ). 6 239 [BOS] herba prima a ) Herba perenne de la família de les rubiàcies, de tiges molt primes, nuoses i difuses, fulles molt estretes, oposades o verticil·lades, i flors tubuloses, blanques o rosades, en inflorescències laxes, que es fa als prats secs i és utilitzada en medicina popular com a diürètica ( Asperula cynanchica ). 6 239 [BOS] herba prima b ) Herba de la família de les cariofil·làcies, molt ramosa, de tiges febles, fulles linears oposades i flors blanques en cimes laxes, que es fa a les roques ombrívoles de muntanya ( Moehringia muscosa ). 6 239 [BOS] herba prima c ) Margall 1 . 6 239 [BOS] herba prima d ) Salsufragi 1 . 6 240 [BOS] herba pucera Plantatge 1 1 . 6 241 [BOS] herba queixalera Jusquiam . 6 242 [BOS] [LC] herba remuguera Rogeta 1 . 6 243 [BOS] [LC] herba rodona Herba de la família de les gramínies, amb les bases de les tiges engruixides i cobertes de fibres entrecreuades, fulles convolutes i sovint arquejades i inflorescències en panícula densa, freqüent a les pastures de les terres calcàries ( Koeleria vallesiana ). 6 244 [BOS] [LC] herba roja Herba de la família de les rosàcies, estolonífera i poc o molt pilosa, de fulles que tenen de cinc a set folíols ovats, dentats a la part apical, i flors grogues amb calicle, freqüent a les pastures seques ( Potentilla neumanniana o P. verna ). 6 245 [BOS] herba sabonera a ) Anagall 1 . 6 245 [BOS] [ED] herba sabonera b ) Herba de la família de les cariofil·làcies, de tija erecta i nuosa, fulles oposades, lanceolades o oblongues, flors regulars força grosses, amb el calze tubulós i cinc pètals de color de rosa, en inflorescència terminal més aviat densa, i fruit en càpsula, que creix en llocs humits, rica en saponines per la qual cosa ha estat emprada com a succedani del sabó ( Saponaria officinalis ). 6 246 [BOS] [LC] herba salada Cirialera . 6 247 [AGA] [BOS] herba sana Menta pebrera . 6 248 [BOS] [LC] herba sanguina Sanguinària blanca . 6 249 [BOS] [LC] herba sanguinària a ) Herba de les set sagnies a) . 6 249 [BOS] [LC] herba sanguinària b ) Mill de sol . 6 249 [BOS] [LC] herba sanguinària c ) Sanguinària blanca . 6 250 [BOS] [LC] herba santa a ) Herba morenera . 6 250 [BOS] [LC] herba santa b ) Sàlvia romana . 6 251 [BOS] [LC] herba santjoanera Maleïda . 6 252 [BOS] [LC] herba sardinera Blet pudent . 6 253 [BOS] herba sense virtut Maleïda . 6 254 [BOS] [LC] herba soldadora Pinzell 3 . 6 255 [BOS] herba tacada Herba presseguera . 6 256 [BOS] herba talpera [o herba talpinera ] Estramoni . 6 257 [BOS] [LC] herba tana Tanarida . 6 258 [BOS] herba tora Tora 1 1 . 6 259 [BOS] herba torçonera Herba menuda . 6 260 [BOI] herba torta Herba caragolera . 6 261 [BOS] [LC] herba tossera [o herba tossina ] Orella d’os . 6 262 [BOS] herba turmera Herba d’or . 6 263 [BOS] [LC] herba ventolera Ventolera . 6 264 [AGA] [BOS] [LC] herba vergera Herba de la família de les compostes, menuda i cespitosa, de fulles ovades i llargament peciolades, en rosetes basals, i capítols sobre llargs peduncles, amb el botó groc i la corona blanca, freqüent als pradells de les illes Balears ( Bellium bellidioides ). 6 265 [BOS] herba verinosa Tora 1 1 . 6 266 [BOS] herba vermella Herba de la família de les cariofil·làcies, gràcil, glandulosa i viscosa, de fulles linears oposades, amb estípules papiràcies platejades, flors rosades en inflorescència laxa, fruit en càpsula i granes negroses, que es fa als camins i llocs erms ( Spergularia rubra ).",
+    "matched_keywords": [
+      "Menorca",
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009550",
+    "term": "llengua",
+    "grammatical_category": "f.",
+    "full_definition": "llengua 1 1 f. [LC] [MD] [ZOA] Òrgan musculós dels vertebrats, molt mòbil, revestit d’un epiteli sensorial i situat a la cavitat bucal, que serveix com a òrgan del gust i com a òrgan principal de la deglució, la succió, la masticació i l’articulació de sons. La punta de la llengua. Ensenyar la llengua al metge. Treure la llengua. Fer petar la llengua. Va arribar corrent, amb un pam de llengua a fora. Comprar, menjar, una llengua de porc, de bou. 1 2 [LC] [MD] tenir la llengua carregada [o la llengua bruta , o la llengua blanca ] Tenir-la recoberta d’una capa blanca, groguenca, indici d’un estat morbós del tub digestiu. 1 3 [LC] [MD] tenir la llengua espessa [o la llengua pastosa ] Tenir-la recoberta d’una mucositat espessa. 1 4 [LC] tenir la llengua lligada Tenir un motiu que no permet de dir una cosa. 2 1 f. [LC] Llengua considerada com l’agent principal de la paraula, ús de la llengua en parlar. Fer córrer la llengua. Moderar, frenar, la llengua. Li vaig dir tot el que em va venir a la llengua. Només parla ell, sembla que hagi menjat llengua! 2 2 [LC] anar-se’n de la llengua Anar-se’n de la boca . 2 3 [LC] mala llengua [o llengua d’escorpí , o llengua d’escurçó , o llengua serpentina , o llengua verinosa , o llengua viperina ] Propensió a la maldiença. Té una mala llengua incorregible: malparla de tothom. 2 4 [LC] mala llengua Persona maldient. No facis cas del que diu: és una mala llengua. Males llengües diuen que ho ha fet ella. 2 5 [LC] tenir llengua a algú No intimidar-se davant d’algú. 2 6 [LC] tenir molta llengua algú Dir més que no farà, parlar més que no deuria, no callar per desvergonyiment, irreverència, etc. 2 7 [LC] anar a llengües de la gent Ésser objecte de comentaris maldients. 2 8 f. [LC] Informació que hom dona o rep sobre alguna cosa. Donar llengua d’alguna cosa a algú. Tenir, haver, llengua d’alguna cosa. 3 1 f. [LC] Cosa que per la seva forma recorda la llengua. Una llengua de foc. 3 2 [GL] llengua de glacera Part de la glacera de tipus alpí que s’inicia en el circ glacial i acaba en zones a les quals la velocitat d’avançament resta compensada per la velocitat de fusió del glaç. 3 3 [GL] [LC] llengua de terra Promontori sedimentari pla, estret i llarg que avança endins del mar, d’un llac, etc. 3 4 [GL] [LC] llengua glacial Llengua de glacera . 4 f. [HIH] Circumscripció territorial que formava part de la jurisdicció de l’orde de l’Hospital de Sant Joan de Jerusalem. 5 1 f. [FL] [LC] Sistema de signes orals, escrits o gestuals, que serveix per a la comunicació. La llengua pàtria, nacional. La llengua catalana. Les llengües neollatines. 5 2 f. [FL] Conjunt de regles subjacents a tot acte de parla, que afecta els diversos components d’un sistema lingüístic. 5 3 [FL] llengua artificial Sistema de signes comunicatius elaborat per convenció deliberada. 5 4 [FL] llengua de signes Llengua natural de signes gestuals i de percepció visual que utilitza els gestos de les mans, de la cara i d’altres parts del cos, així com l’espai, com a sistema de comunicació. 5 5 [FL] llengua de signes catalana Llengua de signes pròpia de la comunitat de signants de Catalunya i Menorca (sigla, LSC). 5 6 [FL] llengua franca Llengua que és una barreja de dues o més llengües i en la qual s’entenen els naturals de pobles distints. 5 7 [FL] llengua materna Llengua adquirida d’una manera natural al llarg de la infància. 5 8 [FL] [LC] llengua morta Llengua que ja no es parla. 5 9 [FL] [LC] llengua vehicular Llengua de comunicació entre parlants de llengües maternes diferents. 5 10 [FL] [LC] llengua viva Llengua que encara es parla. 5 11 [FL] [LC] llengua aglutinant [o llengua aglomerant ] Llengua en què l’estructura dels mots està formada per elements morfològics, fàcilment separables, que mantenen llur significació i llur individualitat. 5 12 [FL] llengua aïllant Llengua en què els elements relacionals i els elements significants constitueixen mots distints. 5 13 [FL] llengua amalgamant Llengua flexiva . 5 14 [FL] [LC] llengua analítica Llengua que expressa les funcions morfosintàctiques per mitjà de l’ordre de mots o per l’ús de mots independents. 5 15 [FL] llengua ergativa Llengua que es caracteritza morfològicament per la possessió del cas ergatiu i sintàcticament per l’existència de construccions ergatives. 5 16 [FL] [LC] llengua flexiva Llengua en què els mots no es poden analitzar en elements morfològics fàcilment aïllables i en què una mateixa categoria gramatical pot ésser expressada per diferents elements. El llatí és una llengua flexiva. 5 17 [FL] llengua polisintètica Llengua en què les funcions morfosintàctiques s’expressen per mitjà d’un sol mot que aglutina una gran quantitat d’elements semàntics i de relacions gramaticals. 5 18 [FL] [LC] llengua sintètica Llengua flexiva . 5 19 [FL] [LC] llengua tonal Llengua que fa ús distintiu del to lèxic. 6 1 f. [FL] llengua d’oc Occità 2 1 . 6 2 [FL] [LC] llengües hispàniques Llengües romàniques parlades al territori de l’antiga Hispània. 6 3 [FL] [LC] llengües romàniques Llengües sortides del desenvolupament del llatí vulgar: portuguès, espanyol, català, francès, italià, romanès, etc. 7 1 f. [FL] Llenguatge propi d’una època, d’un estament, de certes matèries. La llengua de la prosa. 7 2 [FL] llengua d’ús Llengua col·loquial. 7 3 [FL] llengua estàndard Estàndard 4 . 7 4 [FL] [FLL] llengua literària Llengua que s’usa en escriure, amb una tendència a la unitat i a l’elevació respecte al llenguatge quotidià. 8 1 f. [BOS] llengua bovina a ) Paradella mollerosa . 8 1 f. [BOS] llengua bovina b ) Buglossa . 8 2 [BOS] llengua d’oca Espiga d’aigua . 8 3 [BOS] [LC] llengua de bou Herba de la família de les boraginàcies, tota ella híspida, de tiges dretes puntejades de negre, fulles oblongues o lanceolades, flors de color variable entre el blau i el porpra, amplament tubuloses i amb els estams molt sortints, freqüent en prats secs i vores de camins ( Echium vulgare ). 8 4 [BOS] llengua de ca Planta de la família de les boraginàcies, tomentosa i d’un verd grisenc, de fulles oblongues, les superiors semiamplexicaules, flors d’un blau brut amb venes violeta i fruit format per quatre mericarpis coberts d’agullons, que es fa en herbassars nitròfils ( Cynoglossum creticum ). 8 5 [AGA] [BOS] llengua de cavall a ) Galzeran major . 8 5 [AGA] [BOS] llengua de cavall b ) Espiga d’aigua . 8 6 [BOI] llengua de cérvol Falguera de l’ordre de les asplenials, de fulla entera, amb sorus bruns allargats, a banda i banda del nervi ( Asplenium scolopendrium ). 8 7 [BOS] llengua de frare Cugot . 8 8 [BOS] llengua de moixó Passacamins . 8 9 [BOI] llengua de serp Falguera de l’ordre de les ofioglossals, formada per una part aplanada, lanceolada, i una espiga d’esporangis ( Ophioglossum vulgatum ). 8 10 [BOS] [LC] llengua de vaca Buglossa . 8 11 [BOS] llengua rodona Aristolòquia . 9 1 f. [BOB] llengua de bou Bolet del grup dels basidiomicets afil·loforats, de barret carnós, irregular, de color blanquinós o groc pàl·lid, amb agulletes ( Hydnum repandum i espècies afins). 9 2 [BOB] llengua de bou blanca Llengua de bou de color blanc i carn fràgil, que viu preferentment en pinedes càlides ( Hydnum albidum ). 9 3 [BOB] llengua de bou vermellosa Bolet d’agulles rufescent . 9 4 [BOB] llengua de terra Bolet dels gèneres Trichoglossum i Geoglossum , del grup dels ascomicets, que es caracteritza per tenir fructificacions erectes i negroses en forma de llengua o de maça, que surten de terra, isolades o en grups. 9 5 [BOB] llengua de vaca Fetge de vaca b) . 9 6 [BOB] [LC] llengua de vedella Llengua de bou . 10 1 f. [LC] [ZOP] llengua de Sant Pau Peix de la família dels soleids, d’uns 20 centímetres de llargada, amb quatre taques negres orlades de blanc, disposades simètricament, amb els dos ulls sobre el costat dret ( Microchirus ocellatus ). 10 2 [ZOP] llengua de bacallà Peix de la família dels gàdids, de cos molt allargat, que pot atènyer 180 centímetres de llargada, de color bru verdós, amb dues aletes dorsals i una de ventral, que viu en aigües profundes i és molt poc freqüent ( Molva molva ).",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0072118",
+    "term": "menorquí",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "menorquí -ina 1 1 adj. i m. i f. [LC] Natural de Menorca. 1 2 adj. [LC] Relatiu o pertanyent a Menorca o als seus habitants. 2 1 m. [FL] Subdialecte del balear parlat a Menorca. 2 2 adj. [FL] Relatiu o pertanyent al menorquí.",
+    "matched_keywords": [
+      "Menorca",
+      "balear",
+      "menorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0026715",
+    "term": "pomada",
+    "grammatical_category": "f.",
+    "full_definition": "pomada 1 f. [ED] [LC] [MD] Mescla de greix i d’altres ingredients emprada com a cosmètic o com a medicament. Posar-se pomada als cabells. M’he fet una untura amb una pomada que m’ha preparat l’apotecari. 2 f. [HO] Beguda tradicional de Menorca consistent en una mescla de ginebra i llimonada.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0007075",
+    "term": "taula",
+    "grammatical_category": "f.",
+    "full_definition": "taula 1 1 f. [IMF] [LC] Moble que consisteix en una peça llisa i plana sostinguda horitzontalment per peus o petges, que serveix per a menjar, escriure, treballar, jugar, etc. Una taula de noguera, de roure. Una taula de pedra. Una taula d’escriure. Una taula de ping-pong. Una tauleta de cosir. Una taula de cafè. Una taula rodona, quadrada. 1 2 [IMF] taula d’ales Taula que té uns suplements per a augmentar-ne la superfície. 1 3 [IMF] [LC] taula raconera Taula, de superfície generalment triangular, adaptable en un racó d’habitació. 2 1 f. [LC] Taula de menjar. Parar, desparar, la taula. Posar-se, asseure’s, a taula. Alçar-se de taula. Érem, sèiem, dotze a taula. Servir a taula. 2 2 [LC] de la taula al llit i del llit a la taula Expressió que s’aplica a qui sols viu per a menjar i dormir. 2 3 [HO] taula auxiliar Taula situada a la vora dels comensals en un restaurant, on es posen els accessoris de servei i on el cambrer pot acabar de preparar els plats. 2 4 [LC] taula rodona a ) Taula on mengen plegats tots els hostes d’una fonda, d’una posada, etc. 2 4 [LC] taula rodona b ) Taula en què cap lloc no és el preferent. 2 5 [LC] tenir taula parada a ) Estar dispost a convidar a taula tothom qui es presenta. 2 5 [LC] tenir taula parada b ) Tenir habitualment convidats. 2 6 f. [HO] [LC] Menjar que se serveix a taula. Li agrada una bona taula. 3 1 f. [JE] [LC] Taula de joc. Una taula de tresillo. Una taula de bacarà. Taula de billar. 3 2 [LC] posar sobre la taula Suscitar una qüestió a resoldre, a considerar, etc. 3 3 [JE] [LC] per taula loc. adv. a ) Tocant la bola en una de les bandes de la taula de billar. 3 3 [LC] per taula loc. adv. b ) Indirectament . 3 4 f. pl. [JE] [LC] En el joc d’escacs, dames, etc., estat del joc en què, donada la posició de les peces, cap dels dos jugadors no pot guanyar la partida. 4 1 f. [CO] taula de control Taula o moble on hi ha els dispositius electrònics adequats per tal de regular els diferents elements que intervenen en un enregistrament o en una emissió de ràdio o de televisió. 4 2 [CO] taula de mescles Taula amb els recursos tècnics suficients per a realitzar les barreges de so i d’imatge en la producció d’un programa de ràdio o de televisió. 4 3 [CO] taula de muntatge a ) Taula de vidre, il·luminada per sota, utilitzada per a muntar els textos o les il·lustracions que després passaran a la placa o al cilindre. 4 3 [CO] taula de muntatge b ) En cinema i en televisió, taula per a sincronitzar la imatge i el so, tallar els plans que el realitzador considera sobrers i fer el muntatge definitiu. 4 4 [BB] [CO] taula de redacció En premsa, taula on treballen els redactors d’una publicació. 5 1 f. [HIH] Botiga o oficina destinada a vendre certes coses, a despatxar assumptes d’interès comú. A casa seva són carnissers; tenen una taula al mercat. 5 2 [HIH] taula de canvi a ) Lloc on els canviadors posaven les monedes i feien el canvi manual d’unes monedes per altres. 5 2 [HIH] taula de canvi b ) Institució destinada al canvi, al dipòsit i a la transferència de monedes. 6 1 f. [IT] [LC] Peça de fusta, pedra o altra matèria rígida, plana i de poc gruix, com la destinada a afixar-hi anuncis, bans o actes o a gravar-hi, a pintar-hi, quelcom. Posar un anunci a la taula d’avisos. Les taules de Moisès, de la Llei. És una pintura feta sobre una taula. 6 2 [LC] fer taula rasa a ) Esborrar el que hi ha escrit. 6 2 [LC] fer taula rasa b ) Considerar com a nul tot el que ha estat fet anteriorment. 6 3 [IT] [LC] taula rasa Taula en què no hi ha encara res gravat o pintat. 6 4 [RE] taula sacra Sacra . 7 1 f. [LC] Objecte que presenta una superfície plana i llisa comparable a la d’una taula. 7 2 f. [IT] Part no gravada i polida de la superfície d’un corró d’estampar. 7 3 [BB] [IT] taula d’estampació Màquina d’estampar de taula llarga. 7 4 f. [EI] Part d’algunes màquines o eines que suporta la peça que ha d’ésser treballada. 8 1 f. [IT] [usat generalment en pl.] Peça de fusta resistent, relativament estreta i amb la superfície superior planejada i polida, que fa de suport a la llançadora en el seu moviment entre els calaixos del teler. 8 2 f. [LC] [TRA] Post de l’entaulament d’una nau. 9 1 f. [LC] taula de júnyer Reng de júnyer. 9 2 [LC] taula rodona a ) Torneig mantingut per un cavaller o cavallers disposats a acceptar el repte de qui es presenti. 9 2 [CO] [LC] taula rodona b ) Debat públic d’un tema amb diversos participants, cap dels quals no presideix ni dirigeix, conduït per un moderador. 10 f. [MU] taula harmònica Superfície elàstica, generalment de fusta, en contacte amb les cordes dels instruments cordòfons mitjançant el pont, la qual es posa en vibració i amplifica el so de la corda. 11 f. pl. [JE] Escenari . 12 1 f. [AGA] [LC] Capçada 2 . 12 2 f. [GL] [GLM] [IMI] Part superior de la talla brillant d’un diamant. 13 f. [HIH] Monument megalític prehistòric propi de Menorca, consistent en una gran pedra clavada verticalment a terra amb una altra pedra col·locada horitzontalment al damunt. 14 1 f. [GL] Relleu tabular aïllat, format per un estrat horitzontal resistent a l’erosió. 14 2 [GL] taula basàltica Relleu tabular constituït per la superfície d’una colada de basalt sensiblement horitzontal. 14 3 [GL] taula glacial Bloc de roca plana suportada per una columna de glaç, damunt una glacera. 15 f. [BB] [CO] Llista de les matèries contingudes en un llibre, amb indicació de les pàgines on són tractades. 16 f. [GL] [HIH] taula cronològica [o taula de còmput ] Forma gràfica de representar esquemàticament els esdeveniments per ordre cronològic, la successió de sobirans i papes, els elements computables dels anys, dels mesos i dels dies, etc. 17 1 f. [QU] taula periòdica dels elements [o taula de Mendeléiev ] Ordenació dels elements químics en una taula per tal de posar de manifest la periodicitat de les propietats d’aquests amb l’augment del nombre atòmic. 17 2 [FIA] taules astronòmiques Publicació que conté una col·lecció de dades dels moviments i les posicions d’una sèrie d’astres relatives a un període de temps determinat. 18 1 f. [AGF] [BB] [CO] [MT] Llista d’un cert nombre de valors d’una variable i els valors corresponents d’una altra que és funció de la primera, disposats generalment en columnes. Taula de quadrats, de cubs, de logaritmes, de sinus, de tangents. Taula d’interessos, d’anualitats. Taula de producció forestal. 18 2 f. [IN] Estructura de dades en què cada element pot ésser identificat i situat per mitjà d’una combinació única d’una o més claus. 18 3 [LC] [MT] taula de multiplicació [o taula de Pitàgores ] Quadrat dividit en 81 cases quadrades disposades formant nou files i nou columnes, en el qual les nou cases de la primera fila porten, d’esquerra a dreta, els números 1, 2, 3, etc., fins a 9, les nou cases de la primera columna porten, de dalt a baix, els números 1, 2, 3, etc., fins a 9, i cadascuna de les restants, situada en l’encreuament d’una fila i d’una columna, porta un número que expressa el producte dels nombres que encapçalen la fila i la columna a les quals pertany.",
+    "matched_keywords": [
+      "Menorca"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0059470",
+    "term": "domer",
+    "grammatical_category": "m.",
+    "full_definition": "domer 1 m. [HIH] [PR] [RE] En algunes catedrals, beneficiat que té al seu càrrec curar del temple, administrar els sagraments i estendre les corresponents partides. 2 m. [HIH] [PR] Clergue que exercia una doma o càrrec per setmanes. 3 m. [HIH] [PR] Prevere que anava setmanalment a dir missa a les esglésies rurals d’Eivissa.",
+    "matched_keywords": [
+      "Eivissa"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0014452",
+    "term": "eivissenc",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "eivissenc -a 1 1 adj. i m. i f. [LC] Natural d’Eivissa. 1 2 adj. [LC] Relatiu o pertanyent a Eivissa o als seus habitants. 2 1 m. [FL] [LC] Subdialecte del balear parlat a l’illa d’Eivissa. 2 2 adj. [FL] [LC] Relatiu o pertanyent a l’eivissenc.",
+    "matched_keywords": [
+      "Eivissa",
+      "balear",
+      "eivissenc"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0021476",
+    "term": "frígola",
+    "grammatical_category": "f.",
+    "full_definition": "frígola 1 f. [BOS] [LC] Mata de la família de les labiades, aromàtica, de tiges tomentoses i blanquinoses, fulles linears cobertes de glàndules i poc o molt ciliades al marge, oposades i en fascicles axil·lars, i flors roses, agrupades en densos glomèruls terminals, esfèrics o oblongs, que es fa a les timonedes, sobretot en indrets molt pasturats de les terres mediterrànies meridionals, corrent a Eivissa i emprada com a aromatitzant ( Thymbra capitata o Thymus capitatus ). 2 [BOS] frígola borda Mata de la família de les labiades, molt foliosa, de fulles aciculars amb els marges revoluts, i flors purpurescents, soles o a parells a la part superior de les branques, que es fa a les timonedes i als llocs molt pasturats, comuna a Eivissa ( Satureja barceloi o Micromeria inodora ).",
+    "matched_keywords": [
+      "Eivissa"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0027887",
+    "term": "quartó",
+    "grammatical_category": "m.",
+    "full_definition": "quartó 1 m. [FIM] [LC] Quart 4 2 . 2 m. [LC] Quarter 1 1 . 3 m. [HIH] Districte jurisdiccional dels cinc en què fou dividida Eivissa fora murs de la vila. 4 m. [AGR] Cap de bestiar cavallí o porquí que té entre tres i quatre anys.",
+    "matched_keywords": [
+      "Eivissa"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0093505",
+    "term": "venda2",
+    "grammatical_category": "f.",
+    "full_definition": "venda 2 f. [DR] [LC] Partida dels antics quartons i de les actuals parròquies d’Eivissa.",
+    "matched_keywords": [
+      "Eivissa"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0029033",
+    "term": "formenterenc",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "formenterenc -a 1 adj. i m. i f. [LC] Natural de Formentera. 2 adj. [LC] Relatiu o pertanyent a Formentera o als seus habitants.",
+    "matched_keywords": [
+      "Formentera"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0020832",
+    "term": "formenterer",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "formenterer -a 1 adj. i m. i f. [LC] Formenterenc . 2 1 m. [FL] [LC] Subdialecte del balear parlat a l’illa de Formentera. 2 2 adj. [FL] [LC] Relatiu o pertanyent al formenterer.",
+    "matched_keywords": [
+      "Formentera",
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0108260",
+    "term": "adaram",
+    "grammatical_category": "m.",
+    "full_definition": "adaram m. [FIM] Pes propi del País Valencià, Tortosa i les illes Balears, equivalent a 36 grams o a una setzena part de l’unça.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0000320",
+    "term": "albó",
+    "grammatical_category": "m.",
+    "full_definition": "albó 1 m. [BOS] [LC] Herba de la família de les liliàcies, vigorosa, de fulles totes basals i tija robusta ramificada a la part superior, terminada en raïms de flors blanquinoses, freqüent als indrets secs i pedregosos de les Balears i, en general, de la regió mediterrània ( Asphodelus aestivus o A. microcarpus ). 2 [BOS] albó de muntanya Herba de la família de les liliàcies, semblant a l’albó, però de fulles i flors més grosses i inflorescència simple o gairebé, que es fa als prats de muntanya ( Asphodelus albus ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0046505",
+    "term": "arç",
+    "grammatical_category": "m.",
+    "full_definition": "arç 1 m. [BOS] [LC] Arbust o arbre espinós, que pertany a les famílies de les rosàcies, de les solanàcies, de les eleagnàcies o de les ramnàcies. 2 [AGA] [BOS] [LC] arç blanc Arbust o arbre caducifoli de la família de les rosàcies, molt espinós, amb fulles lobades, flors blanques flairoses, disposades en corimbes, i fruits petits i carnosos, vermells, les cireretes de pastor, que es fa sovint a les bardisses ( Crataegus monogyna ). 3 [BOS] [LC] arç de tanques Arbust caducifoli, espinós, de la família de les solanàcies, de fulles estretes, conreat a la regió mediterrània per a fer tanques ( Lycium europaeum ). 4 [BOS] [LC] arç groc Arbust caducifoli de la família de les eleagnàcies, molt espinós, de fulles estretes lanceolades, flors verdoses i fruits de color taronja, que es fa en terrenys sorrencs o pedregosos ( Hippophae rhamnoides ). 5 [BOS] [LC] arç intricat Arbust de la família de les solanàcies, espinós i compacte, de fulles glauques, carnoses i estretes, flors tubuloses, violàcies o purpúries, i fruit en baia negra o vermellosa, que viu al migjorn valencià i a les illes Balears ( Lycium intricatum ). 6 [BOS] [LC] arç negre a ) Aranyoner . 6 [BOS] arç negre b ) Arçot .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0044834",
+    "term": "arítjol",
+    "grammatical_category": "m.",
+    "full_definition": "arítjol 1 m. [BOS] [LC] Liana de la família de les esmilacàcies, espinosa, dioica, de fulles cordiformes coriàcies, amb la vora espinosa i amb circells basals, flors blanques molt petites, en umbel·les sobre un eix flexuós, i fruit en baia negra o vermella, molt característica de la terra baixa mediterrània ( Smilax aspera ). 2 [BOS] arítjol baleàric Arítjol d’una varietat mancada gairebé de fulles, que abunda a les zones ventejades de les illes Balears ( Smilax aspera var. balearica ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002327",
+    "term": "baldriga",
+    "grammatical_category": "f.",
+    "full_definition": "baldriga 1 f. [ZOO] Ocell de la família dels procel·làrids, de color fosc, de mida mitjana, amb el vol inclinat sobre un costat. 2 [ZOO] baldriga capnegra Ocell de la família dels procel·làrids, de plomatge cendrós amb el capell negre, rar a les nostres contrades ( Puffinus gravis ). 3 [ZOO] baldriga cendrosa Ocell de la família dels procel·làrids, d’uns 45 centímetres de llargada, plomatge gris fosc a les parts superiors i blanc a les inferiors ( Calonectris diomedea ). 4 [ZOO] baldriga grisa Ocell de la família dels procel·làrids, d’uns 40 centímetres de llargada, de plomatge fosc uniforme, propi de l’Atlàntic i accidental al Mediterrani ( Puffinus griseus ). 5 [ZOO] baldriga pufí Ocell de la família dels procel·làrids, d’uns 35 centímetres de llargada, amb una subespècie endèmica a les illes Balears, més grossa que les anteriors, de color brunenc ( Puffinus mauretanicus ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0046695",
+    "term": "balear",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "balear 1 1 adj. i m. i f. [LC] Natural de les illes Balears. 1 2 adj. [LC] Relatiu o pertanyent a les illes Balears o als seus habitants. 2 1 m. [FL] [LC] Dialecte oriental del català parlat a les illes Balears. 2 2 adj. [FL] [LC] Relatiu o pertanyent al balear.",
+    "matched_keywords": [
+      "Balears",
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0046847",
+    "term": "barcella",
+    "grammatical_category": "f.",
+    "full_definition": "barcella 1 f. [AGA] [FIM] [LC] Mesura de capacitat per a grans, pròpia del País Valencià, Tortosa i les illes Balears, de valor variable. 2 f. [AGA] Recipient que té la capacitat d’una barcella. 3 f. [AGA] Extensió de terra de conreu que es pot sembrar amb una barcella de blat.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0034665",
+    "term": "caldereta",
+    "grammatical_category": "f.",
+    "full_definition": "caldereta f. [HO] Sopa de peix o de marisc, pròpia de les Balears, cuinada a base d’un sofregit.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0050286",
+    "term": "cana1",
+    "grammatical_category": "f.",
+    "full_definition": "cana 1 1 f. [FIM] [IT] [LC] Mida pròpia de Catalunya, les illes Balears i la Catalunya del Nord, que equival a 8 pams, o a 6 peus, o a 2 passos, i, a Barcelona, és igual a 1,555 metres. 2 [FIM] cana de destre Destre 1 1 .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002499",
+    "term": "carnassa",
+    "grammatical_category": "f.",
+    "full_definition": "carnassa 1 f. [LC] Abundància de carn. 2 f. [AGR] [IQA] Carn i seu que hom separa del cuir en descarnar i que és aprofitada per a fabricar aiguacuit. 3 f. [BOS] Planta herbàcia de la família de les umbel·líferes, de fulles gruixudes i brillants i flors petites i grogues, que es fa als pedruscalls, endèmica de les illes Balears ( Pastinaca lucida ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0002040",
+    "term": "català",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "català -ana 1 1 adj. i m. i f. [LC] Natural de Catalunya. 1 2 adj. [LC] Relatiu o pertanyent a Catalunya o als seus habitants. El poble català. La nació catalana. 2 1 adj. i m. i f. [LC] Natural dels Països Catalans. 2 2 adj. [LC] Relatiu o pertanyent als Països Catalans o als seus habitants. 3 1 m. [FL] [LC] Llengua romànica parlada a Catalunya, a la major part del País Valencià, a les Illes Balears, a la Franja de Ponent, a la Catalunya del Nord, a Andorra, a la ciutat sarda de l’Alguer i a la comarca murciana del Carxe. 3 2 adj. [FL] [LC] Relatiu o pertanyent al català. 3 3 [FL] català central Dialecte oriental del català parlat en una part del Principat de Catalunya, que inclou el subdialecte septentrional de transició, el barceloní i el tarragoní. 3 4 [FL] català nord-occidental Dialecte occidental del català parlat en una part de Catalunya, i a Andorra, la Ribagorça, la Llitera, el Baix Cinca i una part del Matarranya, que inclou el lleidatà, el ribagorçà, el pallarès i el tortosí. 3 5 [FL] català occidental Grup dialectal del català que inclou el català nord-occidental i el valencià. 3 6 [FL] català oriental Grup dialectal del català que inclou el rossellonès, el català central, el balear i l’alguerès. 3 7 [FL] català septentrional Rossellonès 2 1 . 3 8 [FL] català septentrional de transició Subdialecte del català central, de transició cap al rossellonès. 3 9 [LC] clar i català V. clar¹ . 4 f. [HO] Botifarra catalana . Entrepà de catalana. 5 f. [ED] [LC] Porró 1 .",
+    "matched_keywords": [
+      "Balears",
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009260",
+    "term": "ciclamen",
+    "grammatical_category": "m.",
+    "full_definition": "ciclamen 1 m. [AGA] [BOS] Herba perenne del gènere Cyclamen , de la família de les primulàcies, que fa un gros tubercle, fulles cordades o reniformes i flors de color blanc rosat o violeta, amb els pètals tombats enrere, molt emprada en jardineria i com a planta d’interior. 2 [BOS] ciclamen baleàric Ciclamen de fulles marbrades de blanc i flors petites d’un blanc rosat, propi de les illes Balears i d’alguns indrets de Provença i la Fenolleda ( Cyclamen balearicum ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0050569",
+    "term": "claveller",
+    "grammatical_category": "m.",
+    "full_definition": "claveller 1 m. [BOS] [LC] Petit arbre perennifoli, de la família de les mirtàcies, de fulles lanceolades i flors vermelloses en corimbes, que forneix el clavell d’espècia ( Syzygium aromaticum ). 2 [BOS] claveller de penyal Mata de la família de les umbel·líferes, de fulles estretament lanceolades, més o menys aglomerades a la part superior de les tiges, flors grogues, en umbel·la, i fruit oblong, que es fa a les escletxes de les roques calcàries i és endèmica de les Balears ( Bupleurum barceloi ). 3 m. [AGA] [BOS] [LC] Clavellina 1 .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0019857",
+    "term": "estepa1",
+    "grammatical_category": "f.",
+    "full_definition": "estepa 1 1 1 f. [BOS] [LC] Arbust o mata del gènere Cistus , de la família de les cistàcies, de fulles oposades, flors radiades i vistoses amb molts estams, i fruit en càpsula, propi sobretot de les brolles mediterrànies. 1 2 [BOS] estepa blanca Estepa de fulles oblongues, tomentoses i blanquinoses, i flors de color de rosa purpuri ( Cistus albidus ). 1 3 [BOS] estepa borrera Estepa de fulles ovades, reticulades i rugoses i flors blanques ( Cistus salviifolius ). 1 4 [BOS] estepa de muntanya Estepa de fulles lanceolades, verdes per sobre, tomentoses i blanques per sota, i de grans flors blanques, pròpia de la muntanya mediterrània ( Cistus laurifolius ). 1 5 [BOS] estepa ladanífera Estepa alta de fulles lanceolades i grans flors blanques, generalment amb taques vermelles al centre, productora de làdan ( Cistus ladanifer ). 1 6 [BOS] estepa negra Estepa de fulles estretes i flors blanques ( Cistus monspeliensis ). 2 f. [BOS] estepa joana Mata de la família de les gutíferes, de fulles i tiges cobertes de vesícules glandulars i flors grogues, endèmica de les illes Balears ( Hypericum balearicum ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0018346",
+    "term": "gripau",
+    "grammatical_category": "m.",
+    "full_definition": "gripau 1 m. [LC] [ZOR] Amfibi anur cobert d’una pell berrugosa, sovint amb glàndules que contenen líquid irritant, de costums menys aquàtics i moviments més lents i feixucs que la granota. 2 [ZOR] gripau banyut Gripau del gènere Ceratophrys , de mida relativament gran, de cap molt gros, amb l’obertura bucal molt ampla, i colors vistosos, caracteritzat per la seva agressivitat i per unes petites banyes situades sobre els ulls, propi de l’Amèrica del Sud. 3 [ZOR] gripau comú Gripau de la família dels bufònids, de mida gran, amb glàndules paròtides prominents, ulls de color de coure amb la pupil·la horitzontal i coloració brunenca ( Bufo bufo ). 4 [ZOR] gripau corredor Gripau de la família dels bufònids, de mida mitjana i cos rabassut, amb les extremitats robustes i adaptades a la marxa, de tons verdosos o ocres sobre un fons més clar ( Bufo calamita ). 5 [ZOR] gripau d’esperons Gripau de la família dels pelobàtids, d’hàbits excavadors, proveït d’un esperó corni negre a les potes posteriors ( Pelobates cultripes ). 6 [ZOR] gripau verd Gripau de la família dels bufònids, de mida mitjana i amb taques verdes de contorn negre ben definit sobre un fons blanquinós, introduït de ben antic a les Balears ( Bufo viridis ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0097456",
+    "term": "ieisme",
+    "grammatical_category": "m.",
+    "full_definition": "ieisme 1 m. [FL] Fenomen propi del català oriental, viu a les Balears i a les comarques nord-orientals i centrals fins al nord del Barcelonès, consistent a pronunciar i el resultat de l’evolució dels grups C’L , G’L , T’L i LY del llatí vulgar. 2 m. [FL] Defecte consistent en la pronúncia sistemàtica de i en comptes de ll .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009980",
+    "term": "lliura",
+    "grammatical_category": "f.",
+    "full_definition": "lliura 1 1 f. [FIM] [LC] Unitat de pes de valor molt variable segons els països i les localitats. 1 2 f. [FIM] Unitat anglosaxona de pes, que es divideix en 16 unces i equival a 453,592 grams. 1 3 f. [FIM] Unitat de pes catalana, dividida en 12 unces, equivalent a 400 grams al Principat de Catalunya, a 407 grams a les illes Balears i a 355 grams al País Valencià. 1 4 [FIM] lliura carnissera Unitat de pes equivalent a 36 unces, que són 1.200 grams, aproximadament. 1 5 f. [FIM] Pes emprat en medicina i farmàcia equivalent a 6.480 grans, que són 300 grams. 2 f. [FIM] Mesura superficial agrària. 3 f. [FIM] Mesura de capacitat per a líquids, de valor variable. 4 1 f. [ECT] [NU] Unitat monetària de diferents països. 4 2 f. [ECT] Moneda o bitllet d’una lliura. 4 3 [ECT] lliura esterlina Unitat monetària del Regne Unit. 4 4 f. [NU] Moneda de compte de valor de 20 sous o 240 diners. 5 f. [LC] Contrapès que es posa al cap del caragol de les premses d’oli.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0011627",
+    "term": "naveta",
+    "grammatical_category": "f.",
+    "full_definition": "naveta 1 f. [HIA] [LC] Vas en forma de nau on es guarda l’encens per a les cerimònies del culte. 2 f. [HIA] Monument megalític prehistòric propi de les Balears, que té forma de nau invertida. 3 f. [QU] Gresol de petites dimensions, de material refractari, de platí, de níquel, etc., per a cremar-hi compostos orgànics dins un tub de combustió.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0003729",
+    "term": "orellana",
+    "grammatical_category": "f.",
+    "full_definition": "orellana 1 f. [HO] [LC] Tros de préssec o d’albercoc assecat a l’aire i al sol. 2 f. [HO] [LC] Peça llarguera i molt prima de pasta de farina fregida amb ou i llard o amb llet i oli, que se sol menjar amb sucre o amb mel, pròpia d’alguns indrets de les Balears. 3 1 f. [BOB] Bolet comestible del grup dels basidiomicets, de carpòfor en forma de petxina, gris, a vegades lilós o brunenc i amb làmines una mica decurrents, que creix normalment sobre la fusta dels pollancres ( Pleurotus ostreatus ). 3 2 [BOB] orellana borda Gírgola de pi b) . 3 3 [BOB] orellana d’arbre [o orellana de poll , o orellana de pollancre ] Orellana 3 1 . 3 4 [BOB] orellana de suro a ) Gírgola de cama excèntrica, feltrada o esquamosa, i barret en forma de petxina, que té restes d’un vel blanc i creix sobre alzines, sureres, roures i fajos ( Pleurotus dryinus ). 3 4 [BOB] orellana de suro b ) Bolet de l’ordre de les poliporals, que forma flotes de barrets densament pilosos, sobre fusta morta de surera ( Lentinus strigosus ). 3 5 [BOB] orellana de terra Gírgola de pi a) .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0003782",
+    "term": "peu",
+    "grammatical_category": "m.",
+    "full_definition": "peu 1 1 m. [LC] [MD] [ZOA] Part terminal de les extremitats abdominals de l’ésser humà que comprèn el tars, el metatars i els dits. Els dits dels peus. La planta del peu. Tenir els peus grossos, petits, amples, estrets, llargs. Ficar-se de peus a l’aigua. Prendre un bany de peus. Una puntada de peu. Aguantar-se amb la punta dels peus. Saltar a peus junts. Girar-se, torçar-se, un peu. 1 2 [LC] a peu loc. adv. Caminant. Els uns hi han anat a peu, els altres a cavall. 1 3 [LC] a peu coix loc. adv. Amb un peu enlaire sense tocar a terra. Anar, saltar, caminar, a peu coix. Jugar a peu coix. 1 4 [LC] a peu dret loc. adv. Dempeus . 1 5 [LC] a peu eixut loc. adv. Sense mullar-se els peus. Travessar una riera a peu eixut. 1 6 [LC] a peu ferm loc. adv. Sense recular un pas. Et vaig esperar a peu ferm tot el matí. 1 7 [LC] a peu pla loc. adv. Al mateix nivell. No ha de pujar escales: és a peu pla del carrer. 1 8 [LC] a peu rossec loc. adv. Arrossegant els peus. Caminava a peu rossec. 1 9 [LC] a peu sec loc. adv. A peu eixut . 1 10 [LC] perdre peu Quan es camina dins l’aigua, deixar de tocar el fons amb el peu. 2 1 m. [LC] anar amb peus de plom Procedir cautament, reflexionant el que hom fa. 2 2 [LC] caure als peus d’algú Prosternar-se-li als peus. 2 3 [LC] estar en peu de guerra Estar preparat a fer la guerra. 2 4 [LC] fer una cosa amb els peus Fer-la molt malament. 2 5 [LC] no tenir una cosa cap ni peus [o no tenir una cosa ni cap ni peus ] V. cap¹ . 2 6 [LC] posar el peu al coll a algú Vèncer-lo. 2 7 [LC] posar els peus en un indret Anar-hi. Fa anys que no poso els peus en aquell antre. 2 8 [LC] posar quelcom als peus d’algú Oferir-li-ho en homenatge. 2 9 [LC] en peu loc. adj. a ) Que continua vigent. L’oferta continua en  peu. 2 9 [LC] en peu loc. adj. b ) Que no ha estat enderrocat. Només queda en peu la torre. 2 10 [LC] sense cap ni peus V. cap¹ . 2 11 [LC] tenir-li a algú el peu a la gola [o tenir-li a algú el peu al coll ] Tenir-lo a mercè nostra. 2 12 [LC] tenir un peu a l’estrep Estar a punt d’emprendre un viatge, de començar una empresa. 2 13 [LC] tenir algú un peu a la fossa [o tenir algú un peu a la tomba ] Tenir poc temps de vida, estar a punt de morir. 3 m. [LC] Part de la mitja que correspon al peu. Se m’ha estripat el peu de la mitja. 4 1 m. [MD] peu d’atleta Micosi del peu produïda pel fong Epidermophyton floccosum . 4 2 [MD] peu pla Deformitat caracteritzada per la desaparició de la pontada del peu, de manera que hom recolza tota la planta a terra. 5 1 m. [LC] [ZOA] Part terminal de les potes dels animals que correspon anatòmicament al peu o a la mà dels humans. Animals de peu rodó, de peu forcat. Menjar peus de porc. 5 2 [VE] peu de pinya Pota arronsada que alguns cavalls tenen per un defecte de conformació. 6 1 [SP] peu d’ànec Aleta 2 2 . 6 2 m. [LC] peu de gall a ) Peça que per la seva forma recorda la d’un peu de gall. 6 2 m. [LC] peu de gall b ) Conjunt dels senyals, solcs, etc., que parteixen d’un mateix punt. 6 3 [TRA] peu de gallina Màquina de tres peus que serveix per a aixecar grans pesos. 6 4 [TRA] peu de porc Eina del mestre d’aixa que consisteix en un alçaprem de ferro acabat en dues orelles. 7 m. [TRA] fer peu d’ànec Fondejar una nau amb tres àncores, dues a proa i una a popa. 8 1 m. [AF] [IMF] [LC] Base, cosa que serveix de suport a una altra. Una copa d’argent amb un peu de fusta. El peu d’una lletra. 8 2 [AQ] [TRA] peu dret a ) Peça col·locada verticalment per sostenir algun element de construcció o alguna altra cosa. 8 2 [AQ] [TRA] peu dret b ) Tauló que, disposat verticalment i fermat a d’altres taulons travessers, forma part d’una bastida. 8 3 m. [AQ] Balustre, barra de ferro, etc., que, posat verticalment a l’extrem inferior d’algunes escales, o d’un dels seus trams, forma part de la barana, tot sostenint-ne el passamà. 8 4 [TRA] peu de roda Gaó² . 9 1 m. [LC] Part oposada a la capçalera. L’un estirava el llit pel cap, l’altre pels peus. 9 2 [AF] [BB] [LC] peu d’impremta Dades relatives a un llibre o un fullet, principalment del lloc i l’any de publicació i del nom i el domicili de l’impressor, que figuren generalment a la part inferior del dors de la portada. 9 3 [AF] [BB] peu de gravat Llegenda, generalment posada a la part baixa d’un gravat. 9 4 [AF] peu de pàgina Part baixa de la pàgina. Una nota a peu de pàgina, al peu de la pàgina. 9 5 [AD] [BB] peu d’un document Part terminal d’un text. 10 1 m. [LC] peu d’una obliqua Punt d’una recta o d’un pla en què es produeix la intersecció d’una obliqua. 10 2 [LC] peu d’una perpendicular Punt d’una recta o d’un pla en què es produeix la intersecció d’una perpendicular. 10 3 [AQ] peu de l’arc Punt on s’inicia la curvatura d’un arc. 11 1 m. [LC] donar peu a una cosa Donar-hi ocasió. Les característiques d’aquell poble han donat peu a fomentar el turisme. 11 2 [LC] prendre peu d’una cosa Valer-se’n com a pretext, com a ocasió. 12 1 [LC] al peu de loc. prep. Molt a la vora de, tocant la part baixa de. Havíem arribat al peu mateix de la muntanya, de la costa. Érem al peu del mur, de l’arbre. Agenollar-se al peu de l’altar. 12 2 [FL] [LC] al peu de la lletra loc. adv. a ) Literalment, atenent no a l’esperit sinó a la lletra. Copiar un text al peu de la lletra. 12 2 [LC] al peu de la lletra loc. adv. b ) Exactament, sense afegir ni treure res. Complir una ordre al peu de la lletra. 12 3 [LC] al peu del canó loc. adv. En disposició, a punt, especialment davant una situació dura o combativa. 13 [LC] a peu de loc. prep. Just tocant a. S’estan en un hotel a peu de carretera. El muntatge final es fa a peu d’obra. 14 m. [GL] peu de mont Piemont . 15 1 m. [AGF] [BO] Tronc d’una planta. 15 2 m. [BO] [LC] La planta mateixa. 15 3 m. [AGA] Arbre sobre el qual es fa un empelt. 15 4 m. [BO] Cama d’un bolet. 15 5 m. [BO] [LC] Part basal de l’esporòfit dels briòfits que penetra en els teixits del gametòfit i n’absorbeix aliment, fent les funcions d’un haustori. 16 1 m. [AGA] Pila de pasta d’oliva molta, de raïm aixafat, etc., disposada en cofins o en altres recipients per a ésser premsada. 16 2 m. [AGA] Quantitat d’olives que entren a cada premsada. 17 m. [IT] Tint previ que es dona a un teixit, una roba, etc., per a fer més intens, més permanent, el color. 18 1 m. [HIG] En heràld., peça fonamental col·locada en faixa tocant la vora inferior del camper i d’una amplària igual a un terç de l’altura de l’escut. 18 2 m. [HIG] Part o meitat inferior de la flor de lis. 18 3 m. [HIG] Extrem del braç inferior d’una creu. 19 1 m. [FIF] [FIM] [LC] Mida corresponent a la llargària normal del peu humà, de valor variable, equivalent a Barcelona a 25,93 centímetres. Peu romà, castellà. 19 2 m. [FIM] Unitat anglosaxona de longitud, equivalent a 30,48 centímetres (símbol, ft o ′). 20 m. [EI] [FIM] peu de rei Instrument de mesura de gruixos usat en diversos oficis, especialment en mecànica. 21 1 m. [FLL] Grup de síl·labes que es pren com a unitat mètrica del vers. Els sis peus que componen l’hexàmetre llatí. 21 2 [LC] peu forçat Condició fixada per endavant, requisit ineludible. 22 1 m. [BOS] [LC] peu d’ànec Sarrons . 22 2 [BOS] peu d’ase Pota de cavall . 22 3 [BOS] peu d’oca Sarrons . 22 4 [BOS] peu de bou Sarriassa . 22 5 [BOS] peu de cavall Pota de cavall . 22 6 [BOS] [LC] peu de colom Planta híspida de la família de les boraginàcies, d’arrel tintòria, fulles oblongues i flors amb la corol·la tubulosa, groga, disposades en cimes escorpioides, que es fa a les pastures seques en terreny calcari ( Onosma tricerosperma ). 22 7 [BOS] [LC] peu de corb Cervina . 22 8 [BOS] [LC] peu de Crist a ) Gram negre . 22 8 [BOS] [LC] peu de Crist b ) Peucrist . 22 9 [BOS] [LC] peu de gall Flor robí . 22 10 [BOS] [LC] [MD] peu de gat Pota de gat . 22 11 [AGA] [BOS] peu de gallina Gram 1 1 . 22 12 [BOS] [LC] peu de llebre Herba anual de la família de les papilionàcies, del grup dels trèvols, tota pubescent, de flors rosades i petites, reunides en glomèruls densos, ovoides o oblongs, que es fa als pradells de teròfits en sòls àcids, sovint sorrencs ( Trifolium arvense i T. lagopus ). 22 13 [BOS] [LC] peu de lleó Pota de lleó . 22 14 [BOS] peu de llop a ) Veratre . 22 14 [BOS] peu de llop b ) Malrubí d’aigua . 22 15 [BOS] [LC] peu de mula a ) Pota de cavall . 22 15 [BOS] [LC] peu de mula b ) Barretera . 22 16 [BOS] peu de pardal a ) Herba anual de la família de les papilionàcies, de fulles trifoliolades, flors grogues i petites i llegums arcuats i pènduls, generalment per parells, que es fa als erms i pradells de teròfits del País Valencià i d’algunes de les illes Balears ( Ononis ornithopodioides ). 22 16 [BOS] peu de pardal b ) Herba anual de la família de les papilionàcies, de fulles imparipinnades, flors roses o blanquinoses, molt petites, en glomèruls llargament pedunculats, i fruits un xic arcuats, articulats, en grups de tres a vuit, que es fa als pradells de teròfits del nord-est de Catalunya ( Ornithopus perpusillus ). 22 16 [BOS] peu de pardal c ) Banya de cabra a) . 22 16 [BOS] peu de pardal d ) Coronil·la escorpioide . 22 17 [BOS] peu de vedell Sarriassa . 23 1 m. [BOB] peu blau Pimpinella morada . 23 2 [BOB] [LC] peu de rata [o peu de cabrit ] Bolet del gènere Ramaria , de l’ordre de les gomfals, d’aparell esporífer ramificat i carnós, generalment comestible. 23 3 [BOB] [LC] peu de rata bord Peu de rata de color salmó però virant a llimona a les puntes, que és amargant i purgant ( Ramaria formosa ). 23 4 [BOB] [LC] peu de rata daurat Peu de rata comestible, de branques denses, de color groc fort ( Ramaria aurea i espècies afins). 23 5 [BOB] peu de rata gris Bolet del grup dels basidiomicets, gris, de forma més o menys ramificada ( Clavulina cinerea ). 23 6 [BOB] [LC] peu de rata groc [o peu de rata gros ] Peu de rata comestible, semblant al peu de rata daurat, de mida més grossa i color groc ( Ramaria flava i espècies afins). 23 7 [BOB] [LC] peu de rata reina Manetes arrissades . 23 8 [BOB] [LC] peu de rata rosat Coliflor 2 1 . 23 9 [BOB] peu violeta Pimpinella morada . 24 1 m. [ZOI] peu d’ànec Animal equinoderm de la classe dels asteroïdeus, molt aplatat i fi, de color vermell llampant i groguenc ( Ansepoda membranacea ). 24 2 [ZOI] peu de cabra Percebe . 24 3 [ZOI] peu de pelicà Mol·lusc gastròpode, amb prolongacions en forma de dit a la vora anterior de la closca ( Aporrhais pespelecani ). 24 4 [ZOI] peu de cabrit Arca de Noè .",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0009429",
+    "term": "sobrassada",
+    "grammatical_category": "f.",
+    "full_definition": "sobrassada f. [HO] [LC] Embotit de carn de porc capolada, adobada amb sal i pebre vermell, típic de les Balears.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0082169",
+    "term": "talaiot",
+    "grammatical_category": "m.",
+    "full_definition": "talaiot m. [HIA] [HIH] [LC] Monument megalític de les Balears, semblant a una torre de poca altura.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0082255",
+    "term": "tàpsia",
+    "grammatical_category": "f.",
+    "full_definition": "tàpsia f. [BOS] [LC] [MD] Planta de la família de les umbel·líferes, de tija erecta, fulles repetidament pinnatisectes amb els segments lanceolats, flors grogues en umbel·la terminal i fruit molt comprimit amb quatre amples ales laterals, que es fa a les brolles de les illes Balears i d’altres països mediterranis, l’arrel resinosa de la qual ha estat utilitzada en medicina popular ( Thapsia garganica ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0008154",
+    "term": "tem",
+    "grammatical_category": "m.",
+    "full_definition": "tem 1 m. [BOS] [LC] Farigola . 2 [BOS] tem bord Mata de la família de les labiades, de mida petita, de tiges filiformes, fulles cordiformes, generalment purpúries per sota, i flors petites, roses, purpúries o blanques, en verticil·lastres pauciflors, molt freqüent a les roques de les illes Balears ( Satureja microphylla o Micromeria filiformis ).",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0007936",
+    "term": "violeta",
+    "grammatical_category": "f.",
+    "full_definition": "violeta 1 1 f. [BOS] Viola 1 1 . 1 2 f. [AGA] [BOS] [LC] Viola d’olor . 2 1 f. [AGA] [BOS] violeta africana Planta herbàcia de la família de les gesneriàcies, de fulles en roseta basal, piloses, ovades, gruixudes, d’un verd fosc per sobre, vermelloses i amb els nervis molt prominents per sota, i flors una mica irregulars, simpètales, amb cinc pètals violacis, rosats o blancs, i dos estams grocs, disposades en cimes curtes, originària de l’Àfrica oriental i cultivada en interiors ( Saintpaulia ionantha ). 2 2 [BOS] violeta de mar Violer marí . 2 3 [BOS] violeta de penyal [o violeta roquera ] Mata de la família de les papilionàcies, de tiges flexuoses, fulles pinnaticompostes i glauques, amb els folíols oblongs, flors grogues amb olor de violeta, disposades en petites umbel·les, i fruit articulat amb els segments en forma de ferradura o de mitja lluna, que viu a les roques calcàries de les Illes Balears ( Hippocrepis balearica ). 2 4 [BOS] violeta silvestre Viola silvestre . 3 1 m. [LC] Color entre morat i lila, com les flors de la viola. 3 2 m. [LC] [usat en aposició] Uns lliris violeta. 3 3 adj. [LC] Un cel de tonalitats violetes. 3 4 [LC] [QU] violeta cristall Colorant del trifenilmetà. 3 5 [LC] [QU] violeta de genciana Colorant bàsic d’anilina, mescla de pararosanilines metilades.",
+    "matched_keywords": [
+      "Balears"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0045112",
+    "term": "article",
+    "grammatical_category": "m.",
+    "full_definition": "article 1 1 m. [DR] [LC] Disposició que en conjunt amb unes altres forma un estatut, un reglament, un tractat, un contracte, etc. L’article onzè del reglament. 1 2 m. [FL] [LC] Divisió d’un diccionari encapçalada per una entrada i que conté informacions diverses. L’article corresponent al mot ballesta . 1 3 m. [CO] Escrit de contingut variable d’una publicació periòdica. 1 4 m. [BB] [CO] Gènere del periodisme d’opinió que consisteix en un comentari d’una certa extensió, signat i no sotmès necessàriament a una periodicitat fixa. 1 5 m. [BB] [CO] Escrit d’aquest gènere. Un article de la secció de cultura. 1 6 m. [BB] [CO] Escrit en prosa d’una certa extensió, signat i publicat en una obra col·lectiva. Un article polèmic dins la miscel·lània. 2 m. [LC] [RE] article de fe a ) Veritat que els cristians han de creure com a revelada per Déu. 2 m. [LC] article de fe b ) Allò que mereix ésser cregut. 3 1 m. [DR] Prova d’un judici o pregunta dels escrits d’interrogació dels testimonis. 3 2 m. [DR] Qüestió incidental dins un procés. 4 1 m. [LC] Cosa comerciable. Articles de primera necessitat. Articles de luxe. 4 2 [LC] fer l’article Fer valer la mercaderia. 5 1 m. [FL] [LC] Determinant mancat de significació independent que encapçala el sintagma nominal i indica si aquest sintagma introdueix un element nou en l’univers del discurs o un element conegut i fàcilment recuperable a partir del context. 5 2 [FL] article personal Article que pot precedir els noms propis de persona i que presenta formes derivades d’antigues partícules de tractament. 5 3 [FL] [LC] article salat Article definit propi del balear, emprat també en el parlar salat, que té les formes es i sa . 6 [LC] en l’article de la mort loc. adv. A punt de morir-se.",
+    "matched_keywords": [
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0085350",
+    "term": "as3",
+    "grammatical_category": "",
+    "full_definition": "as 3 [inv.] [LC] En el balear i en el parlar salat, en registres informals, contracció de la preposició a i de l’article es .",
+    "matched_keywords": [
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0046696",
+    "term": "baleàric",
+    "grammatical_category": "adj.im.",
+    "full_definition": "baleàric -a adj. i m. [LC] Balear 1 2 i 2 .",
+    "matched_keywords": [
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0008019",
+    "term": "vocal",
+    "grammatical_category": "adj.",
+    "full_definition": "vocal 1 adj. [LC] [MD] Relatiu o pertanyent a la veu. Els òrgans vocals. 2 1 m. i f. [DR] [LC] Persona que té veu en una congregació, en una junta, etc. 2 2 m. i f. [DR] [LC] Individu d’una junta que no té un càrrec especial. 3 1 f. [FL] [LC] So que s’articula sense cap obstrucció o constricció de l’aire expirat. 3 2 f. [FL] Lletra que representa una vocal. 3 3 [FL] vocal alta Vocal que s’articula amb el dors de la llengua relativament elevat. La i i la u són vocals altes. 3 4 [FL] vocal anterior Vocal que s’articula amb el cos de la llengua avançat. La i és una vocal anterior. 3 5 [FL] vocal baixa Vocal que s’articula amb el cos de la llengua abaixat. La a és una vocal baixa. 3 6 [FL] vocal central Vocal que s’articula amb el cos de la llengua entre la posició que correspon a les vocals anteriors i la posició que correspon a les vocals posteriors. 3 7 [FL] vocal lliure Vocal no seguida per una consonant en una síl·laba. 3 8 [FL] vocal mitjana Vocal que s’articula amb el cos de la llengua entre la posició que correspon a les vocals altes i la que correspon a les vocals baixes. La e de cel és una vocal mitjana baixa o oberta, i la de fem , una vocal mitjana alta o tancada. 3 9 [FL] vocal modal Vocal temàtica que té valor de morfema modal. 3 10 [FL] vocal neutra En català, vocal central mitjana, que correspon a l’articulació de a i e àtones en els parlars orientals i també a certes e tòniques d’una gran part del balear. 3 11 [FL] vocal oberta Vocal baixa . 3 12 [FL] vocal posterior Vocal que s’articula amb el cos de la llengua endarrerit. La u és una vocal posterior. 3 13 [FL] vocal tancada Vocal alta . 3 14 [FL] vocal temàtica Vocal que, en aquelles formes verbals en què apareix, se situa immediatament després del radical i permet classificar els verbs en conjugacions. La vocal temàtica i dels verbs de la tercera conjugació dormir i servir .",
+    "matched_keywords": [
+      "balear"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0025552",
+    "term": "aguiat",
+    "grammatical_category": "m.",
+    "full_definition": "aguiat m. [HO] Plat mallorquí de carn cuinada amb ceba, alls, tomàquet, espècies i brou.",
+    "matched_keywords": [
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0004714",
+    "term": "copeo",
+    "grammatical_category": "m.",
+    "full_definition": "copeo m. [AN] [JE] [MU] Ball popular mallorquí de parella, de ritme ternari i de moviment viu.",
+    "matched_keywords": [
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0015899",
+    "term": "croat1",
+    "grammatical_category": "m.",
+    "full_definition": "croat 1 1 m. [HIH] [LC] [PR] El qui prenia part en una croada. 2 1 m. [NU] Moneda barcelonesa d’argent, inicialment amb el valor legal d’un sou. 2 2 m. [NU] Ral d’argent, especialment el sard i el mallorquí.",
+    "matched_keywords": [
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0089646",
+    "term": "pollencí",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "pollencí -ina 1 1 adj. i m. i f. [LC] Natural de Pollença. 1 2 adj. [LC] Relatiu o pertanyent a Pollença o als seus habitants. 2 1 m. [FL] [LC] Parlar mallorquí de la ciutat de Pollença. 2 2 adj. [FL] [LC] Relatiu o pertanyent al pollencí.",
+    "matched_keywords": [
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  },
+  {
+    "id": "0031461",
+    "term": "solleric",
+    "grammatical_category": "adj.im.if.",
+    "full_definition": "solleric -a 1 1 adj. i m. i f. [LC] Natural de Sóller. 1 2 adj. [LC] Relatiu o pertanyent a Sóller o als seus habitants. 2 1 m. [FL] [LC] Parlar mallorquí de la ciutat de Sóller. 2 2 adj. [FL] [LC] Relatiu o pertanyent al solleric.",
+    "matched_keywords": [
+      "mallorquí"
+    ],
+    "source": "DIEC2 (Institut d'Estudis Catalans)"
+  }
+]

@@ -1,0 +1,378 @@
+{
+  "words": [
+    {
+      "term": "Teringa",
+      "ipa_pronunciation": "[təˈɾiŋ.ɡə]",
+      "grammatical_category": "nom femení",
+      "definition": "Filera, renglera o successió continuada de coses o persones que van l'una darrere l'altra.",
+      "example_sentence": "Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat.",
+      "etymology": "D'origen expressiu o relacionat amb 'tirar' / 'enfilar' en cadena.",
+      "dialectal_notes": "Molt viva a Mallorca i Menorca.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    },
+    {
+      "term": "Cap-ficat",
+      "ipa_pronunciation": "[kap.fiˈkat]",
+      "grammatical_category": "adjectiu",
+      "definition": "Persona caparruda, obstinada o entestada en una idea; també s'usa per descriure algú immers en pensaments o preocupat.",
+      "example_sentence": "No li facis canviar de parer, que quan és cap-ficat no hi ha res a fer.",
+      "etymology": "Compost de 'cap' i el participi del verb 'ficar'.",
+      "dialectal_notes": "Molt viu a tot Mallorca.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    },
+    {
+      "term": "Ullprès",
+      "ipa_pronunciation": "[uʎˈpɾəs]",
+      "grammatical_category": "adjectiu",
+      "definition": "Afectat pel mal d'ull segons la creença popular tradicional mallorquina; fascinat de manera negativa o malaltís sense causa física aparent.",
+      "example_sentence": "L'al·lot plora tota la nit sense motiu; sa padrina diu que deu estar ullprès.",
+      "etymology": "De 'ull' i 'près' (pres, capturat).",
+      "dialectal_notes": "Patrimoni etnogràfic mallorquí (remeis tradicionals amb aigua i oli).",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll) / Costumari Mallorquí"
+    },
+    {
+      "term": "Fer un gafet",
+      "ipa_pronunciation": "[fe un ɡəˈfət]",
+      "grammatical_category": "expressió / frase feta",
+      "definition": "Dormir una becaina o una petita migdiada breu per recuperar forces.",
+      "example_sentence": "Després de dinar me'n vaig anar a jeure vint minuts per fer un gafet.",
+      "etymology": "Gafet (ganxo petit o tancador; 'enganxar' la son breument).",
+      "dialectal_notes": "Mallorquí col·loquial.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    },
+    {
+      "term": "Trempar",
+      "ipa_pronunciation": "[tɾəmˈpa]",
+      "grammatical_category": "verb",
+      "definition": "Amanir una ensalada amb oli, sal i vinagre, especialment el trempó tradicional (tomàtiga, pebre verd i ceba blanca).",
+      "example_sentence": "Talla bé sa ceba i sa tomàtiga i trempa-ho amb un bon raig d'oli d'oliva.",
+      "etymology": "Del llatí 'temperare' (mesclar en proporció justa).",
+      "dialectal_notes": "Pilar gastronòmic balear.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    },
+    {
+      "term": "Qui no té feina el moix pentina",
+      "ipa_pronunciation": "[ki no te ˈfəj.nə əl moʃ pənˈti.nə]",
+      "grammatical_category": "dita / refrany",
+      "definition": "Refrany popular que es diu d'algú que perd el temps fent feines inútils, ximples o absurdes per no tenir obligacions reals.",
+      "example_sentence": "Mira si s'avorreix que compta quantes rajoles té el menjador: qui no té feina el moix pentina!",
+      "etymology": "'Moix' és la paraula mallorquina tradicional per a 'gat'.",
+      "dialectal_notes": "Dita popular mallorquina universal.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll) / Refranyer Mallorquí"
+    },
+    {
+      "term": "Xereca",
+      "ipa_pronunciation": "[ʃəˈɾə.kə]",
+      "grammatical_category": "adjectiu / nom",
+      "definition": "Cosa de mala qualitat, mal feta, espatllada o de poc valor; també s'aplica a una persona informal o poc seriosa.",
+      "example_sentence": "Aquesta eina és una xereca, no durarà ni dos dies de feina al camp.",
+      "etymology": "Probablement d'origen onomatopeic o expressiu.",
+      "dialectal_notes": "Molt arrelat a la comarca del Pla i Llevant.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    },
+    {
+      "term": "Al bell mig",
+      "ipa_pronunciation": "[əl beʎ mitʃ]",
+      "grammatical_category": "locució adverbial",
+      "definition": "Exactament al centre, just al mig d'un espai o d'un assumpte.",
+      "example_sentence": "Va deixar el carretó aturat al bell mig del camí ral.",
+      "etymology": "De 'bell' (en sentit ponderatiu o enfàtic) i 'mig'.",
+      "dialectal_notes": "Ús literari i popular a totes les Illes.",
+      "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+    }
+  ],
+  "fauna": [
+    {
+      "common_name_ca": "Ferreret",
+      "scientific_name": "Alytes muletensis",
+      "group_type": "amfibi",
+      "is_endemic": true,
+      "is_native_breed": false,
+      "conservation_status": "Vulnerable (VU)",
+      "habitat": "Gorgs i torrents càrstics d'alta muntanya a la Serra de Tramuntana (torrents de Pareis, Gorg Blau, etc.).",
+      "description": "Petit gripau endèmic de Mallorca, considerat un fòssil vivent. Va ser redescobert viu el 1980 després d'haver estat descrit inicialment per restes fòssils del Plistocè.",
+      "curiosities": "El mascle és qui transporta els ous fecundats enganxats a les seves cames del darrere fins que es desclouen.",
+      "source_reference": "Biodibal (UIB) / Servei de Protecció d'Espècies CAIB"
+    },
+    {
+      "common_name_ca": "Porc Negre Mallorquí",
+      "scientific_name": "Sus scrofa domesticus",
+      "group_type": "raça autòctona",
+      "is_endemic": false,
+      "is_native_breed": true,
+      "conservation_status": "Protecció Oficial (IRFAP)",
+      "habitat": "Explotacions extensives i garrigues arbrades amb garrovers i alzinars a Mallorca.",
+      "description": "Raça porcina autòctona de color negre o gris fosc, amb característiques 'mamelles' cutànies que pengen del coll. És la base fonamental de l'autèntica Sobrassada de Mallorca de Porc Negre.",
+      "curiosities": "La seva dieta tradicional amb figues seques, garroves i glans atorga a la carn una textura i aroma únics al món.",
+      "source_reference": "IRFAP (Races Autòctones de les Illes Balears)"
+    },
+    {
+      "common_name_ca": "Ca de Bou",
+      "scientific_name": "Canis lupus familiaris",
+      "group_type": "raça autòctona",
+      "is_endemic": false,
+      "is_native_breed": true,
+      "conservation_status": "Raça autòctona catalogada",
+      "habitat": "Possessions i finques rústiques de Mallorca.",
+      "description": "Molós autòcton de constitució forta, musculada i mandíbules molt potents. Tradicionalment emprat com a guardià fidel de possessions i per a la subjecció de bestiar brau.",
+      "curiosities": "Reconegut internacionalment per la FCI com una de les races autòctones més antigues i singulars de les Balears.",
+      "source_reference": "IRFAP / Club del Ca de Bou"
+    },
+    {
+      "common_name_ca": "Ca de Bestiar",
+      "scientific_name": "Canis lupus familiaris",
+      "group_type": "raça autòctona",
+      "is_endemic": false,
+      "is_native_breed": true,
+      "conservation_status": "Raça autòctona catalogada",
+      "habitat": "Finques ramaderes i pastures de tota l'illa.",
+      "description": "Gos pastor mallorquí d'un negre atzabeja brillant (permissió d'una petita taca blanca al pit), musculat, molt intel·ligent, lleial al seu amo i d'instint de custòdia insuperable.",
+      "curiosities": "Existeixen dues varietats de pèl: curt (més comú) i llarg. Tradicionalment no acceptava menjar de cap foraster.",
+      "source_reference": "IRFAP / Club del Ca de Bestiar"
+    },
+    {
+      "common_name_ca": "Virot petit",
+      "scientific_name": "Puffinus mauretanicus",
+      "group_type": "au",
+      "is_endemic": true,
+      "is_native_breed": false,
+      "conservation_status": "En perill crític (CR)",
+      "habitat": "Penya-segats marins, illots costaners i mar obert balear.",
+      "description": "L'ocell marí més amenaçat de tot Europa, endèmic exclusiu de les Illes Balears.",
+      "curiosities": "Vola arran d'aigua amb un batre d'ales ràpid i precís, i només toca terra de nit per evitar els depredadors.",
+      "source_reference": "Biodibal (UIB) / SEO BirdLife"
+    },
+    {
+      "common_name_ca": "Voltor negre",
+      "scientific_name": "Aegypius monachus",
+      "group_type": "au",
+      "is_endemic": false,
+      "is_native_breed": false,
+      "conservation_status": "Vulnerable (població en recuperació)",
+      "habitat": "Cingles i alzinars feréstecs de la Serra de Tramuntana.",
+      "description": "L'ocell rapinyaire més gran d'Europa, amb una envergadura d'ales de fins a gairebé tres metres. Mallorca acull l'única població insular del món.",
+      "curiosities": "Gràcies a dècades de conservació de la Fundació Vida Silvestre Mediterrània, la seva població a la Tramuntana ha passat d'uns pocs exemplars a més de 200.",
+      "source_reference": "Servei de Protecció d'Espècies CAIB / Fundació Vida Silvestre Mediterrània"
+    },
+    {
+      "common_name_ca": "Sargantana balear",
+      "scientific_name": "Podarcis lilfordi",
+      "group_type": "reptil",
+      "is_endemic": true,
+      "is_native_breed": false,
+      "conservation_status": "En perill (EN)",
+      "habitat": "Illots costaners aïllats de Mallorca (Dragonera, Cabrera, illots de Santa Ponça).",
+      "description": "Rèptil endèmic que va desaparèixer de l'illa gran de Mallorca per la introducció de depredadors forans (com gats i serps), però que sobreviu en una vintena de subespècies als illots.",
+      "curiosities": "Als illots no té por dels humans i té un paper clau com a pol·linitzadora i dispersora de llavors com la rapa de frare.",
+      "source_reference": "Biodibal (UIB)"
+    }
+  ],
+  "flora": [
+    {
+      "common_name_ca": "Fonoll marí",
+      "scientific_name": "Crithmum maritimum",
+      "family": "Apiaceae",
+      "is_endemic": false,
+      "flowering_period": "Juliol - Octubre",
+      "habitat": "Roques i penya-segats marítims batuts per la salabror marina.",
+      "traditional_uses": "Conserva tradicional mallorquina adobada amb vinagre i aigua amb sal, acompanyament indispensable del pa amb oli.",
+      "description": "Planta aromàtica suculenta de fulles carnoses verd-glauc. Molt rica en vitamina C, utilitzada històricament pels navegants contra l'escorbut.",
+      "curiosities": "La seva recol·lecció silvestre comercial està regulada a les Balears per protegir els penya-segats.",
+      "source_reference": "Herbari Virtual del Mediterrani Occidental (UIB)"
+    },
+    {
+      "common_name_ca": "Estepa joana (Hipèric balear)",
+      "scientific_name": "Hypericum balearicum",
+      "family": "Hypericaceae",
+      "is_endemic": true,
+      "flowering_period": "Abril - Juliol",
+      "habitat": "Garrigues i vessants pedregosos de la Serra de Tramuntana i el Raiguer.",
+      "traditional_uses": "Oli de cop: maceració de flors en oli d'oliva verge per guarir cremades, contusions i ferides.",
+      "description": "Arbust endèmic balear inconfusible per les seves fulles petites amb berrugues resinoses i flors solitàries grogues llampants d'olor balsàmica.",
+      "curiosities": "Desprèn una aroma característica a resina quan rep la forta insolació de l'estiu mallorquí.",
+      "source_reference": "Herbari Virtual del Mediterrani Occidental (UIB)"
+    },
+    {
+      "common_name_ca": "Garrofer",
+      "scientific_name": "Ceratonia siliqua",
+      "family": "Fabaceae",
+      "is_endemic": false,
+      "flowering_period": "Setembre - Novembre",
+      "habitat": "Terres de secà, planes del Raiguer, Pla i Migjorn de Mallorca.",
+      "traditional_uses": "Aliment del porc negre, farina de garrova per a rebosteria, garrofí per a espessidors naturals alimentaris.",
+      "description": "Arbre noble de fulla perenne i fusta rogenca, símbol secular del paisatge agrari mallorquí resistent a les secades.",
+      "curiosities": "El mot 'quirat' (orfebreria) prové de la paraula grega per a la llavor de la garrova, per la seva sorprenent regularitat de pes.",
+      "source_reference": "Herbari Virtual del Mediterrani Occidental (UIB) / IRFAP"
+    },
+    {
+      "common_name_ca": "Mata (Lentisc)",
+      "scientific_name": "Pistacia lentiscus",
+      "family": "Anacardiaceae",
+      "is_endemic": false,
+      "flowering_period": "Març - Maig",
+      "habitat": "Garrigues típiques, costes i alzinars degradats de tot Mallorca.",
+      "traditional_uses": "Mata de fer escombres rústiques de garriga; la resina s'ha emprat tradicionalment com a màstic aromàtic.",
+      "description": "Arbust perenne aromàtic molt dens amb fulles compostes sense folíol terminal i petits fruits vermells que es tornen negres quan maduren.",
+      "curiosities": "Dona nom a la formació vegetal més extensa de l'illa: la mata garriguera.",
+      "source_reference": "Herbari Virtual del Mediterrani Occidental (UIB)"
+    },
+    {
+      "common_name_ca": "Cresta de gall (Didalera menor)",
+      "scientific_name": "Digitalis minor",
+      "family": "Plantaginaceae",
+      "is_endemic": true,
+      "flowering_period": "Maig - Juliol",
+      "habitat": "Escletxes de roques calcàries i penyals ombrívols de la Serra de Tramuntana.",
+      "traditional_uses": "Planta tòxica amb principis cardiotònics; exclusivament ús mèdic controlat.",
+      "description": "Herba endèmica preciosa amb flors rosades o purpúries en forma de didal penjant en espiga elegant.",
+      "curiosities": "Creix directament sobre les parets de roca vertical calcària de la Tramuntana.",
+      "source_reference": "Herbari Virtual del Mediterrani Occidental (UIB)"
+    }
+  ],
+  "emblematic_businesses": [
+    {
+      "name": "Forn del Santo Cristo",
+      "category_type": "Comerç amb història",
+      "sector": "Forn i Pastisseria",
+      "foundation_year": 1910,
+      "municipality": "Palma",
+      "address": "Carrer dels Paraires, 2, 07001 Palma",
+      "latitude": 39.5701,
+      "longitude": 2.6489,
+      "history_summary": "Fundat el 1910 al cor de Palma, és un dels forns més venerats de Mallorca per la conservació de la recepta tradicional d'ensaïmada amb saïm autèntic i fermentació pacient.",
+      "heritage_elements": "Rètol clàssic, mostrador de fusta noble i forn tradicional de solera.",
+      "is_active": true,
+      "source_reference": "Catàleg Emblemàtics Balears (IDI)"
+    },
+    {
+      "name": "Teixits Riera",
+      "category_type": "Comerç arrelat i amb història",
+      "sector": "Artesania / Tèxtil (Teles de llengües)",
+      "foundation_year": 1896,
+      "municipality": "Lloseta",
+      "address": "Carrer Major, 50, 07360 Lloseta",
+      "latitude": 39.7188,
+      "longitude": 2.8687,
+      "history_summary": "Taller familiar que des del 1896 confecciona artesanalment les famoses 'teles de llengües' mitjançant la tècnica mil·lenària de l'ikat, mantenint telers mecànics històrics.",
+      "heritage_elements": "Telers de fusta i ferro de finals del segle XIX i arxiu històric de patrons gràfics.",
+      "is_active": true,
+      "source_reference": "Catàleg Emblemàtics Balears (IDI)"
+    },
+    {
+      "name": "Vidrieries Gordiola",
+      "category_type": "Comerç amb història i patrimoni",
+      "sector": "Artesania (Vidre bufat)",
+      "foundation_year": 1719,
+      "municipality": "Algaida",
+      "address": "Carretera Palma-Manacor, km 19, 07210 Algaida",
+      "latitude": 39.5623,
+      "longitude": 2.9021,
+      "history_summary": "Amb més de 300 anys ininterromputs de tradició, és el taller de vidre bufat més antic de Mallorca i un referent mediterrani d'aquest ofici reconegut per la UNESCO.",
+      "heritage_elements": "Forns de fusió de vidre en directe, castell neogòtic i museu del vidre bufat.",
+      "is_active": true,
+      "source_reference": "Catàleg Emblemàtics Balears (IDI) / UNESCO Patrimoni Immaterial"
+    },
+    {
+      "name": "Ca Dona Àngela",
+      "category_type": "Comerç amb història i patrimoni",
+      "sector": "Merceria tradicional",
+      "foundation_year": 1685,
+      "municipality": "Palma",
+      "address": "Carrer de Jaume II, 38, 07001 Palma",
+      "latitude": 39.5694,
+      "longitude": 2.6512,
+      "history_summary": "Documentada des del 1685, és una de les merceries en actiu més antigues d'Europa, venent fils de seda, vetes, encaixos i ornaments tradicionals mallorquins.",
+      "heritage_elements": "Taulells i calaixeres de fusta centenària que conserven l'essència del comerç del barroc i segle XIX.",
+      "is_active": true,
+      "source_reference": "Catàleg Emblemàtics Balears (IDI) / Ajuntament de Palma"
+    },
+    {
+      "name": "Celler Sa Premsa",
+      "category_type": "Comerç amb història",
+      "sector": "Restauració / Celler tradicional",
+      "foundation_year": 1958,
+      "municipality": "Palma",
+      "address": "Plaça del Bisbe Berenguer de Palou, 8, 07003 Palma",
+      "latitude": 39.5746,
+      "longitude": 2.6508,
+      "history_summary": "Espai emblemàtic de la gastronomia tradicional mallorquina, decorat amb bótes de vi gegantines, eines de pagès i cartells històrics de fires de Mallorca.",
+      "heritage_elements": "Bótes monumentals de roure i estris agrícoles tradicionals conservats a les parets.",
+      "is_active": true,
+      "source_reference": "Catàleg Emblemàtics Balears (IDI)"
+    }
+  ],
+  "historical_events": [
+    {
+      "title": "Cultura Talaiòtica: Poblat de ses Païsses",
+      "historical_period": "Prehistòria i Talaiòtic",
+      "year_start": -1000,
+      "year_end": -123,
+      "date_display": "c. 1000 a. C. - 123 a. C.",
+      "location_scope": "Artà, Mallorca",
+      "summary": "Període de màxima esplendor de la civilització megalítica talaiòtica a Mallorca, amb grans torres ciclòpies de vigilància, murades ciclòpies i estructures hipòstiles.",
+      "detailed_description": "El poblat de ses Païsses a Artà conserva una de les portes megalítiques més monumentals de la Mediterrània occidental i il·lustra l'organització comunitària dels antics pobladors balears.",
+      "key_figures": "Foners balears (famosos per la seva punteria al servei de cartaginesos i romans)",
+      "source_reference": "Gran Enciclopèdia de Mallorca (GEM)"
+    },
+    {
+      "title": "Conquesta romana de Quint Cecili Metel",
+      "historical_period": "Època Romana",
+      "year_start": -123,
+      "year_end": -122,
+      "date_display": "123 a. C.",
+      "location_scope": "Palma i Pol·lèntia (Alcúdia)",
+      "summary": "El cònsol romà Quint Cecili Metel (anomenat 'Balearicus') conquereix les Balears i funda les ciutats de Palma i Pol·lèntia.",
+      "detailed_description": "La conquesta posà fi a la pirateria a les rutes de la Mediterrània occidental i integrà Mallorca a l'Imperi Romà, iniciant la romanització i l'arribada de la vinya i l'olivera.",
+      "key_figures": "Quint Cecili Metel Balearicus",
+      "source_reference": "Gran Enciclopèdia de Mallorca (GEM)"
+    },
+    {
+      "title": "Mayûrqa: La conquesta islàmica",
+      "historical_period": "Època Islàmica (Mayûrqa)",
+      "year_start": 902,
+      "year_end": 1229,
+      "date_display": "902 d. C. - 1229",
+      "location_scope": "Madîna Mayûrqa (Palma)",
+      "summary": "Incorporació de les Balears a l'emirat de Còrdova per Issam al-Khawlaní, iniciant més de tres segles d'esplendor andalusí.",
+      "detailed_description": "Desenvolupament dels sistemes hidràulics (qanats, sínies i síquies) que transformaren l'agricultura, construcció dels Banys Àrabs i fortificació de Madîna Mayûrqa com a nus comercial clau.",
+      "key_figures": "Issam al-Khawlaní, Abu Yahya",
+      "source_reference": "Arxiu del Regne de Mallorca (ARM) / Història de les Illes Balears"
+    },
+    {
+      "title": "Conquesta de Mallorca pel Rei Jaume I",
+      "historical_period": "Reialme de Mallorca (Edat Mitjana)",
+      "year_start": 1229,
+      "year_end": 1230,
+      "date_display": "31 de desembre de 1229",
+      "location_scope": "Desembarcament a Santa Ponça i assalt a Madîna Mayûrqa (Palma)",
+      "summary": "L'exèrcit cristià liderat pel rei Jaume I el Conqueridor assalta Madîna Mayûrqa el darrer dia de 1229, incorporant l'illa a la cristiandat i a la Corona d'Aragó.",
+      "detailed_description": "La campanya va donar pas al 'Llibre del Repartiment' (distribució de les terres entre nobles catalans, aragonesos i occitans) i a la creació de les bases institucionals del futur Regne de Mallorca independent (creat el 1276).",
+      "key_figures": "Rei Jaume I, Bernat de Santa Eugènia, Nunó Sanç, Guillem de Montcada",
+      "source_reference": "Arxiu del Regne de Mallorca (ARM) / Llibre dels Fets"
+    },
+    {
+      "title": "La Revolta de les Germanies a Mallorca",
+      "historical_period": "Edat Moderna",
+      "year_start": 1521,
+      "year_end": 1523,
+      "date_display": "1521 - 1523",
+      "location_scope": "Ciutat de Mallorca, Alcúdia i Castell de Bellver",
+      "summary": "Insurrecció popular dels menestrals i pagesos ('agermanats') contra els tributs abusius, la corrupció de la noblesa i els cavallers.",
+      "detailed_description": "Sota el lideratge de menestrals com Joanot Colom, els agermanats van controlar gran part de l'illa durant dos anys, mentre els cavallers es van refugiar a Alcúdia fins a la repressió imperial.",
+      "key_figures": "Joan Crespí, Joanot Colom, emperador Carles V",
+      "source_reference": "Arxiu del Regne de Mallorca (ARM) / GEM"
+    },
+    {
+      "title": "El Decret de Nova Planta a Mallorca",
+      "historical_period": "Edat Moderna",
+      "year_start": 1715,
+      "year_end": 1716,
+      "date_display": "28 de novembre de 1715",
+      "location_scope": "Regne de Mallorca",
+      "summary": "Després de la Guerra de Successió, Felip V aboleix les institucions pròpies del Regne de Mallorca (com el Gran i General Consell).",
+      "detailed_description": "Implantació del model castellà de reial audiència i capità general, marcant la fi de la sobirania jurídica i política tradicional de Mallorca.",
+      "key_figures": "Felip V, Marquès d'Asfeld",
+      "source_reference": "Arxiu del Regne de Mallorca (ARM)"
+    }
+  ]
+}

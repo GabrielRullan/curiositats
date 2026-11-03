@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una teringa de curiositats — Mallorca</title>
+  <meta name="description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
+  <link rel="canonical" href="https://teringa.balears.tech">
+  
+  <!-- Open Graph / Xarxes Socials -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teringa.balears.tech">
+  <meta property="og:title" content="Una teringa de curiositats — Mallorca">
+  <meta property="og:description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://teringa.balears.tech">
+  <meta property="twitter:title" content="Una teringa de curiositats — Mallorca">
+  <meta property="twitter:description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CAPÇALERA PRINCIPAL -->
+  <header class="hero">
+    <div class="container hero-content">
+      <nav class="hero-top-nav" aria-label="Informació del projecte, contacte i privadesa">
+        <button type="button" class="hero-nav-btn" data-open-modal="contact-modal" aria-label="Obrir apartat de contacte">
+          <span class="icon">📬</span> Contacte
+        </button>
+        <button type="button" class="hero-nav-btn" data-open-modal="privacy-modal" aria-label="Obrir política de privadesa sense cookies">
+          <span class="icon">🔒</span> Privadesa (Zero Cookies)
+        </button>
+        <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="hero-nav-btn">
+          <span class="icon">🐙</span> GitHub
+        </a>
+        <a href="/swagger/" class="hero-nav-btn">
+          <span class="icon">⚡</span> Swagger API
+        </a>
+      </nav>
+
+      <div class="badge-brand">Patrimoni & Etnografia de Mallorca</div>
+      <h1 class="site-title">Una teringa de curiositats</h1>
+      <p class="site-tagline">
+        <em>«Teringa» (f.):</em> Filera o successió continuada de coses o persones que van l'una darrere l'altra.
+      </p>
+
+      <!-- Commutador de vistes principal (Per defecte: Una a la sort) -->
+      <nav class="view-switcher" aria-label="Selector de vista principal">
+        <button type="button" class="btn-tab active" id="tab-spotlight" data-view="spotlight">
+          <span class="icon">🎲</span> Una a la sort
+        </button>
+        <button type="button" class="btn-tab" id="tab-teringa" data-view="teringa">
+          <span class="icon">📜</span> Tota sa teringa <span class="tab-badge" id="tab-total-badge">31</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       VISTA 1: UNA A LA SORT (VISTA PER DEFECTE)
+       ===================================================================== -->
+  <section class="view-section active" id="view-spotlight" aria-label="Curiositat a la sort">
+    <div class="container spotlight-container">
+      
+      <div class="spotlight-card" id="spotlight-card">
+        <!-- Capçalera de la targeta d'impacte -->
+        <div class="spotlight-top">
+          <span class="spotlight-badge" id="sp-badge">🗣️ Llengua & Dites</span>
+          <span class="sp-origin-tag" id="sp-origin-tag">Patrimoni de Mallorca</span>
+        </div>
+
+        <!-- Cos de la curiositat -->
+        <div class="spotlight-body">
+          <h2 class="sp-title" id="sp-title">Teringa</h2>
+          <p class="sp-subtitle" id="sp-subtitle">[təˈɾiŋ.ɡə] &bull; nom femení</p>
+
+          <p class="sp-definition" id="sp-definition">
+            Filera, renglera o successió continuada de coses o persones que van l'una darrere l'altra.
+          </p>
+
+          <div class="sp-curiosity-box" id="sp-curiosity-box">
+            <span class="sp-box-icon">💡</span>
+            <div class="sp-box-text" id="sp-box-text">
+              Exemple: «Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat.»
+            </div>
+          </div>
+        </div>
+
+        <!-- Peu de la targeta -->
+        <div class="spotlight-footer">
+          <span class="sp-source" id="sp-source">Font: Diccionari Català-Valencià-Balear (Alcover-Moll)</span>
+        </div>
+      </div>
+
+      <!-- Controls de la vista "A la sort" -->
+      <div class="spotlight-actions">
+        <button type="button" class="btn btn-primary btn-lg" id="btn-next-random">
+          <span class="icon">🎲</span> Treu-ne una altra a la sort!
+        </button>
+        <button type="button" class="btn btn-secondary" id="btn-goto-teringa">
+          <span>📜 Explorar tota sa teringa &rarr;</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       VISTA 2: TOTA SA TERINGA (CATÀLEG, FILTRES I CERCA)
+       ===================================================================== -->
+  <section class="view-section" id="view-teringa" aria-label="Catàleg complet de la teringa">
+    
+    <!-- Barra de controls i filtres -->
+    <div class="controls-bar">
+      <div class="container controls-inner">
+        
+        <!-- Cercador instantani -->
+        <div class="search-box">
+          <label for="search-input" class="visually-hidden">Cerca una curiositat</label>
+          <span class="search-icon">🔍</span>
+          <input 
+            type="search" 
+            id="search-input" 
+            placeholder="Cerca un mot, animal, planta, lloc o fet històric..." 
+            autocomplete="off"
+          >
+        </div>
+
+        <!-- Filtres temàtics -->
+        <nav class="filter-pills" aria-label="Categories">
+          <button type="button" class="pill active" data-category="all">
+            <span>🌟 Totes</span> <span class="pill-count" id="count-all">0</span>
+          </button>
+          <button type="button" class="pill pill-words" data-category="words">
+            <span>🗣️ Llengua</span> <span class="pill-count" id="count-words">0</span>
+          </button>
+          <button type="button" class="pill pill-fauna" data-category="fauna">
+            <span>🦎 Fauna</span> <span class="pill-count" id="count-fauna">0</span>
+          </button>
+          <button type="button" class="pill pill-flora" data-category="flora">
+            <span>🌿 Flora</span> <span class="pill-count" id="count-flora">0</span>
+          </button>
+          <button type="button" class="pill pill-businesses" data-category="businesses">
+            <span>🥖 Comerços</span> <span class="pill-count" id="count-businesses">0</span>
+          </button>
+          <button type="button" class="pill pill-history" data-category="history">
+            <span>📜 Història</span> <span class="pill-count" id="count-history">0</span>
+          </button>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Feed / Renglera de curiositats -->
+    <main class="container teringa-container">
+      <div class="teringa-header">
+        <h2 id="teringa-status-title">La teringa completa de Mallorca</h2>
+        <div class="teringa-header-actions">
+          <span class="results-counter" id="results-counter">Mostrant curiositats</span>
+          <button type="button" class="btn btn-sm btn-secondary" id="btn-shuffle-feed">
+            <span>🔀 Remena l'ordre</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="teringa-feed" id="teringa-feed" aria-live="polite">
+        <!-- Targetes injectades dinàmicament -->
+      </div>
+    </main>
+
+  </section>
+
+  <!-- MODAL / DIÀLEG NADIU DE DETALL (Modern HTML <dialog>) -->
+  <dialog id="detail-modal" aria-labelledby="modal-title" closedby="any">
+    <div class="modal-box">
+      <header class="modal-header">
+        <div class="modal-badge" id="modal-badge">Categoria</div>
+        <button type="button" class="modal-close" id="modal-close-btn" aria-label="Tancar la finestra">✕</button>
+      </header>
+
+      <div class="modal-body">
+        <h3 id="modal-title" class="modal-title">Títol de la curiositat</h3>
+        <p id="modal-subtitle" class="modal-subtitle">Subtítol o context fonètic/científic</p>
+
+        <div class="modal-content" id="modal-content">
+          <!-- Text explicatiu detallat -->
+        </div>
+
+        <div class="modal-extra" id="modal-extra">
+          <!-- Curiositats o dades addicionals -->
+        </div>
+
+        <div class="modal-meta" id="modal-meta">
+          <small id="modal-source" class="source-ref">Font: </small>
+        </div>
+      </div>
+
+      <footer class="modal-footer">
+        <form method="dialog">
+          <button class="btn btn-secondary" value="close" autofocus>Tancar</button>
+        </form>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- MODAL NADIU DE CONTACTE (Modern HTML <dialog>) -->
+  <dialog id="contact-modal" aria-labelledby="contact-modal-title" closedby="any">
+    <div class="modal-box">
+      <header class="modal-header">
+        <div class="modal-badge modal-badge-contact">📬 Contacte & Col·laboració</div>
+        <button type="button" class="modal-close" data-close-modal="contact-modal" aria-label="Tancar la finestra">✕</button>
+      </header>
+
+      <div class="modal-body">
+        <h3 id="contact-modal-title" class="modal-title">Com contactar o col·laborar</h3>
+        <p class="modal-subtitle">Projecte comunitari i obert sobre la memòria de Mallorca</p>
+
+        <div class="modal-content">
+          <p>
+            «Una teringa de curiositats» és un espai obert dedicat a preservar i difondre la riquesa lèxica, natural i històrica de Mallorca. Tota aportació de la comunitat és benvinguda:
+          </p>
+
+          <div class="modal-cards-grid">
+            <div class="modal-info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">✉️</span>
+                <strong>Correu electrònic directe</strong>
+              </div>
+              <p>Per a consultes personals, dubtes, suggeriments generals o aportacions etnogràfiques:</p>
+              <a href="mailto:gabrielrullan@users.noreply.github.com" class="btn btn-sm btn-secondary">gabrielrullan@users.noreply.github.com</a>
+            </div>
+
+            <div class="modal-info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">🐙</span>
+                <strong>Repositori a GitHub (Codi obert)</strong>
+              </div>
+              <p>Tot el projecte és lliure i transparent. Pots obrir incidències (issues) o proposar nous canvis mitjançant Pull Requests:</p>
+              <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">github.com/GabrielRullan/curiositats</a>
+            </div>
+
+            <div class="modal-info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon">💡</span>
+                <strong>Com proposar una nova curiositat</strong>
+              </div>
+              <p>
+                Si vols proposar un mot tradicional, una dita del teu poble, o una referència històrica, indica la denominació popular, el significat, la comarca o poble on s'usa, i la font oral o bibliogràfica si la coneixes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="modal-footer">
+        <form method="dialog">
+          <button class="btn btn-secondary" value="close" autofocus>Tancar</button>
+        </form>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- MODAL NADIU DE PRIVADESA (Modern HTML <dialog>) -->
+  <dialog id="privacy-modal" aria-labelledby="privacy-modal-title" closedby="any">
+    <div class="modal-box">
+      <header class="modal-header">
+        <div class="modal-badge modal-badge-privacy">🔒 Privadesa sense cookies</div>
+        <button type="button" class="modal-close" data-close-modal="privacy-modal" aria-label="Tancar la finestra">✕</button>
+      </header>
+
+      <div class="modal-body">
+        <h3 id="privacy-modal-title" class="modal-title">Nota informativa sobre privadesa</h3>
+        <p class="modal-subtitle">Compromís ferm amb una navegació lliure, neta i anònima</p>
+
+        <div class="modal-content">
+          <div class="privacy-notice-callout">
+            <span class="callout-icon">🍪</span>
+            <div>
+              <strong>Absència total de galetes (Zero Cookies):</strong>
+              <p>Aquest lloc web <strong>no utilitza cookies de cap mena</strong> (ni tècniques, ni de sessió, ni d'analítica, ni de tercers). No s'instal·la cap arxiu de seguiment al teu navegador ni dispositiu.</p>
+            </div>
+          </div>
+
+          <div class="privacy-points">
+            <div class="privacy-point-item">
+              <span class="point-check">✓</span>
+              <div>
+                <strong>Cap recollida de dades de caràcter personal:</strong>
+                <p>No recopilem, no tractem ni emmagatzemem noms, correus, números de telèfon ni cap informació identificativa dels visitants. No hi ha comptes ni cal registre previ.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point-item">
+              <span class="point-check">✓</span>
+              <div>
+                <strong>Sense rastrejadors ni analítica invasiva:</strong>
+                <p>No emprem Google Analytics, Meta Pixel, Hotjar ni cap xarxa de publicitat digital o rastreig comercial.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point-item">
+              <span class="point-check">✓</span>
+              <div>
+                <strong>Consultes anònimes i transparents:</strong>
+                <p>Les cerques al catàleg es processen directament al teu navegador o contra l'API oberta en mode només lectura, garantint un accés àgil i totalment respectuós amb la teva privadesa.</p>
+              </div>
+            </div>
+
+            <div class="privacy-point-item">
+              <span class="point-check">✓</span>
+              <div>
+                <strong>Codi font obert i auditable:</strong>
+                <p>Pots comprovar la total absència de rastrejadors revisant directament el codi font públic a GitHub.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="modal-footer">
+        <form method="dialog">
+          <button class="btn btn-secondary" value="close" autofocus>Entès i d'acord</button>
+        </form>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- PEU DE PÀGINA -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <!-- Columna 1: Sobre el projecte -->
+        <div class="footer-col footer-col-about">
+          <h3 class="footer-col-title">Una teringa de curiositats</h3>
+          <p class="footer-desc">
+            Projecte obert de preservació i divulgació del patrimoni dialectal, natural i històric de Mallorca (<a href="https://teringa.balears.tech" class="footer-accent-link">teringa.balears.tech</a>).
+          </p>
+          <p class="sources-note">
+            <strong>Fonts de referència:</strong> Diccionari Català-Valencià-Balear (Alcover-Moll), Herbari Virtual del Mediterrani Occidental (UIB), Biodibal, IRFAP, Gran Enciclopèdia de Mallorca i Catàleg d'Emblemàtics Balears.
+          </p>
+        </div>
+
+        <!-- Columna 2: Apartat de Contacte -->
+        <div class="footer-col footer-col-contact" id="contacte">
+          <h3 class="footer-col-title">📬 Contacte i col·laboració</h3>
+          <p class="footer-desc">
+            Vols aportar un mot tradicional, una dita viva o proposar millores? La teringa creix amb la participació comunitària.
+          </p>
+          <ul class="footer-link-list">
+            <li>
+              <a href="mailto:gabrielrullan@users.noreply.github.com" class="footer-action-link">
+                <span class="link-icon">✉️</span> gabrielrullan@users.noreply.github.com
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/GabrielRullan/curiositats/issues" target="_blank" rel="noopener noreferrer" class="footer-action-link">
+                <span class="link-icon">🐙</span> Incidències i propostes a GitHub
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="btn-footer-modal" data-open-modal="contact-modal">
+            Més opcions de contacte &rarr;
+          </button>
+        </div>
+
+        <!-- Columna 3: Privadesa Transparent -->
+        <div class="footer-col footer-col-privacy" id="privadesa">
+          <h3 class="footer-col-title">🔒 Privadesa garantida</h3>
+          <div class="privacy-badge">
+            <span class="privacy-badge-icon">🍪</span> Zero Cookies &bull; 100% Respecte
+          </div>
+          <p class="footer-desc">
+            «Una teringa de curiositats» <strong>no utilitza cookies</strong> (ni pròpies ni de tercers), ni cap script de rastreig. <strong>No recollim dades de caràcter personal</strong>. Consulta lliurement amb total privadesa.
+          </p>
+          <button type="button" class="btn-footer-modal" data-open-modal="privacy-modal">
+            Llegir compromís de privadesa &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Barra inferior del peu de pàgina -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025–2026 <strong>Gabriel Rullan</strong> / <em>Una teringa de curiositats</em>. Distribuït sota llicència lliure MIT. Creat amb estima per Mallorca.
+        </p>
+        <nav class="footer-bottom-nav" aria-label="Enllaços legals i repositori">
+          <button type="button" class="footer-text-btn" data-open-modal="privacy-modal">Privadesa sense cookies</button>
+          <span class="nav-sep">&bull;</span>
+          <button type="button" class="footer-text-btn" data-open-modal="contact-modal">Contacte</button>
+          <span class="nav-sep">&bull;</span>
+          <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">GitHub</a>
+          <span class="nav-sep">&bull;</span>
+          <a href="/swagger/" class="footer-bottom-link">Swagger API</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Gestió d'obertura i tancament dels diàlegs de contacte i privadesa
+    document.querySelectorAll('[data-open-modal]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var modalId = btn.getAttribute('data-open-modal');
+        var modal = document.getElementById(modalId);
+        if (modal && typeof modal.showModal === 'function') {
+          modal.showModal();
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var modalId = btn.getAttribute('data-close-modal');
+        var modal = document.getElementById(modalId);
+        if (modal && typeof modal.close === 'function') {
+          modal.close();
+        }
+      });
+    });
+
+    ['contact-modal', 'privacy-modal'].forEach(function(id) {
+      var modal = document.getElementById(id);
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          var rect = modal.getBoundingClientRect();
+          var isInDialog = (
+            e.clientX >= rect.left &&
+            e.clientX <= rect.right &&
+            e.clientY >= rect.top &&
+            e.clientY <= rect.bottom
+          );
+          if (!isInDialog) {
+            modal.close();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

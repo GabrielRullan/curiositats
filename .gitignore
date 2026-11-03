@@ -1,0 +1,38 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Development, agents and IDE metadata
+.agents/
+.gemini/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Firebase and cloud deployment caches
+.firebase/
+.firebaserc.local
+
+# Operating System temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Preserve database and project assets (explicitly tracked)
+!curiositats.db
+!database/
+!web/
+!docs/
+!skills/
+!tests/

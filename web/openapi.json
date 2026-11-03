@@ -1,0 +1,442 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Una teringa de curiositats API",
+    "version": "1.0.0",
+    "description": "API REST oberta i lleugera per consultar el catàleg etnogràfic, lingüístic, natural i històric de Mallorca («Una teringa de curiositats»). Permet l'accés complet o filtrat a les cinc categories principals: lèxic dialectal balear (words), fauna autòctona i endèmica (fauna), flora mediterrània i usos tradicionals (flora), comerços i establiments emblemàtics (businesses) i fets històrics cabdals (history).",
+    "contact": {
+      "name": "Una teringa de curiositats",
+      "url": "https://teringa.balears.tech"
+    },
+    "license": {
+      "name": "Creative Commons Reconeixement-CompartirIgual 4.0 (CC BY-SA 4.0)",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ca"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Local Development (Servidor de desenvolupament local)"
+    },
+    {
+      "url": "https://teringa.balears.tech",
+      "description": "Production Web (Entorn de producció públic)"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Curiositats",
+      "description": "Endpoints per a la recuperació, cerca i exploració del catàleg de curiositats."
+    },
+    {
+      "name": "Estadístiques",
+      "description": "Mètriques i recompte d'elements del patrimoni registrats."
+    }
+  ],
+  "paths": {
+    "/api/curiositats": {
+      "get": {
+        "tags": [
+          "Curiositats"
+        ],
+        "summary": "Llista totes les curiositats o filtra per categoria i cerca textual.",
+        "description": "Retorna una col·lecció de curiositats segons els criteris de filtratge proporcionats. Si no s'especifica cap paràmetre, retorna la teringa sencera amb tots els elements de totes les categories.",
+        "operationId": "getCuriositats",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "Filtra els resultats per una de les categories temàtiques del catàleg.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "words",
+                "fauna",
+                "flora",
+                "businesses",
+                "history"
+              ]
+            },
+            "example": "words"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "description": "Text de cerca per filtrar coincidències en el títol, subtítol, etiqueta o definició.",
+            "schema": {
+              "type": "string"
+            },
+            "example": "teringa"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Llista de curiositats recuperada amb èxit.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Capçalera CORS oberta a qualsevol origen (*)"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Curiositat"
+                  }
+                },
+                "examples": {
+                  "paraula_teringa": {
+                    "summary": "Exemple d'entrada de Lèxic (words)",
+                    "value": [
+                      {
+                        "id": 1,
+                        "title": "Teringa",
+                        "subtitle": "[təˈɾiŋ.ɡə]",
+                        "tag": "nom femení",
+                        "definition": "Filera, renglera o successió continuada de coses o persones que van l'una darrere l'altra.",
+                        "example_sentence": "Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat.",
+                        "etymology": "D'origen expressiu o relacionat amb 'tirar' / 'enfilar' en cadena.",
+                        "dialectal_notes": "Molt viva a Mallorca i Menorca.",
+                        "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)",
+                        "type": "words"
+                      }
+                    ]
+                  },
+                  "fauna_ferreret": {
+                    "summary": "Exemple d'entrada de Fauna (fauna)",
+                    "value": [
+                      {
+                        "id": 1,
+                        "title": "Ferreret",
+                        "subtitle": "Alytes muletensis",
+                        "tag": "amfibi",
+                        "is_endemic": 1,
+                        "is_native_breed": 0,
+                        "conservation_status": "Vulnerable (VU)",
+                        "habitat": "Gorgs i torrents càrstics d'alta muntanya a la Serra de Tramuntana (torrents de Pareis, Gorg Blau, etc.).",
+                        "definition": "Petit gripau endèmic de Mallorca, considerat un fòssil vivent. Va ser redescobert viu el 1980 després d'haver estat descrit inicialment per restes fòssils del Plistocè.",
+                        "curiosities": "El mascle és qui transporta els ous fecundats enganxats a les seves cames del darrere fins que es desclouen.",
+                        "source_reference": "Biodibal (UIB) / Servei de Protecció d'Espècies CAIB",
+                        "type": "fauna"
+                      }
+                    ]
+                  },
+                  "comerc_emblematic": {
+                    "summary": "Exemple de Comerç Emblemàtic (businesses)",
+                    "value": [
+                      {
+                        "id": 1,
+                        "title": "Forn del Santo Cristo",
+                        "subtitle": "Palma",
+                        "tag": "Forn i Pastisseria",
+                        "category_type": "Comerç amb història",
+                        "foundation_year": 1910,
+                        "address": "Carrer dels Paraires, 2, 07001 Palma",
+                        "latitude": 39.5701,
+                        "longitude": 2.6489,
+                        "definition": "Fundat el 1910 al cor de Palma, és un dels forns més venerats de Mallorca per la conservació de la recepta tradicional d'ensaïmada amb saïm autèntic i fermentació pacient.",
+                        "heritage_elements": "Rètol clàssic, mostrador de fusta noble i forn tradicional de solera.",
+                        "source_reference": "Catàleg Emblemàtics Balears (IDI)",
+                        "type": "businesses"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/random": {
+      "get": {
+        "tags": [
+          "Curiositats"
+        ],
+        "summary": "Retorna una curiositat aleatòria del catàleg.",
+        "description": "Selecciona a l'atzar un element individual de qualsevol de les categories del catàleg general d'«Una teringa de curiositats».",
+        "operationId": "getRandomCuriositat",
+        "responses": {
+          "200": {
+            "description": "Element aleatori retornat correctament.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Capçalera CORS oberta a qualsevol origen (*)"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Curiositat"
+                },
+                "example": {
+                  "id": 1,
+                  "title": "Teringa",
+                  "subtitle": "[təˈɾiŋ.ɡə]",
+                  "tag": "nom femení",
+                  "definition": "Filera, renglera o successió continuada de coses o persones que van l'una darrere l'altra.",
+                  "example_sentence": "Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat.",
+                  "etymology": "D'origen expressiu o relacionat amb 'tirar' / 'enfilar' en cadena.",
+                  "dialectal_notes": "Molt viva a Mallorca i Menorca.",
+                  "source_reference": "Diccionari Català-Valencià-Balear (Alcover-Moll)",
+                  "type": "words"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/stats": {
+      "get": {
+        "tags": [
+          "Estadístiques"
+        ],
+        "summary": "Retorna les estadístiques de recompte per categoria i el total del catàleg.",
+        "description": "Consulta en temps real les taules de la base de dades i proporciona el recompte exacte d'elements registrats a cadascuna de les cinc àrees temàtiques, acompanyat del total global.",
+        "operationId": "getStats",
+        "responses": {
+          "200": {
+            "description": "Estadístiques globals calculades satisfactòriament.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Capçalera CORS oberta a qualsevol origen (*)"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatsResponse"
+                },
+                "example": {
+                  "words": 8,
+                  "fauna": 7,
+                  "flora": 5,
+                  "businesses": 5,
+                  "history": 6,
+                  "total": 31
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StatsResponse": {
+        "type": "object",
+        "description": "Recompte d'entrades per categoria i suma total del catàleg.",
+        "required": [
+          "words",
+          "fauna",
+          "flora",
+          "businesses",
+          "history",
+          "total"
+        ],
+        "properties": {
+          "words": {
+            "type": "integer",
+            "description": "Recompte de termes, mots i dites populars (taula words)",
+            "example": 8
+          },
+          "fauna": {
+            "type": "integer",
+            "description": "Recompte d'espècies animals i races autòctones (taula fauna)",
+            "example": 7
+          },
+          "flora": {
+            "type": "integer",
+            "description": "Recompte d'espècies botàniques i plantes tradicionals (taula flora)",
+            "example": 5
+          },
+          "businesses": {
+            "type": "integer",
+            "description": "Recompte de comerços i establiments emblemàtics (taula emblematic_businesses)",
+            "example": 5
+          },
+          "history": {
+            "type": "integer",
+            "description": "Recompte d'esdeveniments i jaciments històrics (taula historical_events)",
+            "example": 6
+          },
+          "total": {
+            "type": "integer",
+            "description": "Suma total de totes les curiositats catalogades",
+            "example": 31
+          }
+        }
+      },
+      "Curiositat": {
+        "type": "object",
+        "description": "Representació d'un element de curiositat del patrimoni de Mallorca.",
+        "required": [
+          "id",
+          "title",
+          "subtitle",
+          "tag",
+          "definition",
+          "source_reference",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Identificador numèric únic de l'element dins de la seva taula",
+            "example": 1
+          },
+          "title": {
+            "type": "string",
+            "description": "Nom o títol principal de l'element (terme lingüístic, nom comú de l'espècie, nom del negoci o títol històric)",
+            "example": "Teringa"
+          },
+          "subtitle": {
+            "type": "string",
+            "description": "Subtítol contextual (transcripció fonètica AFI, nom científic en llatí, municipi o període cronològic)",
+            "example": "[təˈɾiŋ.ɡə]"
+          },
+          "tag": {
+            "type": "string",
+            "description": "Etiqueta classificatòria (categoria gramatical, classe biològica, família botànica, sector artesanal o període històric)",
+            "example": "nom femení"
+          },
+          "definition": {
+            "type": "string",
+            "description": "Descripció o definició detallada de l'element patrimonial",
+            "example": "Filera, renglera o successió continuada de coses o persones que van l'una darrere l'altra."
+          },
+          "source_reference": {
+            "type": "string",
+            "description": "Referència bibliogràfica, institució o font d'origen de la dada",
+            "example": "Diccionari Català-Valencià-Balear (Alcover-Moll)"
+          },
+          "type": {
+            "type": "string",
+            "description": "Identificador de la categoria d'origen de la curiositat",
+            "enum": [
+              "words",
+              "fauna",
+              "flora",
+              "businesses",
+              "history"
+            ],
+            "example": "words"
+          },
+          "example_sentence": {
+            "type": "string",
+            "description": "[Específic de words] Frase o context literari/popular d'exemple d'ús del mot",
+            "example": "Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat."
+          },
+          "etymology": {
+            "type": "string",
+            "description": "[Específic de words] Origen etimològic del terme",
+            "example": "D'origen expressiu o relacionat amb 'tirar' / 'enfilar' en cadena."
+          },
+          "dialectal_notes": {
+            "type": "string",
+            "description": "[Específic de words] Àmbit geogràfic i notes sobre la vitalitat dialectal",
+            "example": "Molt viva a Mallorca i Menorca."
+          },
+          "is_endemic": {
+            "type": "integer",
+            "description": "[Específic de fauna i flora] Indicador si l'espècie és endèmica de les Balears (1 per sí, 0 per no)",
+            "enum": [0, 1],
+            "example": 1
+          },
+          "is_native_breed": {
+            "type": "integer",
+            "description": "[Específic de fauna] Indicador si es tracta d'una raça autòctona domèstica (1 per sí, 0 per no)",
+            "enum": [0, 1],
+            "example": 0
+          },
+          "conservation_status": {
+            "type": "string",
+            "description": "[Específic de fauna] Estat de conservació segons la llista vermella de la UICN o catàlegs oficials",
+            "example": "Vulnerable (VU)"
+          },
+          "habitat": {
+            "type": "string",
+            "description": "[Específic de fauna i flora] Descripció de l'hàbitat natural on es troba l'espècie",
+            "example": "Gorgs i torrents càrstics d'alta muntanya a la Serra de Tramuntana."
+          },
+          "curiosities": {
+            "type": "string",
+            "description": "[Específic de fauna i flora] Detall o anècdota etnològica d'interès especial",
+            "example": "El mascle és qui transporta els ous fecundats enganxats a les seves cames."
+          },
+          "flowering_period": {
+            "type": "string",
+            "description": "[Específic de flora] Mesos o època de floració",
+            "example": "Juliol - Octubre"
+          },
+          "traditional_uses": {
+            "type": "string",
+            "description": "[Específic de flora] Usos culinaris, etnobotànics o medicinals tradicionals a les illes",
+            "example": "Conserva tradicional mallorquina adobada amb vinagre i aigua amb sal."
+          },
+          "category_type": {
+            "type": "string",
+            "description": "[Específic de businesses] Tipologia de protecció patrimonial de l'establiment",
+            "example": "Comerç amb història"
+          },
+          "foundation_year": {
+            "type": "integer",
+            "description": "[Específic de businesses] Any de fundació de l'establiment",
+            "example": 1910
+          },
+          "address": {
+            "type": "string",
+            "description": "[Específic de businesses] Adreça física de l'establiment",
+            "example": "Carrer dels Paraires, 2, 07001 Palma"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "float",
+            "description": "[Específic de businesses] Coordenada de latitud geogràfica (WGS84)",
+            "example": 39.5701
+          },
+          "longitude": {
+            "type": "number",
+            "format": "float",
+            "description": "[Específic de businesses] Coordenada de longitud geogràfica (WGS84)",
+            "example": 2.6489
+          },
+          "heritage_elements": {
+            "type": "string",
+            "description": "[Específic de businesses] Elements mobles, arquitectònics o decoratius de valor patrimonial conservats",
+            "example": "Rètol clàssic, mostrador de fusta noble i forn tradicional de solera."
+          },
+          "location_scope": {
+            "type": "string",
+            "description": "[Específic de history] Àmbit geogràfic o municipi on va succeir l'esdeveniment",
+            "example": "Artà, Mallorca"
+          },
+          "detailed_description": {
+            "type": "string",
+            "description": "[Específic de history] Desenvolupament històric detallat de l'esdeveniment o context",
+            "example": "El poblat de ses Païsses a Artà conserva una de les portes megalítiques més monumentals..."
+          },
+          "key_figures": {
+            "type": "string",
+            "description": "[Específic de history] Personatges clau o col·lectius protagonistes",
+            "example": "Foners balears (famosos per la seva punteria al servei de cartaginesos i romans)"
+          }
+        }
+      }
+    }
+  }
+}
