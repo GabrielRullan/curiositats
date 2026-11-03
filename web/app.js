@@ -449,6 +449,22 @@ let allItems = [];
 let currentCategory = "all";
 let currentSearch = "";
 let currentRandomIndex = -1;
+let visibleLimit = 48;
+
+// Síntesi de veu nativa en català per a les paraules
+function speakText(text) {
+  if (!("speechSynthesis" in window)) return;
+  try {
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "ca-ES";
+    utter.rate = 0.9;
+    window.speechSynthesis.speak(utter);
+  } catch (e) {
+    console.warn("Error reproduint àudio:", e);
+  }
+}
+window.speakText = speakText;
 
 // Elements del DOM: Selector de vistes
 const tabSpotlight = document.getElementById("tab-spotlight");
@@ -469,6 +485,17 @@ const spBoxText = document.getElementById("sp-box-text");
 const spSource = document.getElementById("sp-source");
 const btnNextRandom = document.getElementById("btn-next-random");
 const btnGotoTeringa = document.getElementById("btn-goto-teringa");
+
+// Elements Menú Lateral (Drawer) i Accions Ràpides
+const btnOpenDrawer = document.getElementById("btn-open-drawer");
+const btnCloseDrawer = document.getElementById("btn-close-drawer");
+const sideDrawer = document.getElementById("side-drawer");
+const drawerBackdrop = document.getElementById("drawer-backdrop");
+const toastEl = document.getElementById("toast");
+const btnCopyCuriosity = document.getElementById("btn-copy-curiosity");
+const spFilterChips = document.querySelectorAll(".sp-filter-chip");
+let currentSpotlightCategory = "all";
+let currentSpotlightItem = null;
 
 // Elements Catàleg ("Tota sa teringa")
 const feedContainer = document.getElementById("teringa-feed");
@@ -501,18 +528,35 @@ async function initApp() {
   renderTeringa();
 }
 
-// Carregar dades de l'API SQLite o fallback
+// Carregar dades: prova curiositats.json (producció/Firebase), /api/curiositats (local), o fallback
 async function loadData() {
   try {
-    const res = await fetch("/api/curiositats");
-    if (!res.ok) throw new Error("API not available");
-    allItems = await res.json();
-    if (!allItems || allItems.length === 0) {
-      allItems = FALLBACK_DATA;
+    const res = await fetch("curiositats.json");
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        allItems = data;
+        return;
+      }
     }
   } catch (e) {
-    allItems = FALLBACK_DATA;
+    // Continuar
   }
+
+  try {
+    const res = await fetch("/api/curiositats");
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        allItems = data;
+        return;
+      }
+    }
+  } catch (e) {
+    // Continuar
+  }
+
+  allItems = FALLBACK_DATA;
 }
 
 // Commutador de vistes
@@ -540,10 +584,16 @@ function switchView(viewName) {
 function pickRandomSpotlight(animate = true) {
   if (allItems.length === 0) return;
 
-  // Mostreig estratificat equilibrat per categoria per garantir diversitat en el Spotlight
-  const activeTypes = [...new Set(allItems.map(it => it.type))];
-  const chosenType = activeTypes[Math.floor(Math.random() * activeTypes.length)];
-  const pool = allItems.filter(it => it.type === chosenType);
+  let pool;
+  if (currentSpotlightCategory && currentSpotlightCategory !== "all") {
+    pool = allItems.filter(it => it.type === currentSpotlightCategory);
+    if (pool.length === 0) pool = allItems;
+  } else {
+    // Mostreig estratificat equilibrat per categoria per garantir diversitat en el Spotlight
+    const activeTypes = [...new Set(allItems.map(it => it.type))];
+    const chosenType = activeTypes[Math.floor(Math.random() * activeTypes.length)];
+    pool = allItems.filter(it => it.type === chosenType);
+  }
 
   let item;
   if (pool.length > 1) {
@@ -560,6 +610,7 @@ function pickRandomSpotlight(animate = true) {
     item = allItems[Math.floor(Math.random() * allItems.length)];
   }
   currentRandomIndex = allItems.indexOf(item);
+  currentSpotlightItem = item;
 
   const updateCardContent = () => {
     const cfg = TYPE_CONFIG[item.type] || TYPE_CONFIG.words;
@@ -571,7 +622,10 @@ function pickRandomSpotlight(animate = true) {
     spotlightCard.style.borderTop = `6px solid ${cfg.color}`;
 
     spOriginTag.textContent = item.tag ? formatTag(item.tag) : "Patrimoni de Mallorca";
-    spTitle.textContent = item.title;
+    const isWord = item.type === "words";
+    spTitle.innerHTML = isWord
+      ? `${item.title} <button type="button" style="background:none; border:none; font-size:1.3rem; cursor:pointer; vertical-align:middle;" title="Escoltar pronúncia" onclick="speakText('${item.title.replace(/'/g, "\\'")}')">🔊</button>`
+      : item.title;
     spSubtitle.textContent = item.subtitle || "";
     spDefinition.textContent = item.definition || "";
 
@@ -640,7 +694,9 @@ function renderTeringa() {
     return;
   }
 
-  filtered.forEach((item, index) => {
+  const itemsToRender = filtered.slice(0, visibleLimit);
+
+  itemsToRender.forEach((item, index) => {
     const cfg = TYPE_CONFIG[item.type] || TYPE_CONFIG.words;
     const card = document.createElement("article");
     card.className = `card-curiositat ${cfg.className}`;
@@ -648,12 +704,20 @@ function renderTeringa() {
     card.setAttribute("role", "button");
     card.setAttribute("aria-label", `Veure detalls de: ${item.title}`);
 
+    const isWord = item.type === "words";
+    const audioBtnHtml = isWord
+      ? `<button type="button" class="card-audio-btn" title="Escoltar com es diu" onclick="event.stopPropagation(); speakText('${item.title.replace(/'/g, "\\'")}')" style="background:none;border:none;cursor:pointer;font-size:1.1rem;padding:2px 6px;border-radius:4px;" aria-label="Escoltar">🔊</button>`
+      : "";
+
     card.innerHTML = `
       <div class="card-top">
         <span class="card-tag">${formatTag(item.tag) || cfg.label}</span>
         <span class="card-type-icon">${cfg.icon}</span>
       </div>
-      <h3 class="card-title">${item.title}</h3>
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:0.5rem;">
+        <h3 class="card-title">${item.title}</h3>
+        ${audioBtnHtml}
+      </div>
       ${item.subtitle ? `<p class="card-subtitle">${item.subtitle}</p>` : ""}
       <p class="card-snippet">${item.definition || ""}</p>
       <div class="card-bottom">
@@ -672,6 +736,26 @@ function renderTeringa() {
 
     feedContainer.appendChild(card);
   });
+
+  if (filtered.length > visibleLimit) {
+    const loadMoreBox = document.createElement("div");
+    loadMoreBox.style.gridColumn = "1 / -1";
+    loadMoreBox.style.textAlign = "center";
+    loadMoreBox.style.padding = "2rem 0";
+    const remaining = filtered.length - visibleLimit;
+    const nextChunk = Math.min(48, remaining);
+    loadMoreBox.innerHTML = `
+      <button type="button" class="btn btn-secondary btn-lg" id="btn-load-more" style="cursor: pointer; padding: 0.85rem 1.75rem; font-weight: 600;">
+        📜 Enfila'n més (+${nextChunk}) &bull; En queden ${remaining} a sa teringa
+      </button>
+    `;
+    const btn = loadMoreBox.querySelector("#btn-load-more");
+    btn.addEventListener("click", () => {
+      visibleLimit += 48;
+      renderTeringa();
+    });
+    feedContainer.appendChild(loadMoreBox);
+  }
 }
 
 // Obrir modal amb detall
@@ -681,7 +765,10 @@ function openDetail(item) {
   modalBadge.style.backgroundColor = cfg.color;
   modalBadge.style.color = "#FFFFFF";
 
-  modalTitle.textContent = item.title;
+  const isWord = item.type === "words";
+  modalTitle.innerHTML = isWord
+    ? `${item.title} <button type="button" style="background:none; border:none; font-size:1.3rem; cursor:pointer; vertical-align:middle;" title="Escoltar pronúncia" onclick="speakText('${item.title.replace(/'/g, "\\'")}')">🔊</button>`
+    : item.title;
   modalSubtitle.textContent = item.subtitle || (item.tag ? formatTag(item.tag) : "");
   modalContent.textContent = item.definition || "";
 
@@ -701,12 +788,49 @@ function openDetail(item) {
 window.clearFilters = function() {
   currentCategory = "all";
   currentSearch = "";
+  visibleLimit = 48;
   searchInput.value = "";
   pills.forEach(p => p.classList.toggle("active", p.dataset.category === "all"));
   renderTeringa();
 };
 
 // Configuració d'esdeveniments
+
+// Obertura i tancament del menú lateral (Drawer)
+function openDrawer() {
+  if (!sideDrawer) return;
+  sideDrawer.removeAttribute("hidden");
+  // Forçar cicle de renderitzat per a l'animació CSS
+  void sideDrawer.offsetWidth;
+  sideDrawer.classList.add("active");
+  if (drawerBackdrop) drawerBackdrop.classList.add("active");
+  if (btnOpenDrawer) btnOpenDrawer.setAttribute("aria-expanded", "true");
+  document.body.style.overflow = "hidden";
+}
+
+function closeDrawer() {
+  if (!sideDrawer) return;
+  sideDrawer.classList.remove("active");
+  if (drawerBackdrop) drawerBackdrop.classList.remove("active");
+  if (btnOpenDrawer) btnOpenDrawer.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = "";
+  setTimeout(() => {
+    if (!sideDrawer.classList.contains("active")) {
+      sideDrawer.setAttribute("hidden", "");
+    }
+  }, 320);
+}
+
+// Notificació Toast temporal
+function showToast(message) {
+  if (!toastEl) return;
+  toastEl.textContent = message;
+  toastEl.classList.add("show");
+  setTimeout(() => {
+    toastEl.classList.remove("show");
+  }, 2600);
+}
+
 function setupEventListeners() {
   // Tabs de navegació
   tabSpotlight.addEventListener("click", () => switchView("spotlight"));
@@ -728,6 +852,7 @@ function setupEventListeners() {
       pills.forEach(p => p.classList.remove("active"));
       pill.classList.add("active");
       currentCategory = pill.dataset.category;
+      visibleLimit = 48;
       renderTeringa();
     });
   });
@@ -735,7 +860,93 @@ function setupEventListeners() {
   // Cercador en temps real
   searchInput.addEventListener("input", (e) => {
     currentSearch = e.target.value.trim();
+    visibleLimit = 48;
     renderTeringa();
+  });
+
+  // Gestió d'obertura/tancament del menú lateral
+  if (btnOpenDrawer) btnOpenDrawer.addEventListener("click", openDrawer);
+  if (btnCloseDrawer) btnCloseDrawer.addEventListener("click", closeDrawer);
+  if (drawerBackdrop) drawerBackdrop.addEventListener("click", closeDrawer);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sideDrawer && sideDrawer.classList.contains("active")) {
+      closeDrawer();
+    }
+  });
+
+  // Vistes des del menú lateral
+  document.querySelectorAll("[data-drawer-nav]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const view = btn.getAttribute("data-drawer-nav");
+      switchView(view);
+      closeDrawer();
+    });
+  });
+
+  // Categories des del menú lateral (va a tota sa teringa i filtra directament)
+  document.querySelectorAll("[data-drawer-category]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cat = btn.getAttribute("data-drawer-category");
+      switchView("teringa");
+      const targetPill = document.querySelector(`.pill[data-category="${cat}"]`);
+      if (targetPill) {
+        pills.forEach(p => p.classList.remove("active"));
+        targetPill.classList.add("active");
+        currentCategory = cat;
+        visibleLimit = 48;
+        renderTeringa();
+      }
+      closeDrawer();
+    });
+  });
+
+  // Filtres ràpids per al Spotlight ("A la sort")
+  spFilterChips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      spFilterChips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      currentSpotlightCategory = chip.getAttribute("data-sp-cat") || "all";
+      pickRandomSpotlight(true);
+    });
+  });
+
+  // Botó de copiar curiositat
+  if (btnCopyCuriosity) {
+    btnCopyCuriosity.addEventListener("click", async () => {
+      if (!currentSpotlightItem) return;
+      const it = currentSpotlightItem;
+      const extra = it.curiosities || it.detailed_description || it.example_sentence || it.heritage_elements || "";
+      const textToCopy = `📜 «${it.title}»${it.subtitle ? ` (${it.subtitle})` : ""}\n${it.definition || ""}${extra ? `\n💡 ${extra}` : ""}\nFont: ${it.source_reference || "Patrimoni de Mallorca"}\nDescobreix més a: https://teringa.balears.tech`;
+
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(textToCopy);
+          showToast("Curiositat copiada al portapapers! 📋");
+        } else {
+          const ta = document.createElement("textarea");
+          ta.value = textToCopy;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+          showToast("Curiositat copiada al portapapers! 📋");
+        }
+      } catch (err) {
+        showToast("No s'ha pogut copiar el text");
+      }
+    });
+  }
+
+  // Drecera de teclat per a ordinadors: Espai o Fletxa Dreta per a nova curiositat
+  document.addEventListener("keydown", (e) => {
+    const isInputActive = ["INPUT", "TEXTAREA"].includes(document.activeElement.tagName);
+    if (!isInputActive && viewSpotlight && viewSpotlight.classList.contains("active")) {
+      if (e.code === "Space" || e.key === "ArrowRight") {
+        e.preventDefault();
+        pickRandomSpotlight(true);
+      }
+    }
   });
 
   // Tancar modal

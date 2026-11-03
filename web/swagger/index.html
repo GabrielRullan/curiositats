@@ -6,8 +6,11 @@
   <title>Documentació Swagger API — Una teringa de curiositats</title>
   <meta name="description" content="Especificació OpenAPI interactiva de l'API REST d'Una teringa de curiositats (Mallorca).">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+  <!-- Favicon i Icones Oficials -->
+  <link rel="icon" type="image/svg+xml" href="../logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,6 +72,15 @@
       gap: 0.85rem;
       text-decoration: none;
       color: #FFFFFF;
+    }
+
+    .brand-logo-img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      flex-shrink: 0;
     }
 
     .brand-icon {
@@ -207,7 +219,7 @@
   <header class="teringa-swagger-header">
     <div class="header-inner">
       <a href="/" class="brand-group" title="Tornar a Una teringa de curiositats">
-        <span class="brand-icon">📜</span>
+        <img src="../logo-circle.png" alt="Logotip Una teringa de curiositats" class="brand-logo-img" width="42" height="42">
         <div class="brand-text">
           <h1>Una teringa de curiositats</h1>
           <p>Documentació Interactiva OpenAPI / Swagger</p>

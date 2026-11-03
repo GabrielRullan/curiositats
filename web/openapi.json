@@ -5,8 +5,9 @@
     "version": "1.0.0",
     "description": "API REST oberta i lleugera per consultar el catàleg etnogràfic, lingüístic, natural i històric de Mallorca («Una teringa de curiositats»). Permet l'accés complet o filtrat a les cinc categories principals: lèxic dialectal balear (words), fauna autòctona i endèmica (fauna), flora mediterrània i usos tradicionals (flora), comerços i establiments emblemàtics (businesses) i fets històrics cabdals (history).",
     "contact": {
-      "name": "Una teringa de curiositats",
-      "url": "https://teringa.balears.tech"
+      "name": "Gabriel Rullan — Una teringa de curiositats",
+      "url": "https://teringa.balears.tech",
+      "email": "gabriel@data-partner.xyz"
     },
     "license": {
       "name": "Creative Commons Reconeixement-CompartirIgual 4.0 (CC BY-SA 4.0)",
@@ -210,6 +211,35 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Categoria no trobada o no vàlida.",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "Capçalera CORS oberta a qualsevol origen (*)"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                },
+                "example": {
+                  "error": "Not Found",
+                  "message": "Categoria 'nonexistent_category' no trobada o no vàlida. Categories permeses: words, fauna, flora, businesses, history.",
+                  "valid_categories": [
+                    "words",
+                    "fauna",
+                    "flora",
+                    "businesses",
+                    "history"
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -372,13 +402,19 @@
           "is_endemic": {
             "type": "integer",
             "description": "[Específic de fauna i flora] Indicador si l'espècie és endèmica de les Balears (1 per sí, 0 per no)",
-            "enum": [0, 1],
+            "enum": [
+              0,
+              1
+            ],
             "example": 1
           },
           "is_native_breed": {
             "type": "integer",
             "description": "[Específic de fauna] Indicador si es tracta d'una raça autòctona domèstica (1 per sí, 0 per no)",
-            "enum": [0, 1],
+            "enum": [
+              0,
+              1
+            ],
             "example": 0
           },
           "conservation_status": {
@@ -452,6 +488,40 @@
             "type": "string",
             "description": "[Específic de history] Personatges clau o col·lectius protagonistes",
             "example": "Foners balears (famosos per la seva punteria al servei de cartaginesos i romans)"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "description": "Estructura estàndard de resposta d'error de l'API.",
+        "required": [
+          "error",
+          "message"
+        ],
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Codi d'error HTTP o tipus d'error",
+            "example": "Not Found"
+          },
+          "message": {
+            "type": "string",
+            "description": "Missatge explicatiu de l'error",
+            "example": "Categoria 'nonexistent_category' no trobada o no vàlida. Categories permeses: words, fauna, flora, businesses, history."
+          },
+          "valid_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Llista de categories permeses",
+            "example": [
+              "words",
+              "fauna",
+              "flora",
+              "businesses",
+              "history"
+            ]
           }
         }
       }

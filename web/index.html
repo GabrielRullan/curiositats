@@ -7,15 +7,23 @@
   <meta name="description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
   <link rel="canonical" href="https://teringa.balears.tech">
   
+  <!-- Favicon i Icones Oficials -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
   <!-- Open Graph / Xarxes Socials -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teringa.balears.tech">
   <meta property="og:title" content="Una teringa de curiositats — Mallorca">
   <meta property="og:description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
+  <meta property="og:image" content="https://teringa.balears.tech/logo.png">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://teringa.balears.tech">
   <meta property="twitter:title" content="Una teringa de curiositats — Mallorca">
   <meta property="twitter:description" content="Una filera continuada de paraules, animals, plantes, negocis i fets històrics de l'illa de Mallorca.">
+  <meta property="twitter:image" content="https://teringa.balears.tech/logo.png">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,58 +32,67 @@
 </head>
 <body>
 
-  <!-- CAPÇALERA PRINCIPAL -->
-  <header class="hero">
-    <div class="container hero-content">
-      <nav class="hero-top-nav" aria-label="Informació del projecte, contacte i privadesa">
-        <button type="button" class="hero-nav-btn" data-open-modal="contact-modal" aria-label="Obrir apartat de contacte">
-          <span class="icon">📬</span> Contacte
-        </button>
-        <button type="button" class="hero-nav-btn" data-open-modal="privacy-modal" aria-label="Obrir política de privadesa sense cookies">
-          <span class="icon">🔒</span> Privadesa (Zero Cookies)
-        </button>
-        <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="hero-nav-btn">
-          <span class="icon">🐙</span> GitHub
-        </a>
-        <a href="/swagger/" class="hero-nav-btn">
-          <span class="icon">⚡</span> Swagger API
-        </a>
-      </nav>
+  <!-- BARRA DE CAPÇALERA COMPACTA I FIXA (MOBILE & DESKTOP FRIENDLY) -->
+  <header class="app-header">
+    <div class="header-inner">
+      <!-- Marca i Logotip -->
+      <a href="/" class="brand-link" aria-label="Inici — Una teringa de curiositats balears">
+        <img src="logo-circle.png" alt="Logotip Una teringa" class="brand-logo" width="40" height="40" fetchpriority="high">
+        <div class="brand-text">
+          <span class="brand-title">Una teringa</span>
+          <span class="brand-sub">Curiositats Balears</span>
+        </div>
+      </a>
 
-      <div class="badge-brand">Patrimoni & Etnografia de Mallorca</div>
-      <h1 class="site-title">Una teringa de curiositats</h1>
-      <p class="site-tagline">
-        <em>«Teringa» (f.):</em> Filera o successió continuada de coses o persones que van l'una darrere l'altra.
-      </p>
-
-      <!-- Commutador de vistes principal (Per defecte: Una a la sort) -->
+      <!-- Commutador de Vistes Central (A la sort / Tota sa teringa) -->
       <nav class="view-switcher" aria-label="Selector de vista principal">
-        <button type="button" class="btn-tab active" id="tab-spotlight" data-view="spotlight">
-          <span class="icon">🎲</span> Una a la sort
+        <button type="button" class="btn-tab active" id="tab-spotlight" data-view="spotlight" aria-label="Vista d'una curiositat a la sort">
+          <span class="tab-icon">🎲</span> <span class="tab-label">A la sort</span>
         </button>
-        <button type="button" class="btn-tab" id="tab-teringa" data-view="teringa">
-          <span class="icon">📜</span> Tota sa teringa <span class="tab-badge" id="tab-total-badge">31</span>
+        <button type="button" class="btn-tab" id="tab-teringa" data-view="teringa" aria-label="Vista del catàleg complet de curiositats">
+          <span class="tab-icon">📜</span> <span class="tab-label">Tota sa teringa</span> <span class="tab-badge" id="tab-total-badge">31</span>
         </button>
       </nav>
+
+      <!-- Botó Menú Lateral -->
+      <button type="button" class="btn-drawer-toggle" id="btn-open-drawer" aria-label="Obrir menú lateral d'informació i navegació" aria-controls="side-drawer" aria-expanded="false">
+        <svg class="drawer-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span class="drawer-btn-label">Menú</span>
+      </button>
     </div>
   </header>
 
   <!-- =====================================================================
-       VISTA 1: UNA A LA SORT (VISTA PER DEFECTE)
+       VISTA 1: LA CURIOSITAT EN PRIMER PLA ("UNA A LA SORT")
        ===================================================================== -->
-  <section class="view-section active" id="view-spotlight" aria-label="Curiositat a la sort">
+  <section class="view-section active" id="view-spotlight" aria-label="Curiositat en primer pla">
     <div class="container spotlight-container">
       
-      <div class="spotlight-card" id="spotlight-card">
+      <!-- Selector ràpid de categoria per a l'atzar -->
+      <nav class="spotlight-quick-filters" aria-label="Filtra la curiositat a la sort per temàtica">
+        <button type="button" class="sp-filter-chip active" data-sp-cat="all">🌟 Totes</button>
+        <button type="button" class="sp-filter-chip" data-sp-cat="words">🗣️ Mots</button>
+        <button type="button" class="sp-filter-chip" data-sp-cat="fauna">🦎 Fauna</button>
+        <button type="button" class="sp-filter-chip" data-sp-cat="flora">🌿 Flora</button>
+        <button type="button" class="sp-filter-chip" data-sp-cat="businesses">🥖 Comerços</button>
+        <button type="button" class="sp-filter-chip" data-sp-cat="history">🏛️ Història</button>
+      </nav>
+
+      <!-- Targeta principal de la Curiositat -->
+      <article class="spotlight-card" id="spotlight-card" aria-live="polite">
         <!-- Capçalera de la targeta d'impacte -->
-        <div class="spotlight-top">
+        <header class="spotlight-top">
           <span class="spotlight-badge" id="sp-badge">🗣️ Llengua & Dites</span>
           <span class="sp-origin-tag" id="sp-origin-tag">Patrimoni de Mallorca</span>
-        </div>
+        </header>
 
         <!-- Cos de la curiositat -->
         <div class="spotlight-body">
-          <h2 class="sp-title" id="sp-title">Teringa</h2>
+          <h1 class="sp-title" id="sp-title">Teringa</h1>
           <p class="sp-subtitle" id="sp-subtitle">[təˈɾiŋ.ɡə] &bull; nom femení</p>
 
           <p class="sp-definition" id="sp-definition">
@@ -83,28 +100,36 @@
           </p>
 
           <div class="sp-curiosity-box" id="sp-curiosity-box">
-            <span class="sp-box-icon">💡</span>
+            <span class="sp-box-icon" aria-hidden="true">💡</span>
             <div class="sp-box-text" id="sp-box-text">
               Exemple: «Hi havia una teringa de carros que esperaven per entrar a Ciutat el dia de mercat.»
             </div>
           </div>
         </div>
 
-        <!-- Peu de la targeta -->
-        <div class="spotlight-footer">
+        <!-- Peu de la targeta amb font i botó de copiar -->
+        <footer class="spotlight-footer">
           <span class="sp-source" id="sp-source">Font: Diccionari Català-Valencià-Balear (Alcover-Moll)</span>
-        </div>
-      </div>
+          <button type="button" class="btn-action-copy" id="btn-copy-curiosity" aria-label="Copiar text de la curiositat" title="Copiar curiositat">
+            <span class="copy-icon" aria-hidden="true">📋</span>
+            <span class="copy-label">Copiar</span>
+          </button>
+        </footer>
+      </article>
 
-      <!-- Controls de la vista "A la sort" -->
+      <!-- Controls de la vista "A la sort" (Adaptats a pantalla tàctil) -->
       <div class="spotlight-actions">
         <button type="button" class="btn btn-primary btn-lg" id="btn-next-random">
-          <span class="icon">🎲</span> Treu-ne una altra a la sort!
+          <span class="icon dice-icon" aria-hidden="true">🎲</span> Treu-ne una altra a la sort!
         </button>
         <button type="button" class="btn btn-secondary" id="btn-goto-teringa">
           <span>📜 Explorar tota sa teringa &rarr;</span>
         </button>
       </div>
+
+      <p class="spotlight-hint" aria-hidden="true">
+        Prem <kbd>Espai</kbd> o <kbd>&rarr;</kbd> per treure'n una altra
+      </p>
 
     </div>
   </section>
@@ -231,7 +256,7 @@
                 <strong>Correu electrònic directe</strong>
               </div>
               <p>Per a consultes personals, dubtes, suggeriments generals o aportacions etnogràfiques:</p>
-              <a href="mailto:gabrielrullan@users.noreply.github.com" class="btn btn-sm btn-secondary">gabrielrullan@users.noreply.github.com</a>
+              <a href="mailto:gabriel@data-partner.xyz" class="btn btn-sm btn-secondary">gabriel@data-partner.xyz</a>
             </div>
 
             <div class="modal-info-card">
@@ -335,7 +360,10 @@
       <div class="footer-grid">
         <!-- Columna 1: Sobre el projecte -->
         <div class="footer-col footer-col-about">
-          <h3 class="footer-col-title">Una teringa de curiositats</h3>
+          <div class="footer-brand-header">
+            <img src="logo-circle.png" alt="Logotip Una teringa de curiositats" class="footer-logo" width="44" height="44" loading="lazy">
+            <h3 class="footer-col-title">Una teringa de curiositats</h3>
+          </div>
           <p class="footer-desc">
             Projecte obert de preservació i divulgació del patrimoni dialectal, natural i històric de Mallorca (<a href="https://teringa.balears.tech" class="footer-accent-link">teringa.balears.tech</a>).
           </p>
@@ -352,8 +380,8 @@
           </p>
           <ul class="footer-link-list">
             <li>
-              <a href="mailto:gabrielrullan@users.noreply.github.com" class="footer-action-link">
-                <span class="link-icon">✉️</span> gabrielrullan@users.noreply.github.com
+              <a href="mailto:gabriel@data-partner.xyz" class="footer-action-link">
+                <span class="link-icon">✉️</span> gabriel@data-partner.xyz
               </a>
             </li>
             <li>
@@ -399,6 +427,151 @@
       </div>
     </div>
   </footer>
+
+  <!-- =====================================================================
+       MENÚ LATERAL OFF-CANVAS (SIDE DRAWER PER A LA INFORMACIÓ)
+       ===================================================================== -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <aside class="side-drawer" id="side-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <img src="logo-circle.png" alt="Logotip Una teringa" class="drawer-logo" width="46" height="46">
+        <div class="drawer-brand-text">
+          <h2 id="drawer-title" class="drawer-title">Una teringa</h2>
+          <span class="drawer-sub">Curiositats Balears</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" id="btn-close-drawer" aria-label="Tancar el menú lateral">
+        ✕
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <!-- Explicació i significat de la teringa -->
+      <section class="drawer-intro-card">
+        <p class="drawer-def">
+          <em>«Teringa» (f.):</em> Filera o successió continuada de coses o persones que van l'una darrere l'altra.
+        </p>
+        <p class="drawer-mission">
+          Arxiu lliure i interactiu per descobrir la parla tradicional, la natura autòctona, els comerços centenaris i la història de Mallorca i les Balears.
+        </p>
+      </section>
+
+      <!-- Vistes de navegació ràpida -->
+      <nav class="drawer-section" aria-label="Navegació de vistes">
+        <h3 class="drawer-section-title">Vistes</h3>
+        <ul class="drawer-menu-list">
+          <li>
+            <button type="button" class="drawer-nav-item" data-drawer-nav="spotlight">
+              <span class="item-icon">🎲</span>
+              <span class="item-text">Curiositat a la sort (En primer pla)</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-nav-item" data-drawer-nav="teringa">
+              <span class="item-icon">📜</span>
+              <span class="item-text">Tota sa teringa completa</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Exploració temàtica directa -->
+      <section class="drawer-section" aria-label="Explorar per categories">
+        <h3 class="drawer-section-title">Explora per temàtica</h3>
+        <ul class="drawer-menu-list">
+          <li>
+            <button type="button" class="drawer-cat-item" data-drawer-category="words">
+              <span class="cat-dot cat-dot-words"></span>
+              <span class="item-icon">🗣️</span>
+              <span class="item-text">De la llengua (Paraules & Dites)</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-cat-item" data-drawer-category="fauna">
+              <span class="cat-dot cat-dot-fauna"></span>
+              <span class="item-icon">🦎</span>
+              <span class="item-text">De la garriga i la mar (Fauna)</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-cat-item" data-drawer-category="flora">
+              <span class="cat-dot cat-dot-flora"></span>
+              <span class="item-icon">🌿</span>
+              <span class="item-text">De la terra i els penyals (Flora)</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-cat-item" data-drawer-category="businesses">
+              <span class="cat-dot cat-dot-businesses"></span>
+              <span class="item-icon">🥖</span>
+              <span class="item-text">De cal menestral (Comerços)</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-cat-item" data-drawer-category="history">
+              <span class="cat-dot cat-dot-history"></span>
+              <span class="item-icon">🏛️</span>
+              <span class="item-text">De temps ha (Història & Fets)</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Informació i transparència -->
+      <section class="drawer-section" aria-label="Informació del projecte">
+        <h3 class="drawer-section-title">Projecte & Comunitat</h3>
+        <ul class="drawer-menu-list">
+          <li>
+            <button type="button" class="drawer-link-btn" data-open-modal="contact-modal">
+              <span class="item-icon">📬</span>
+              <span class="item-text">Contacte i col·laboració</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="drawer-link-btn" data-open-modal="privacy-modal">
+              <span class="item-icon">🔒</span>
+              <span class="item-text">Privadesa (Zero Cookies)</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Eines i Desenvolupadors -->
+      <section class="drawer-section" aria-label="Eines tècniques">
+        <h3 class="drawer-section-title">Eines & Desenvolupadors</h3>
+        <ul class="drawer-menu-list">
+          <li>
+            <a href="/swagger/" class="drawer-ext-link">
+              <span class="item-icon">⚡</span>
+              <span class="item-text">Documentació Swagger API</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="drawer-ext-link">
+              <span class="item-icon">🐙</span>
+              <span class="item-text">Repositori de GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="/openapi.json" target="_blank" rel="noopener" class="drawer-ext-link">
+              <span class="item-icon">📄</span>
+              <span class="item-text">OpenAPI Specification (JSON)</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="drawer-footer">
+      <p>&copy; 2025–2026 <strong>Gabriel Rullan</strong> &bull; Llicència MIT</p>
+      <small>Fet amb estima pel patrimoni de Mallorca</small>
+    </footer>
+  </aside>
+
+  <!-- Notificació Toast per a accions ràpides -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite"></div>
 
   <script src="app.js"></script>
   <script>

@@ -36,3 +36,11 @@ desktop.ini
 !docs/
 !skills/
 !tests/
+
+# Ephemeral scratch scripts and test dumps
+scripts/patch_app.py
+scripts/importers/enrich_patrimoni.py
+scripts/export_curiositats_json.py
+database/dcvb_cache/
+*.log
+firebase-debug.log

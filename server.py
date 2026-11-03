@@ -8,11 +8,14 @@ import json
 from pathlib import Path
 import random
 import sqlite3
+import unicodedata
 import urllib.parse
 
 BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / "curiositats.db"
 WEB_DIR = BASE_DIR / "web"
+
+VALID_CATEGORIES = ("words", "fauna", "flora", "businesses", "history")
 
 
 def get_db_connection():
@@ -68,15 +71,17 @@ def fetch_all_curiositats(category=None, search=None):
 
     conn.close()
 
-    # Filtre de cerca si s'ha especificat
+    # Filtre de cerca si s'ha especificat (normalització Unicode NFC per a caràcters catalans)
     if search:
-        s = search.lower().strip()
-        filtered = []
-        for it in items:
-            text_corpus = f"{it.get('title') or ''} {it.get('subtitle') or ''} {it.get('tag') or ''} {it.get('definition') or ''}".lower()
-            if s in text_corpus:
-                filtered.append(it)
-        items = filtered
+        s = unicodedata.normalize("NFC", search).lower().strip()
+        if s:
+            filtered = []
+            for it in items:
+                raw_corpus = f"{it.get('title') or ''} {it.get('subtitle') or ''} {it.get('tag') or ''} {it.get('definition') or ''}"
+                text_corpus = unicodedata.normalize("NFC", raw_corpus).lower()
+                if s in text_corpus:
+                    filtered.append(it)
+            items = filtered
 
     return items
 
@@ -107,19 +112,59 @@ class TeringaRequestHandler(SimpleHTTPRequestHandler):
             params = urllib.parse.parse_qs(parsed.query)
             category = params.get("category", [None])[0]
 
-            if category:
-                items = fetch_all_curiositats(category=category)
-                chosen = random.choice(items) if items else {}
+            if category is not None and category.strip() != "":
+                cat_clean = category.strip()
+                if cat_clean not in VALID_CATEGORIES:
+                    self.send_response(404)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    error_resp = {
+                        "error": "Not Found",
+                        "message": f"Categoria '{cat_clean}' no trobada o no vàlida. Categories permeses: {', '.join(VALID_CATEGORIES)}.",
+                        "valid_categories": list(VALID_CATEGORIES),
+                    }
+                    self.wfile.write(json.dumps(error_resp, ensure_ascii=False).encode("utf-8"))
+                    return
+
+                items = fetch_all_curiositats(category=cat_clean)
+                if not items:
+                    self.send_response(404)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    error_resp = {
+                        "error": "Not Found",
+                        "message": f"No s'han trobat curiositats per a la categoria '{cat_clean}'.",
+                        "valid_categories": list(VALID_CATEGORIES),
+                    }
+                    self.wfile.write(json.dumps(error_resp, ensure_ascii=False).encode("utf-8"))
+                    return
+
+                chosen = random.choice(items)
             else:
                 # Mostreig estratificat equilibrat per categoria per evitar biaix lèxic
-                categories = ["words", "fauna", "flora", "businesses", "history"]
+                categories = list(VALID_CATEGORIES)
                 random.shuffle(categories)
-                chosen = {}
+                chosen = None
                 for cat in categories:
                     items = fetch_all_curiositats(category=cat)
                     if items:
                         chosen = random.choice(items)
                         break
+
+                if not chosen:
+                    self.send_response(404)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    error_resp = {
+                        "error": "Not Found",
+                        "message": "No s'han trobat curiositats al catàleg.",
+                        "valid_categories": list(VALID_CATEGORIES),
+                    }
+                    self.wfile.write(json.dumps(error_resp, ensure_ascii=False).encode("utf-8"))
+                    return
 
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -202,6 +247,9 @@ class TeringaRequestHandler(SimpleHTTPRequestHandler):
 
 
 def run_server(port=8080):
+    import sys
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     server_address = ("", port)
     httpd = ThreadingHTTPServer(server_address, TeringaRequestHandler)
     print(
