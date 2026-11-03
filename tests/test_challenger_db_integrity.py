@@ -228,8 +228,8 @@ class TestChallengerDatabaseIntegrity(unittest.TestCase):
         cursor.execute("SELECT COUNT(*) FROM words")
         total_words = cursor.fetchone()[0]
         self.assertGreaterEqual(
-            total_words, 1000,
-            f"Expected at least 1,000 rows in words table, found {total_words}"
+            total_words, 1130,
+            f"Expected at least 1,130 rows in words table, found {total_words}"
         )
 
         # Validate term
@@ -362,7 +362,7 @@ class TestChallengerDatabaseIntegrity(unittest.TestCase):
         rows = cursor.fetchall()
         conn.close()
 
-        self.assertGreaterEqual(len(rows), 1000, f"Expected >= 1,000 rows, got {len(rows)}")
+        self.assertGreaterEqual(len(rows), 1130, f"Expected >= 1,130 rows, got {len(rows)}")
 
         expected_keys = {
             "id", "title", "subtitle", "tag", "definition",
@@ -382,7 +382,7 @@ class TestChallengerDatabaseIntegrity(unittest.TestCase):
     def test_json_payload_serialization_roundtrip(self):
         """Stress test: All 1,130 items serialize to valid JSON without runtime errors or malformed payloads."""
         items = server.fetch_all_curiositats(category="words")
-        self.assertGreaterEqual(len(items), 1000, f"fetch_all_curiositats(category='words') yielded {len(items)}")
+        self.assertGreaterEqual(len(items), 1130, f"fetch_all_curiositats(category='words') yielded {len(items)}")
 
         # Test both utf-8 ensure_ascii=False and ensure_ascii=True
         try:
@@ -487,8 +487,8 @@ class TestChallengerDatabaseIntegrity(unittest.TestCase):
         conn.close()
 
         total = w + fa + fl + b + h
-        self.assertGreaterEqual(w, 1000)
-        self.assertGreaterEqual(total, 1050)
+        self.assertGreaterEqual(w, 1130)
+        self.assertGreaterEqual(total, 1150)
 
         # Stress test random selection 100 times for category='words'
         words_items = server.fetch_all_curiositats(category="words")
@@ -599,7 +599,7 @@ class TestChallengerDatabaseIntegrity(unittest.TestCase):
 
         self.assertEqual(len(results), 20)
         for count_items, count_search in results:
-            self.assertGreaterEqual(count_items, 1000)
+            self.assertGreaterEqual(count_items, 1130)
             self.assertGreaterEqual(count_search, 1)
 
 

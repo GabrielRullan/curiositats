@@ -376,6 +376,7 @@ def init_database(
     dry_run=False,
     with_diec=False,
     with_viccionari=False,
+    with_dcvb=False,
     export_fallback=False
 ):
     """Executa la inicialització o validació de la base de dades."""
@@ -477,6 +478,24 @@ def init_database(
             res = import_viccionari_corpus(db_path=db_path)
             print(f"✅ Viccionari importat: {res['inserted']} noves, {res['enriched']} enriquides, total paraules: {res['total_words']}")
 
+    # 6. Suport opcional per al corpus DCVB (Milestone M3 / R1)
+    if with_dcvb:
+        print("\n🏛️ Executant importació del corpus DCVB (Milestone M3 / R1)...")
+        if str(BASE_DIR) not in sys.path:
+            sys.path.insert(0, str(BASE_DIR))
+        from scripts.scrapers.dcvb_crawler import DCVBCrawler
+        dcvb_json = BASE_DIR / "database" / "dcvb_extracted_entries.json"
+        if dry_run:
+            if dcvb_json.exists():
+                with open(dcvb_json, "r", encoding="utf-8") as f:
+                    dcvb_entries = json.load(f)
+                valid_dcvb = [e for e in dcvb_entries if (e.get("term") or "").strip()]
+                print(f"✅ [DRY-RUN] DCVB validat: {len(valid_dcvb)} entrades vàlides a {dcvb_json.name}")
+        else:
+            crawler = DCVBCrawler(db_path=db_path, output_file=dcvb_json)
+            res = crawler.import_to_database()
+            print(f"✅ DCVB importat: {res['inserted']} noves, {res['enriched']} enriquides, total paraules: {res['total_words']}")
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -504,11 +523,18 @@ def main():
         help="Executa també la importació del corpus Viccionari (944 entrades) a curiositats.db.",
     )
     parser.add_argument(
+        "--with-dcvb",
+        "--dcvb",
+        dest="with_dcvb",
+        action="store_true",
+        help="Executa també la importació del corpus DCVB (100 entrades) a curiositats.db.",
+    )
+    parser.add_argument(
         "--all",
         "--with-all",
         dest="with_all",
         action="store_true",
-        help="Inicialitza la base de dades amb TOT el corpus dialectal complet (seed + DIEC2 + Viccionari, 1.036 paraules).",
+        help="Inicialitza la base de dades amb TOT el corpus dialectal complet (seed + DIEC2 + Viccionari + DCVB, 1.130 paraules).",
     )
     parser.add_argument(
         "--export-fallback",
@@ -523,6 +549,7 @@ def main():
 
     with_diec = args.with_diec or args.with_all
     with_viccionari = args.with_viccionari or args.with_all
+    with_dcvb = args.with_dcvb or args.with_all
 
     try:
         init_database(
@@ -532,6 +559,7 @@ def main():
             dry_run=args.dry_run,
             with_diec=with_diec,
             with_viccionari=with_viccionari,
+            with_dcvb=with_dcvb,
             export_fallback=args.export_fallback,
         )
     except Exception as e:
