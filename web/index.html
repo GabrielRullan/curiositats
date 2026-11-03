@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261103">
+  <link rel="stylesheet" href="style.css?v=20261103b">
 </head>
 <body>
 
@@ -436,14 +436,17 @@
   <aside class="side-drawer" id="side-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
     <div class="drawer-header">
       <div class="drawer-brand">
-        <img src="logo-circle.png" alt="Logotip Una teringa" class="drawer-logo" width="46" height="46">
+        <img src="logo-circle.png" alt="Logotip Una teringa" class="drawer-logo" width="44" height="44">
         <div class="drawer-brand-text">
           <h2 id="drawer-title" class="drawer-title">Una teringa</h2>
           <span class="drawer-sub">Curiositats Balears</span>
         </div>
       </div>
-      <button type="button" class="drawer-close-btn" id="btn-close-drawer" aria-label="Tancar el menú lateral">
-        ✕
+      <button type="button" class="drawer-close-btn" id="btn-close-drawer" aria-label="Tancar el menú lateral" title="Tancar menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
       </button>
     </div>
 
@@ -460,18 +463,24 @@
 
       <!-- Vistes de navegació ràpida -->
       <nav class="drawer-section" aria-label="Navegació de vistes">
-        <h3 class="drawer-section-title">Vistes</h3>
+        <h3 class="drawer-section-title">Vistes principals</h3>
         <ul class="drawer-menu-list">
           <li>
             <button type="button" class="drawer-nav-item" data-drawer-nav="spotlight">
-              <span class="item-icon">🎲</span>
-              <span class="item-text">Curiositat a la sort (En primer pla)</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">🎲</span>
+                <span class="item-text">Curiositat a la sort (En primer pla)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-nav-item" data-drawer-nav="teringa">
-              <span class="item-icon">📜</span>
-              <span class="item-text">Tota sa teringa completa</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">📜</span>
+                <span class="item-text">Tota sa teringa completa (1.086)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
         </ul>
@@ -483,37 +492,47 @@
         <ul class="drawer-menu-list">
           <li>
             <button type="button" class="drawer-cat-item" data-drawer-category="words">
-              <span class="cat-dot cat-dot-words"></span>
-              <span class="item-icon">🗣️</span>
-              <span class="item-text">De la llengua (Paraules & Dites)</span>
+              <span class="drawer-item-left">
+                <span class="cat-pill-badge cat-pill-words">🗣️ Mots</span>
+                <span class="item-text">De la llengua (Paraules & Dites)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-cat-item" data-drawer-category="fauna">
-              <span class="cat-dot cat-dot-fauna"></span>
-              <span class="item-icon">🦎</span>
-              <span class="item-text">De la garriga i la mar (Fauna)</span>
+              <span class="drawer-item-left">
+                <span class="cat-pill-badge cat-pill-fauna">🦎 Fauna</span>
+                <span class="item-text">De la garriga i la mar (Fauna)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-cat-item" data-drawer-category="flora">
-              <span class="cat-dot cat-dot-flora"></span>
-              <span class="item-icon">🌿</span>
-              <span class="item-text">De la terra i els penyals (Flora)</span>
+              <span class="drawer-item-left">
+                <span class="cat-pill-badge cat-pill-flora">🌿 Flora</span>
+                <span class="item-text">De la terra i els penyals (Flora)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-cat-item" data-drawer-category="businesses">
-              <span class="cat-dot cat-dot-businesses"></span>
-              <span class="item-icon">🥖</span>
-              <span class="item-text">De cal menestral (Comerços)</span>
+              <span class="drawer-item-left">
+                <span class="cat-pill-badge cat-pill-businesses">🥖 Comerços</span>
+                <span class="item-text">De cal menestral (Comerços)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-cat-item" data-drawer-category="history">
-              <span class="cat-dot cat-dot-history"></span>
-              <span class="item-icon">🏛️</span>
-              <span class="item-text">De temps ha (Història & Fets)</span>
+              <span class="drawer-item-left">
+                <span class="cat-pill-badge cat-pill-history">🏛️ Història</span>
+                <span class="item-text">De temps ha (Història & Fets)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
         </ul>
@@ -525,14 +544,20 @@
         <ul class="drawer-menu-list">
           <li>
             <button type="button" class="drawer-link-btn" data-open-modal="contact-modal">
-              <span class="item-icon">📬</span>
-              <span class="item-text">Contacte i col·laboració</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">📬</span>
+                <span class="item-text">Contacte i col·laboració</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
           <li>
             <button type="button" class="drawer-link-btn" data-open-modal="privacy-modal">
-              <span class="item-icon">🔒</span>
-              <span class="item-text">Privadesa (Zero Cookies)</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">🔒</span>
+                <span class="item-text">Privadesa (Zero Cookies)</span>
+              </span>
+              <span class="drawer-chevron" aria-hidden="true">›</span>
             </button>
           </li>
         </ul>
@@ -544,20 +569,29 @@
         <ul class="drawer-menu-list">
           <li>
             <a href="/swagger/" class="drawer-ext-link">
-              <span class="item-icon">⚡</span>
-              <span class="item-text">Documentació Swagger API</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">⚡</span>
+                <span class="item-text">Documentació Swagger API</span>
+              </span>
+              <span class="drawer-ext-icon" aria-hidden="true">↗</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/GabrielRullan/curiositats" target="_blank" rel="noopener noreferrer" class="drawer-ext-link">
-              <span class="item-icon">🐙</span>
-              <span class="item-text">Repositori de GitHub</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">🐙</span>
+                <span class="item-text">Repositori de GitHub</span>
+              </span>
+              <span class="drawer-ext-icon" aria-hidden="true">↗</span>
             </a>
           </li>
           <li>
             <a href="/openapi.json" target="_blank" rel="noopener" class="drawer-ext-link">
-              <span class="item-icon">📄</span>
-              <span class="item-text">OpenAPI Specification (JSON)</span>
+              <span class="drawer-item-left">
+                <span class="item-icon">📄</span>
+                <span class="item-text">OpenAPI Specification (JSON)</span>
+              </span>
+              <span class="drawer-ext-icon" aria-hidden="true">↗</span>
             </a>
           </li>
         </ul>
@@ -573,7 +607,7 @@
   <!-- Notificació Toast per a accions ràpides -->
   <div id="toast" class="toast-notification" role="status" aria-live="polite"></div>
 
-  <script src="app.js?v=20261103"></script>
+  <script src="app.js?v=20261103b"></script>
   <script>
     // Gestió d'obertura i tancament dels diàlegs de contacte i privadesa
     document.querySelectorAll('[data-open-modal]').forEach(function(btn) {
